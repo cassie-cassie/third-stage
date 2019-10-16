@@ -61,6 +61,16 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(cookieParser())
 
+// 配置模板引擎
+app.set('view engine','ejs')
+
+// 配置静态资源
+app.use(express.static('public'))
+
+// 配置路由
+app.use('/shop',require('./routes/index'))
+
+
 
 
 app.listen(3000,()=>{
