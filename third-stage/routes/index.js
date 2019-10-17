@@ -1,7 +1,7 @@
 const express = require('express');
 const Router = express.Router();
 
-首页路由
+// // 首页路由
 Router.get('/',require('../controller/nav.js'))
 
 // // 登录路由
@@ -22,8 +22,8 @@ Router.get('/',require('../controller/nav.js'))
 // // 国际
 // Router.get('/international',require('../controller/international'))
 
-// // // 家电
-// Router.get('/homeapp',require('../controller/homeapp'))
+// // 家电
+Router.get('/homeapp',require('../controller/homeapp'))
 
 // // 家居
 // Router.get('/furniture',require('../controller/furniture'))
