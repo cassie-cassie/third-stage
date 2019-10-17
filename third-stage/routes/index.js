@@ -22,8 +22,8 @@ Router.get('/',require('../controller/nav.js'))
 // // 国际
 // Router.get('/international',require('../controller/international'))
 
-// // 家电
-Router.get('/homeapp',require('../controller/homeapp'))
+// // // 家电
+// Router.get('/homeapp',require('../controller/homeapp'))
 
 // // 家居
 // Router.get('/furniture',require('../controller/furniture'))
