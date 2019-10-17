@@ -1,0 +1,51 @@
+.container{
+    padding:0;
+    height:250rem;
+}
+.swiperbox{
+    display:flex;
+    position: relative;
+}
+.swiper-pagination{
+    position: absolute;
+    z-index:1;
+    width:98% !important;
+    text-align:right;
+    bottom:0 !important;
+}
+.swiper-pagination-bullet-active{
+    background:#000;
+    border: 1px solid #fff;
+}
+.wd100{
+    width:100%;
+}
+.he100{
+    height:100%;
+}
+.he{
+    height:50%
+}
+.wd50{
+    width:50%
+}
+/* 类型入口 */
+.sectionlist-type{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sectionlist-item-type{
+    width:20%;
+}
+/* 精彩活动 */
+.sectionlist-Wdfact{
+   height:30rem;
+}
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+/* 唯品快抢 */
+.sectionlist-homeapp{
+
+}
