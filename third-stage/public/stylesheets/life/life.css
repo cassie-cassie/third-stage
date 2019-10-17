@@ -1,0 +1,44 @@
+#box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #box-center {
+    position: absolute;
+    top: 2.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .lbt {
+    position: relative;
+    width: 10rem;
+    height: 3rem;
+  }
+  .swiper-container {
+    width: 10rem;
+    height: 3rem;
+  }
+  .swiper-slide img {
+    width: 10rem;
+    height: 3rem;
+  }
+  .lbt-bottom {
+    width: 10rem;
+    height: 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+  }
+  #box-bottom {
+    height: 1.5rem;
+    width: 10rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    border-top: 1px solid #000;
+    background-color: #fff;
+  }
