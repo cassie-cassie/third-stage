@@ -1,8 +1,8 @@
 const express = require('express');
 const Router = express.Router();
 
-// 首页路由
-// Router.get('/',require('../controller/nav.js'))
+首页路由
+Router.get('/',require('../controller/nav.js'))
 
 // // 登录路由
 // Router.get('/login',require('../controller/login.js'))
