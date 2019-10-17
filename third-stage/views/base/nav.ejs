@@ -1,20 +1,134 @@
 <style>
     .nav{
         width:100%;
-        height:3rem;
-        background:red
+        height:8rem;
+        background:#FAFAF9
     }
-    li{
-        float:left
+    #login{
+        width:100%;
+        height:4rem;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .nav1{
+        width:100%;
+        height:4rem;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .login{
+        width:3rem;
+        height:2.3rem;
+        font-size:14px;
+        color:#AAACB0;
+    }
+    .search{
+        width:26rem;
+        height:3rem;
+        border-radius:7rem;
+        border:none;
+        outline:0;
+        font-size:15px;
+        padding:0 2rem;
+        border:1px solid #EDEDED;
+        background:#F3F4F5;
+        color:#C1C2C6;
+    }
+    .list{
+        width:2.5rem;
+        height:2.3rem;
+    }
+    .list img{
+        width:100%
+    }
+    .scrollBar{
+        width: 90%;
+        overflow: hidden;
+        height:3rem
+    }
+    .scrollBarItem{
+        width: 45em;
+    }
+    .scrollBarItem ul{
+        padding: 0.5rem;
+        height: 3rem;
+    }
+    .scrollBarItem ul li{
+        height: 3rem;
+        width: 5em;
+        float: left;
+        line-height: 3rem; 
+        text-align: center;
+        font-size:13px;
+    }
+    .clear:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .nav-img-box{
+        width:10%;
+        position: relative;
+        color: #7b7a7a;
+        text-align: center;
+    }
+    .nav-img-box img{
+        width: 100%;
+        position: relative;
+    }
+    .fs12{
+        font-size: 14px;
+    }
+    .color-gray{
+        color: #999;
+    }
+    .clear{
+        background:yellow
     }
 </style>
-
-
-
 <div class="nav">
-    <ul>
-        <li>kjksajkhjhkds</li>
-        <li>jashjkhfjkh</li>
-        <li>amnhjkskljsd</li>
-    </ul>
+    <div id="login">
+            <span class="login">登录</span>
+            <input class="search" placeholder="大家正在搜：护肤套装">
+            <span class="list"><img src="/images/index/list1.png"></span>
+    </div>
+    <div class="clear nav1">
+        <div class="scrollBar fl">
+            <div class="scrollBarItem">
+                <ul>
+                    <li>今日推荐</li>
+                    <li>最后疯抢</li>
+                    <li>美妆</li>
+                    <li>母婴</li>
+                    <li>国际</li>
+                    <li>家电</li>
+                    <li>家居</li>
+                    <li>生活</li>
+                    <li>唯品奢</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="fr nav-img-box">
+            <img src="image/nav.png" alt="">
+            <p class="fs12 color-gray">导航</p>
+        </div>
+    </div>
 </div>
+<script src="/javascripts/quadro/jquery.js"></script>
+<script src="/javascripts/quadro/iscroll/iscroll.js"></script>
+<script src="/javascripts/quadro/mui/mui.js"></script>
+<script src="/javascripts/quadro/swiper/swiper.js"></script>
+<script>
+     var myScroll1 = new IScroll('.scrollBar',{
+            scrollX: true
+        })
+</script>
