@@ -7,6 +7,9 @@ const Router = express.Router();
 // // 登录路由
 // Router.get('/login',require('../controller/login.js'))
 
+// // 登录后路由
+// Router.get('/user',require('../controller/user.js'))
+
 // // 最后疯抢
 // Router.get('/lastCrazy',require('../controller/lastCrazy'))
 
@@ -20,7 +23,7 @@ const Router = express.Router();
 // Router.get('/international',require('../controller/international'))
 
 // // 家电
-// Router.get('/homeapp',require('../controller/homeapp'))
+Router.get('/homeapp',require('../controller/homeapp'))
 
 // // 家居
 // Router.get('/furniture',require('../controller/furniture'))
