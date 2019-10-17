@@ -20,7 +20,7 @@ Router.get('/',require('../controller/nav.js'))
 // Router.get('/international',require('../controller/international'))
 
 // // 家电
-// Router.get('/homeapp',require('../controller/homeapp'))
+Router.get('/homeapp',require('../controller/homeapp'))
 
 // // 家居
 // Router.get('/furniture',require('../controller/furniture'))
