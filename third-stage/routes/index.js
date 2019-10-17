@@ -7,6 +7,9 @@ Router.get('/',require('../controller/nav.js'))
 // // 登录路由
 // Router.get('/login',require('../controller/login.js'))
 
+// // 登录后路由
+// Router.get('/user',require('../controller/user.js'))
+
 // // 最后疯抢
 // Router.get('/lastCrazy',require('../controller/lastCrazy'))
 

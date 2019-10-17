@@ -46,20 +46,20 @@
     .scrollBar{
         width: 90%;
         overflow: hidden;
-        height:3rem
     }
     .scrollBarItem{
-        width: 45em;
+        width: 60rem;
+        height:4rem
     }
     .scrollBarItem ul{
-        padding: 0.5rem;
-        height: 3rem;
+        padding: 0 0.5rem;
+        height: 4rem;
     }
     .scrollBarItem ul li{
-        height: 3rem;
+        height: 4rem;
         width: 5em;
         float: left;
-        line-height: 3rem; 
+        line-height: 4rem; 
         text-align: center;
         font-size:13px;
     }
@@ -76,57 +76,59 @@
     }
     .nav-img-box{
         width:10%;
+        height:4rem;
         position: relative;
         color: #7b7a7a;
         text-align: center;
     }
-    .nav-img-box img{
-        width: 100%;
-        position: relative;
-    }
     .fs12{
-        font-size: 14px;
+        font-size: 30px;
+        line-height:4rem
     }
     .color-gray{
         color: #999;
     }
-    .clear{
-        background:yellow
+    a{
+        color:#585C64
+    }
+    /* a:first-child{
+        color:#D34BA8
+    } */
+    .color{
+        color:#D34BA8
+    }
+    #active{
+        border-bottom:2px solid #D34BA8;
     }
 </style>
 <div class="nav">
     <div id="login">
-            <span class="login">登录</span>
-            <input class="search" placeholder="大家正在搜：护肤套装">
-            <span class="list"><img src="/images/index/list1.png"></span>
+        <span class="login">登录</span>
+        <input class="search" placeholder="大家正在搜：护肤套装">
+        <span class="list"><img src="/images/index/list1.png"></span>
     </div>
     <div class="clear nav1">
         <div class="scrollBar fl">
             <div class="scrollBarItem">
                 <ul>
-                    <li>今日推荐</li>
-                    <li>最后疯抢</li>
-                    <li>美妆</li>
-                    <li>母婴</li>
-                    <li>国际</li>
-                    <li>家电</li>
-                    <li>家居</li>
-                    <li>生活</li>
-                    <li>唯品奢</li>
+                    <li class="actcive" id="active"><a href="" class="color">今日推荐</a></li>
+                    <li class="actcive"><a href="">最后疯抢</a></li>
+                    <li class="actcive"><a href="">美妆</a></li>
+                    <li class="actcive"><a href="">母婴</a></li>
+                    <li class="actcive"><a href="">国际</a></li>
+                    <li class="actcive"><a href="">家电</a></li>
+                    <li class="actcive"><a href="">家居</a></li>
+                    <li class="actcive"><a href="">生活</a></li>
+                    <li class="actcive"><a href="">唯品奢</a></li>
                 </ul>
             </div>
         </div>
-        
         <div class="fr nav-img-box">
-            <img src="image/nav.png" alt="">
-            <p class="fs12 color-gray">导航</p>
+            <p class="fs12 color-gray"><i class="fa fa-angle-down"></i></p>
         </div>
     </div>
 </div>
-<script src="/javascripts/quadro/jquery.js"></script>
-<script src="/javascripts/quadro/iscroll/iscroll.js"></script>
-<script src="/javascripts/quadro/mui/mui.js"></script>
-<script src="/javascripts/quadro/swiper/swiper.js"></script>
+
 <script>
      var myScroll1 = new IScroll('.scrollBar',{
             scrollX: true
