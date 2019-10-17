@@ -1,0 +1,58 @@
+<% include base/head.ejs %>
+<% include base/nav.ejs %>
+<!-- homeapp 家电页面 -->
+<link rel="stylesheet" href="/stylesheets/homeapp/homeapp.css">
+<script src="/javascripts/quadro/swiper/swiper.js"></script>
+<div class="container">
+    <!-- 轮播图 -->
+    <div class="swiperbox wd100">
+        <div class="swiper-container wd100 he100">
+            <div class="swiper-wrapper wd100 he100">
+                <div class="swiper-slide"><a href=""><img src="/images/homeapp/1.jpg" class="wd100"></img></a></div>
+                <div class="swiper-slide"><a href=""><img src="/images/homeapp/2.jpg" class="wd100"></img></a></div>
+            </div>
+            <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+   </div>
+   <!-- 类型入口 -->
+   <div class="sectionlist-type">
+       <div class="sectionlist-item-type he50 "><a href=""><img src="/images/homeapp/3.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/4.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/12.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/5.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/6.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/7.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/8.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/9.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/10.jpg" class="wd100"></a></div>
+       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/11.jpg" class="wd100"></a></div>
+   </div>
+   <!-- 精彩活动 -->
+   <div class="sectionlist-Wdfact wd100">
+       <!-- 精彩活动顶部 -->
+          <div class="sectionlist-Wdfact-title">
+                <a href=""><img src="/images/homeapp/13.jpg" class="wd100"></a>
+          </div>
+        <!-- oppo手机疯抢 -->
+          <div class="sectionlist-Wdfact-navt flex wd100">
+                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/14.jpg"  class="wd100"></a></div>
+                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/15.jpg" class="wd100"></a></div>
+                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/16.jpg" class="wd100"></a></div>
+                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/17.jpg" class="wd100"></a></div>
+          </div>
+        <!-- 唯品快抢 -->
+        <div class="sectionlist-homeapp">
+                
+
+        </div>
+   </div>
+</div>
+
+<script language="javascript"> 
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        paginationClickable: true  
+    })
+</script>
+<% include base/bottom.ejs %>
+<% include base/foot.ejs %>
