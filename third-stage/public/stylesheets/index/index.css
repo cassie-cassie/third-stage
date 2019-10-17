@@ -1,0 +1,94 @@
+
+#index{
+    width:100%
+}
+.vip,.vip-goods{
+    width:100%;
+    /* height:15.3rem */
+}
+.vip img{
+    width:100%;
+}
+.vip-goods{
+    margin-bottom: 1rem;
+    background:#D5F6FF;
+    display:flex;
+    justify-content:space-around;
+}
+.vip-goods-desc{
+    width:32%;
+    height:100%
+}
+.vip-goods-desc img{
+    width:100%
+}
+.index-list{
+    width:100%;
+}
+.index-desc{
+    width:100%;
+    height:8rem;
+    text-align:center;
+    display:flex;
+    justify-content:space-around
+}
+.index-desc-list{
+    width:15%;
+    height: 8rem;
+    position: relative;
+}
+.cirle-white{
+    height: 5.5rem;
+    width: 100%;
+    border-radius:50%;
+    background:#fff;
+}
+.index-desc-list>img{
+    width: 100%;
+    height: 8rem;
+    float: left;
+    /* height: 8rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fastbuy{
+    width:95%;
+    height:20rem;
+    background:#fff;
+    margin:0 auto;
+    border-radius:0.8rem;
+    margin-bottom: 1rem;;
+}
+.fastbuy-top{
+    height:6rem;
+    margin-bottom: 0.5rem;
+}
+.fastbuy-desc1{
+    font-size:23px;
+    height:4rem;
+    line-height:4rem;
+    text-align:center;
+    color:#282828;
+    margin:0;
+}
+.fastbuy-desc2{
+    font-size:15px;
+    height:2rem;
+    color:#282828;
+    text-align:center;
+    line-height:2rem
+}
+.fastbuy-bottom{
+    height:13rem;
+    display:flex;
+    justify-content: space-around;
+}
+.fastbuy-bottom1{
+    width:20%;
+    height:100%;
+}
+/* .fastbuy-bottom1-desc{
+    height:8rem;
+    background:#D34BA8
+} */
