@@ -54,15 +54,15 @@
 }
 .fastbuy{
     width:95%;
-    height:20rem;
+    height:22rem;
     background:#fff;
     margin:0 auto;
     border-radius:0.8rem;
-    margin-bottom: 1rem;;
+    margin:1rem;
 }
 .fastbuy-top{
     height:6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 .fastbuy-desc1{
     font-size:23px;
@@ -87,8 +87,47 @@
 .fastbuy-bottom1{
     width:20%;
     height:100%;
+    text-align:center
 }
-/* .fastbuy-bottom1-desc{
-    height:8rem;
-    background:#D34BA8
+.opennew{
+    width:95%;
+    height:23rem;
+    background:#fff;
+    margin:0 auto;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-radius:1rem;
+    overflow:hidden;
+}
+.opennew-top{
+    height:75%;
+}
+.opennew-goodsname{
+    float:left; 
+    margin:0;
+    font-size:13px;
+    color:#000;
+    font-weight:600;
+    width:70%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.opennew-times{
+    float:right;
+    margin:0;
+    font-size:12px;
+}
+.opennew-goodsname,.opennew-times{
+    padding:0 0.8rem 0 1rem;
+    margin-top:1rem;
+}
+/* .clear:after{
+    content:'';
+    display:block;
+    clear:both
 } */
+.opnenew-price{
+    font-size:12px;
+    padding:0 0.8rem 0 1rem;
+}
