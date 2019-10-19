@@ -167,7 +167,9 @@ a{
     color:#585C64;
     font-size:12px
 }
-
+.clear p{
+    margin:0
+}
 </style>
 <div class="nav">
     <div id="login">
@@ -284,6 +286,10 @@ a{
             </div>
         </div>
     </div>
+    <!-- 购物车图标 一键回顶部 -->
+    <div id="shopcar" style="width:5rem;height:5rem;background:#22262D;position:fixed;top:90%;left:1rem;z-index:2;border-radius:50%;text-align: center;line-height: 5rem;"><i class="fa fa-shopping-cart" style="font-size:27px;color:#fff;"></i></div>
+    <div id="back" style="width:5rem;height:5rem;background:#22262D;position:fixed;top:90%;right:1rem;z-index:2;border-radius:50%;text-align: center;line-height: 5rem;display:none"><i class="fa fa-angle-up" style="font-size:27px;color:#fff;"></i></div>
+    <!-- <div><i class="fa fa-long-arrow-up"></i></div> -->
 </div>
 
 <script>
@@ -299,5 +305,17 @@ a{
         }
         angleup.onclick=function(){
             angleup.style.display='none'
+        }
+        //    一键回顶部
+        var back=document.querySelector('#back')
+        window.onscroll=function(){
+            if(window.scrollY>1000){
+                back.style.display='block'
+            }else{
+                back.style.display='none'
+            }
+        }
+        back.onclick=function(e){
+            window.scrollTo(0,0)
         }
 </script>
