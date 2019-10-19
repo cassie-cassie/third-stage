@@ -75,86 +75,82 @@
                     <img width="100%" src="/images/index/fastbuy (1).jpg" alt="">
                 </div>
                 <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
+                    <img width="60%" src="/images/index/zmc (1).png" alt="">
                 </div>
-                <p>58</p>
+                <p style="color:#DE3E97;font: size 16px;">￥58</p>
             </div>
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (2).jpg" alt="">
                 </div>
                 <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
+                    <img width="60%" src="/images/index/zmc (2).png" alt="">
                 </div>
-                <p>58</p>
+                <p style="color:#DE3E97;font: size 16px;">￥50</p>
             </div>
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (3).jpg" alt="">
                 </div>
                 <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
+                    <img width="60%" src="/images/index/zmc (2).png" alt="">
                 </div>
-                <p>58</p>
+                <p style="color:#DE3E97;font: size 16px;">￥49</p>
             </div>
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (4).jpg" alt="">
                 </div>
                 <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
+                    <img width="60%" src="/images/index/zmc (3).png" alt="">
                 </div>
-                <p>58</p>
+                <p style="color:#DE3E97;font: size 16px;">￥99</p>
             </div>
         </div>
     </div>
     <!-- 最后疯抢 -->
     <div class="fastbuy">
         <div class="fastbuy-top">
-            <p class="fastbuy-desc1"><span style="color:#DE3E97">唯品快抢</span>.品质好物 天天特价</p>
-            <p class="fastbuy-desc2">美好生活抢先到<i class="fa fa-angle-right" style="margin-left: 0.5rem;"></i></p>
+            <p class="fastbuy-desc1"><span style="color:#DE3E97; margin-right: 0.8rem;">最后疯抢</span>三折封顶</p>
+            <p class="fastbuy-desc2">早10晚8上新 150+品牌疯抢中<i class="fa fa-angle-right" style="margin-left: 0.5rem;"></i></p>
         </div>
         <div class="fastbuy-bottom">
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
-                    <img width="100%" src="/images/index/fastbuy (1).jpg" alt="">
+                    <img width="100%" src="/images/index/lastcrazy (1).jpg" alt="">
                 </div>
-                <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
-                </div>
-                <p>58</p>
+               <p style="margin-top:0.5rem;"><span style="padding:0.2rem;border-radius:0.5rem;background:-webkit-linear-gradient(left,#DC429C,#CC72D5);font-size:10px;color:#fff">疯抢价</span><span style="margin-left:0.2rem;font-size:13px;color:#000">￥488</span></p>
             </div>
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
-                    <img width="100%" src="/images/index/fastbuy (2).jpg" alt="">
+                    <img width="100%" src="/images/index/lastcrazy (2).jpg" alt="">
                 </div>
-                <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
-                </div>
-                <p>58</p>
+                <p style="margin-top:0.5rem;"><span style="padding:0.2rem;border-radius:0.5rem;background:-webkit-linear-gradient(left,#DC429C,#CC72D5);font-size:10px;color:#fff">疯抢价</span><span style="margin-left:0.2rem;font-size:13px;color:#000">￥174</span></p>
             </div>
             <div class="fastbuy-bottom1">
                 <div class="fastbuy-bottom1-desc">
-                    <img width="100%" src="/images/index/fastbuy (3).jpg" alt="">
+                    <img width="100%" src="/images/index/lastcrazy (3).jpg" alt="">
                 </div>
-                <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
-                </div>
-                <p>58</p>
-            </div>
-            <div class="fastbuy-bottom1">
-                <div class="fastbuy-bottom1-desc">
-                    <img width="100%" src="/images/index/fastbuy (4).jpg" alt="">
-                </div>
-                <div>
-                    <img width="100%" src="/images/index/zmc.png" alt="">
-                </div>
-                <p>58</p>
+                <p style="margin-top:0.5rem;"><span style="padding:0.2rem;border-radius:0.5rem;background:-webkit-linear-gradient(left,#DC429C,#CC72D5);font-size:10px;color:#fff">疯抢价</span><span style="margin-left:0.2rem;font-size:13px;color:#000">￥127</span></p>
             </div>
         </div>
     </div>
+    <!-- 今日特卖10点上新 opennew-->
+    <p style="margin:0 auto;width:100%;text-align:center;font-size:16px;font-weight:600;color:#000;margin-bottom:1rem;">今日特卖 10点上新</p>
+    <% for(var i=0;i<data.length;i++){%>
+    <div class="opennew">
+        <div class="opennew-top">
+            <img width="100%" src="/images/index/new (1).jpg" alt="">
+        </div>
+        <div class="clear" style="margin:0.2rem 0">
+            <p class="opennew-goodsname"><span><%= data[i].goodsname%></span></p>
+            <p class="opennew-times">还剩<span>dsd</span>:<span>ddd</span>:<span>dd</span></p>
+        </div>
+        <p class="opnenew-price"><span style="margin-right:1.5rem"><%= data[i].price1%></span><span style="margin-right:0.3rem">|</span><%= data[i].price2%></p>
+    </div>
+    <% } %>
 </div>
 
 
-
+    <% include base/bottom.ejs%>
 <% include base/foot.ejs%>
