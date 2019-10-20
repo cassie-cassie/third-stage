@@ -1,0 +1,151 @@
+<% include base/head.ejs %>
+<style>
+    body{
+        background: #FFFFFF;
+    }
+    .background{
+        width: 37.5rem;
+        height: 19rem;
+        background: #f6f6f6 url(../images/login/login_bg.3a93a8bf.jpg) no-repeat 0 0;
+        margin: 0 auto;
+    }
+    .vip{
+        margin-left: 11rem;
+        padding-top: 7rem;
+    }
+    .vip img{
+        width: 16rem;
+    }
+    #div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #input1,#input2{
+        width: 20rem;
+        float: right;
+        margin-right: 7rem;
+        border: none;
+        background-color: white !important;
+        box-shadow: none;
+    }
+    #button{
+        border-radius: 30rem;
+        margin-top: 1.5rem;
+        width: 32rem;
+        margin-left: 3rem;
+        background: #CACCD2;
+        border: none;
+    }
+    #p1{
+        float: left;
+        line-height: 4rem;
+        font-size: 1.7rem;
+        margin-left: 2.5rem;
+        color: black;
+    }
+    #p2{
+        float: left;
+        font-size: 1.7rem;
+        line-height: 4.5rem;
+        margin-left: 2.5rem;
+        color: black;
+    }
+    #bottom{
+        border-bottom: 0.15rem #F3F3F3 solid;
+        padding-top: 0.5rem;
+        height: 5.3rem;
+    }
+    .password{
+        width: 37.5rem;
+        height: 4rem;
+        color: #5DAAFF;
+        float: left;
+        padding-left: 25rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .h{
+        width: 37.5rem;
+        height: 3rem;
+        /* background: palegreen; */
+        margin-top: 5rem;
+    }
+    .hr2{
+        width: 17rem;
+        height: 1.2rem;
+        /* background: #5069c6; */
+        float: right;
+        border-bottom: 0.15rem #EDEDED solid;
+    }
+    .huo{
+        font-size: 1.5rem;
+        float: right;
+        color: #EDEDED;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .hr1{
+        width: 17rem;
+        height: 1.2rem;
+        /* background: #5069C6; */
+        float: right;
+        border-bottom: 0.15rem #EDEDED solid;
+    }
+    .zhuce{
+        border-radius: 8rem;
+        margin-top: 0.9rem;
+        width: 12rem;
+        height: 3rem;
+        margin-left: 13rem;
+        line-height: 3rem;
+        background: white;
+        border: 0.15rem #F180BF solid;
+    }
+    .zhuce a{
+        color: #F180BF;
+        border: none;
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+        border-radius: 20rem;
+    }
+    .zhuce a:hover{
+        background: white;
+    }
+    .x{
+        position: absolute;
+        top: 1rem;
+        left: 35rem;
+        font-size: 2.5rem;
+        color: #818181;
+    }
+</style>
+<div class="x">
+    <span>X</span>
+</div>
+<div class="background">
+    <div class="vip">
+        <img src="../images/login/logo.ac5608f4.png">
+    </div>
+</div>
+<div  id="div" class="container">
+    <form>
+        <div id="bottom">
+            <p id="p1">登录名</p><input id="input1" type="text" name="username" placeholder="请输入手机号或邮箱" aria-describedby="sizing-addon1" class="form-control">
+        </div>
+        <div id="bottom">
+            <p id="p2">密码</p><input id="input2" type="text" name="password" placeholder="请输入密码" aria-describedby="sizing-addon1" class="form-control">
+        </div>
+        <button id="button" type="submit" class="btn btn-primary btn-lg">登录</button>
+    </form>
+</div>
+<div class="password">
+    <span>忘记密码</span>
+</div>
+<div class="h">
+    <div class="hr1"></div>
+    <div class="huo">或</div>
+    <div class="hr2"></div>
+</div>
+<div class="zhuce"><a href="index/login">手机注册登录</a></div>
+<!-- <script src="/javascripts/ajax/login.js"></script> -->
+<% include base/foot.ejs %>
