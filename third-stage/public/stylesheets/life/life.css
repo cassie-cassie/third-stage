@@ -1,44 +1,222 @@
-#box {
+.life{
+    width: 100%;
+}
+  .swiper-container{
+    width:100%;
+  }
+  .swiper-wrapper{
+      width:100%;
+      height:100%;
+  }
+  .swiper-pagination{
+      position: absolute;
+      z-index:1;
+      width:98% !important;
+      text-align:right;
+      bottom:0 !important;
+  }
+  .swiper-pagination-bullet-active{
+      background:#000;
+      border: 1px solid #fff;
+  }
+  .coupon {
+    width:100%;
+    height: 14rem;
     display: flex;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
-  #box-center {
-    position: absolute;
-    top: 2.5rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  .coupon-img  {
+    width: 100%;
+    height: 14rem;
   }
-  .lbt {
+  .coupon-img > img {
+    width: 100%;
+    height: 14rem;
+  }
+  .daojishi {
+    width:100%;
+    height: 6rem;
+    display: flex;
+  }
+  .daojishi-img  {
+    width: 100%;
+    height: 6rem;
+    
+  }
+  .daojishi > img {
+    width: 100%;
+    height: 6rem; 
     position: relative;
-    width: 10rem;
-    height: 3rem;
   }
-  .swiper-container {
-    width: 10rem;
-    height: 3rem;
-  }
-  .swiper-slide img {
-    width: 10rem;
-    height: 3rem;
-  }
-  .lbt-bottom {
-    width: 10rem;
-    height: 1rem;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-  }
-  #box-bottom {
-    height: 1.5rem;
-    width: 10rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    border-top: 1px solid #000;
-    background-color: #fff;
-  }
+  *{
+    margin:0; 
+    padding:0; 
+    list-style:none;
+    }
+  /* body{ 
+     font-size:18px;  
+    text-align:center;
+    background: blue;
+    }   */
+ .timediv{
+     width: 30rem;
+     height: 3.5rem;
+     position: absolute;
+     top:35rem;
+     left:1rem;
+     /* background: purple; */
+} 
+ #showInterval{
+     font-size: 1.8rem;
+     position: absolute;
+     top:2.5rem;
+     left:3rem;
+     letter-spacing:1rem; 
+     color:#fff;
+ }
+ .frist img{
+   width: 100%;
+   height: 8rem;
+   margin-top: 1rem;
+ }
+ .frist img img{
+    width: 100%;
+    height: 4rem;
+ }
+ .next img{
+  width: 100%;
+ }
+ .jin{
+   width: 100%;
+   height: 3.5rem;
+ }
+ .fastbuy{
+   width: 100%;
+   height: 22rem;
+   background: #fff;
+   margin: 0 auto;
+   border-radius: 0.8rem;
+ }
+ .fastbuy-top{
+   height: 6rem;
+   margin-bottom: 2rem;
+ }
+.fastbuy-desc1{
+  font-size: 23px;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color:#282828;
+  margin: 0;
+}
+.fastbuy-desc2{
+  font-size: 15px;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color:#282828;
+}
+ .meiri img{
+  margin-left: 9rem;
+} 
+.fastbuy-bottom{
+height: 13rem;
+display: flex;
+justify-content: space-around;
+}
+.xiaotu{
+ margin-left: 2rem;
+}
+.kuai{
+  width: 6rem;
+  height: 1.5rem;
+  background: #DE3D80;
+  padding-left: 0.2rem;
+  margin-left: 0.4rem;
+}
+.kuai span{
+  color:#fff;
+  text-align: center; 
+  margin-left: 0.2rem;
+} 
+.center-tu{
+  text-align: center;
+  border-radius: 1.5rem;
+}
+ .opennew{
+  width: 95%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.opennew-top{
+  height: 75%;
+}
+.opennew-goodsname{
+  float: left;
+  margin: 0;
+  font-size:13px;
+  color:#000;
+  font-weight: 600;
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.opennew-times{
+  float:right;
+  margin: 0;
+  font-size:12px;
+}
+.opennew-goodsname,.opennew-times{
+  padding:0 0.8rem 0 1rem;
+  margin-top: 1rem;
+}
+.opennew-price{
+  font-size: 12px;
+  padding: 0 0.8rem 0 1rem;
+} 
+.sectionlist-homeapp {
+  display:flex;
+  justify-content: center;
+  position:relative;
+  width:100%;
+}
+.sectionlist-homeappnavbox{
+ width:96%;
+ position: absolute;
+ top:30%;
+ display:flex;
+ justify-content:space-between;
+}
+.sectionlist-homeappnav{
+  width:24%;
+}
+.sectionlist-homeappnav-logo{
+  width:100%;
+  height:20%;
+  display:flex;
+  justify-content:center;
+}
+.sectionlist-homeappnav-text{
+  width:80%;
+  font-size:1.2rem;
+  color:rgb(222, 61, 150);
+  font-weight:700;
+  display:flex;
+}
+.logodesc{
+  flex:1;
+  background-color:rgb(222, 61, 150);
+  text-align:center;
+  font-size:1rem;
+  color: rgb(255, 255, 255);
+  font-weight:500;
+  height:1.8rem;
+  line-height:1.8rem;
+}
+.logoprice{
+  flex:1
+}
