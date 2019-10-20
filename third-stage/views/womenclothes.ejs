@@ -1,0 +1,108 @@
+<% include base/head.ejs%>
+<link rel="stylesheet" href="/stylesheets/index/womenclothes.css">
+    <div class="womenclothes-top">
+        <input type="text" placeholder="搜索商品或品牌" style="width:90%;height:2.5rem;font-size:13px;background:#F3F4F4;color:#98989E;margin-left:5%;margin-top:1.5rem">
+        <span style="position:absolute;top:1.7rem;right:10%;font-size:14px;color:#98989E"><i class="fa fa-search"></i></span>
+        <div class="womenclothes-top-list">
+            <div class="womenclothes-top-list-desc">
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(1).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">连衣裙</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(2).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">百搭外套</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(3).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">套装</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(4).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">针织毛衣</p>
+                </div>
+            </div>
+            <div class="womenclothes-top-list-desc">
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(5).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">卫衣</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(6).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">衬衫</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(7).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">大衣</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(8).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">气质风衣</p>
+                </div>
+            </div>
+            <div class="womenclothes-top-list-desc">
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(9).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">高腰裤</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(10).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">T恤</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(11).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">半身裙</p>
+                </div>
+                <div>
+                    <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
+                        <img width="100%" src="/images/index/womenclothes(12).webp" alt="">
+                    </div>
+                    <p style="color:#222222;text-align:center;font-size:15px">羽绒服</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="womenclothes-center">
+        <p style="margin:0 auto;width:100%;text-align:center;font-size:16px;font-weight:600;color:#000;margin-bottom:1rem;margin-top:2rem;">今日特卖 10点上新</p>
+        <% for(var i=0;i<data.length;i++){ %>
+        <div class="opennew">
+            <div class="opennew-top">
+                <img width="100%" src=<%= data[i].img%> alt="">
+            </div>
+            <div class="opennew-bottom" style="padding:0 5%;">
+                <span class="womenclothes-sell"><%= data[i].sell%></span>
+                <span class="womenclothes-sell-go">进入会场</span>
+            </div>
+        </div>
+        <% } %>
+        <div style="width:70%;height:3rem;background:#4A90E2;margin:0 auto;text-align:center;line-height: 3rem;margin-top:1rem;color:#fff">
+            查看更多<span><i class="fa fa-angle-down"></i></span>
+        </div>
+        <!-- <div>
+            kjkkhjkhjkhjkhjkh
+        </div> -->
+    </div>
+    
+<% include base/foot.ejs%>
