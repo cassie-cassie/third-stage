@@ -1,0 +1,367 @@
+<% include base/head.ejs %>
+<style>
+    body{
+        background: white;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+    .header{
+        width: 37.5rem;
+        height: 21rem;
+        background: #f6f6f6 url(../images/login/07e0a3f4.user-login-bg.png) 0 0 no-repeat;
+        margin: 0 auto;
+        background-size:cover
+    }
+    .header1{
+        /* background: pink; */
+        width: 6rem;
+        height: 21rem;
+        float: left;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .header1 img{
+        width: 2.5rem;
+    }
+    .header2{
+        /* background: pink; */
+        width: 9rem;
+        height: 21rem;
+        margin-left: 8.6rem;
+        float: left;
+    }
+    .header3{
+        /* background: pink; */
+        width: 6rem;
+        height: 21rem;
+        margin-left: 7.9rem;
+        float: left;
+        padding-left: 1.7rem;
+        padding-top: 1rem;
+    }
+    .header3 img{
+        width: 2.5rem;
+    }
+    .photo{
+        width: 9rem;
+        height: 9rem;
+        margin-top: 3.7rem;
+        border: 0.2rem #A88B4F solid;
+        border-radius: 30rem;
+        overflow:hidden;
+    }
+    .photo img{
+        width: 9.1rem;
+    }
+    .yin{
+        width: 2.6rem;
+        height: 3rem;
+        float: left;
+        /* background: palegreen; */
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .yin img{
+        width: 2.6rem;
+    }
+    .yin-span{
+        width: 5rem;
+        height: 3rem;
+        float: left;
+        font-size: 1.25rem;
+        line-height: 3rem;
+        /* background: peru; */
+        margin-top: 0.5rem;
+        color: #98989F;
+    }
+    .phone{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .user{
+        width: 37.5rem;
+        height: 8rem;
+        background: white;
+        border-bottom: 0.13rem #CCCCCC solid;
+    }
+    .user a{
+        width: 12.4rem;
+        height: 8rem;
+        margin-left: 0.1rem;
+        /* background: #98989F; */
+        float: left;
+    }
+    .user-img{
+        width: 4rem;
+        height: 4rem;
+        margin-left: 4.3rem;
+        margin-top: 1rem;
+        background: #FCF9F1;
+        border-radius: 10rem;
+    }
+    .user-img img{
+        margin-left: 1.1rem;
+        margin-top: 1.1rem;
+    }
+    .user-span{
+        text-align: center;
+        margin-top: 0.3rem;
+        color: black;
+    }
+    .kong{
+        width: 37.5rem;
+        height: 2rem;
+        background: white;
+        border-bottom: 0.13rem #CCCCCC solid;
+    }
+    .kong1{
+        width: 37.5rem;
+        height: 2rem;
+        background: white;
+        border-top: 0.13rem #CCCCCC solid;
+    }
+    #J-user-menus{
+        width: 37.5rem;
+        height: 67.5rem;
+        background: white;
+        border-bottom: 0.13rem #CCCCCC solid;
+    }
+    .list-item{
+        width: 36rem;
+        height: 4.8rem;
+        border-bottom: 0.13rem #CCCCCC solid;
+        margin-left: 1.5rem;
+    }
+    .list-item1{
+        width: 36rem;
+        height: 4.8rem;
+        margin-left: 1.5rem;
+    }
+    .item-inner{
+        width: 10rem;
+        height: 4.8rem;
+        /* background: palegreen; */
+        float: left;
+        line-height: 4.8rem;
+    }
+    .list-item2{
+        width: 36rem;
+        height: 4rem;
+        margin-left: 1.5rem;
+    }
+    .item-inner1{
+        width: 10rem;
+        height: 4rem;
+        background: white;
+        float: left;
+        margin-left: 14.5rem;
+        line-height: 4.8rem;
+    }
+    .icon-back{
+        width: 2rem;
+        height: 4.8rem;
+        /* background: palegreen; */
+        float: right;
+        margin-right: 1.5rem;
+    }
+    .icon-back img{
+        width: 2rem;
+        margin-top: 1.3rem;
+    }
+    .item-title{
+        color: #555555;
+    }
+    #J-foot-download{
+        width: 37.5rem;
+        height: 4.8rem;
+        background: white;
+    }
+</style>
+<div class="header">
+    <div class="header1"><img src="../images/login/返回.png"></div>
+    <div class="header2">
+        <div class="photo"><img src="../images/login/14581158913884.png"></div>
+        <div><div class="yin"><img src="../images/login/deae2906957a4f30a33577a686379f4f.png"></div><div class="yin-span">银卡会员</div></div>
+        <div class="phone"><span>134*****355</span></div>
+    </div>
+    <div class="header3"><img src="../images/login/首页.png"></div>
+</div>
+<div class="user">
+    <a href="">
+        <div class="user-img"><img src="../images/login/2019-10-20_003023.png"></div>
+        <div class="user-span"><span>代付款</span></div>
+    </a>
+    <a href="">
+        <div class="user-img"><img src="../images/login/2019-10-20_003130.png"></div>
+        <div class="user-span"><span>代收货</span></div>
+    </a>
+    <a href="">
+        <div class="user-img"><img src="../images/login/2019-10-20_003158.png"></div>
+        <div class="user-span"><span>全部订单</span></div>
+    </a>
+</div>
+<div class="kong"></div>
+
+<div id="J-user-menus">
+    <!-- <div class="user-menus"> -->
+        <ul>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">我的收藏</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://mcheckout.vip.com/cart-history.html" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">购物车历史</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">浏览历史</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">申请退换</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">零钱</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://mxfd.vip.com/publicity?backId=wbswx2018072301&ep=mstation" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">唯品花</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">优惠券</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">我的唯品币</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">收货地址</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">修改登录密码</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">管理支付密码</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">绑定手机</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">实名认证</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+            <li class="list-item1">
+                <a href="" class="list-item">
+                    <div class="item-inner">
+                        <p class="item-title">我的银行卡</p>
+                    </div>
+                    <div class="icon-back"><img src="../images/login/返回 1.png"></div>
+                </a>
+            </li>
+        </ul>
+    <!-- </div> -->
+</div>
+<div class="kong"></div>
+<ul>
+    <li class="list-item2">
+        <a href="" class="list-item">
+            <div class="item-inner1">
+                <p class="item-title">退出登录</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<div class="kong1"></div>
+<div id="J-wx-share">
+    <input type="hidden" id="J-share-switch" value="">
+</div>
+<!-- 页脚下载条 -->
+<!-- <div id="J-foot-download">
+    <a href="javascript:;" class="footer-download">
+        <div class="download-text">
+            <span class="logo-bg">唯品会</span>
+            <p>唯品会客户端，特卖抢不停</p>
+        </div>
+        <div class="download-btn">
+            <span>下载</span>
+        </div>
+    </a>
+</div> -->
+<!--页脚copyright信息-->
+<!-- <div id="J-page-footer">
+    <div class="wap-footer">
+        <div class="footer-nav">
+            <a href="//m.vip.com/index.html" mars_sead="footer-index_btn" class="vip-index">唯品会首页</a>
+            <a href="//viva.vip.com/act/m/staic-page-about?wapid=vivac_314" class="vip-about">关于我们</a>
+            <a href="//m.vip.com/user.html" mars_sead="footer-users_btn">个人中心</a>
+        </div>
+        <p class="copyright">Copyright © 2008-2017 m.vip.com, All Rights Reserved 粤ICP备08114786号</p>
+        <div class="psb">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010302000068">
+                <i class="psb-sign"></i>
+                <p>粤公网安备 44010302000068号</p>
+            </a>
+        </div>
+    </div>
+</div> -->
+    <% include base/foot.ejs %>

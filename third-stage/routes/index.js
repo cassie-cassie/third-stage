@@ -6,7 +6,9 @@ const Router = express.Router();
 Router.get('/',require('../controller/nav.js'))
 
 // // 登录路由
-// Router.get('/login',require('../controller/login.js'))
+Router.get('/login',require('../controller/login.js'))
+Router.get('/login_user',require('../controller/login_user.js'))
+Router.get('/user',require('../controller/user.js'))
 
 // // 登录后路由
 // Router.get('/user',require('../controller/user.js'))
