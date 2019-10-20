@@ -1,24 +1,200 @@
 <% include base/head.ejs%>
 <% include base/nav.ejs%>
+<link rel="stylesheet" href="/stylesheets/life/life.css">
     <script src="/javascripts/quadro/jquery.js"></script>
     <script src="/javascripts/quadro/swiper/swiper.js"></script>
-    <div id="box">
-        <div id="box-top"></div>
-        <div id="box-center">
-            <div id="wrapper">
-                <div class="lbt">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="/images/life/lb1.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="/images/life/lb2.jpg" alt=""></div>
-                        </div>
-                        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+<div class="life">
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="/images/life/lb1.jpg" width="100%"></img></a></div>
+                        <div class="swiper-slide"><a href=""><img src="/images/life/lb2.jpg" width="100%"></img></a></div>
                     </div>
+                    <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+            </div>
+        <div class="coupon">
+                <div class="coupon-img">
+                    <img src="/images/life/tutu.jpg" alt="">
                 </div>
+        </div>
+        <div class="daojishi">
+                <div class="daojishi-img">
+                    <img src="/images/life/daojishi.jpg" width="100%" alt="">
+                </div>
+        </div>
+    
+
+    <div data-countdown="true" class="timediv">
+        <div class="time">
+            <span  id="showInterval"></span>
+            <span id="showInterval"></span>
+          
+            <span id="showInterval"></span>
+            <span id="showInterval"></span>
+        
+            <span id="showInterval"></span>
+            <span id="showInterval"></span>
+           
+            <span id="showInterval"></span>
+            <span id="showInterval"></span>
+           
+            <span id="showInterval"></span>
+        </div>
+    </div>
+     <div class="frist img ">
+            <img class="ling" src="/images/life/lingshi.jpg" alt="">
+    </div>
+    <div class="next img">
+            <img  src="/images/life/zibu.jpg" alt="">
+            <img  class="jin" src="/images/life/jinqiuyangsheng.jpg" alt="">
+            <img src="/images/life/shilinghaopin.jpg" alt="">
+            <img src="/images/life/dibuhuang .jpg" alt="">   
+    </div>
+
+    <!-- 唯品快枪 -->
+    <div class="sectionlist-homeapp">
+        <img src="/images/life/weipinkuaiqiang.jpg" style="width:100%">
+        <div class="sectionlist-homeappnavbox">
+            <div class="sectionlist-homeappnav">
+                <img src="/images/life/1.jpg" style="width:100%;height:auto">
+                <div class="sectionlist-homeappnav-logo" >
+                    <img src="/images/life/bio.png" style="width:45%">
+                </div>
+                <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">¥99</span></div>
+                </div>
+                <div class="sectionlist-homeappnav">
+                <img src="/images/life/2.jpg" style="width:100%;height:auto">
+                <div class="sectionlist-homeappnav-logo" >
+                    <img src="/images/life/sw.png" style="width:45%">
+                </div>
+                <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">¥129</span></div>
+            </div>
+            <div class="sectionlist-homeappnav">
+                <img src="/images/life/3.jpg" style="width:100%;height:auto">
+                <div class="sectionlist-homeappnav-logo" >
+                    <img src="/images/life/bio.png" style="width:45%">
+                </div>
+                <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">¥99</span></div>
+            </div>
+            <div class="sectionlist-homeappnav">
+                <img src="/images/life/4.jpg" style="width:100%;height:auto">
+                <div class="sectionlist-homeappnav-logo" >
+                        <img src="/images/life/sw.png" style="width:45%">
+                </div>
+                <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">¥119</span></div>
             </div>
         </div>
-        <div id="box-bottom"></div>
     </div>
+
+
+
+
+
+
+
+
+ <!-- <唯品快枪> -->
+       <!-- <div class="fastbuy">
+           <div class="fastbuy-top">
+               <p class="fastbuy-desc1"><span style="color:#de3e97">唯品快抢 生活 </span></p>
+               <div class="meiri"> 
+                   <img src="/images/life/mwiri.png" alt="">
+                </div>
+           </div>
+           <div class="fastbuy-bottom">
+               <div class="fastbuy-bottom1">
+                   <div class="fastbuy-bottom1-desc">
+                       <img width="100%" src="/images/life/3.jpg" alt="">
+                   </div>
+                   <div>
+                        <img class="xiaotu" width="50%" src="/images/life/bio.png" alt="">
+                   </div>
+                   <div class="kuai"><span>快抢价</span><span style="color:red;font:size 15px">￥66</span></div>
+               </div>
+               <div class="fastbuy-bottom1">
+                   <div class="fastbuy-bottom1-desc">
+                       <img width="100%" src="/images/life/2.jpg" alt="">
+                   </div>
+                   <div>
+                       <img class="xiaotu" width="50%" src="/images/life/sw.png" alt="">
+                   </div>
+                   <div class="kuai"><span>快抢价</span><span style="color:red;font:size 15px">￥99</span></div>
+               </div>
+               <div class="fastbuy-bottom1">
+                <div class="fastbuy-bottom1-desc">
+                    <img width="100%" src="/images/life/3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="xiaotu" width="50%" src="/images/life/bio.png" alt="">
+                </div>
+                <div class="kuai"><span>快抢价</span> <span style="color:red;font:size 15px">￥79</span></div>
+               </div>
+               <div class="fastbuy-bottom1">
+                <div class="fastbuy-bottom1-desc">
+                    <img width="100%" src="/images/life/2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="xiaotu" width="50%" src="/images/life/sw.png" alt="">
+                </div>
+               <div class="kuai"><span>快抢价</span><span style="color:red;font:size 15px">￥79</span></div>
+            </div>
+           </div>
+       </div> -->
+
+       <div>
+            <img width="100%" src="/images/life/jingcai.jpg" alt="">
+      </div>
+
+ <p style="margin: 0 auto;width: 100%; text-align:center;font-size: 16px; font-weight:600; color: #000; margin-bottom: 1rem;">每天早10点 晚8点上新</p>
+    <% for (var i=0;i<data.length;i++){%>
+        <div  class="opennew">
+            <div class="opennew-top">
+                <img  width="100%" src=<%= data[i].img%> alt="">
+            </div>
+            <div class="clear" style="margin:0.2rem 0">
+              <p class="opennew-goodsname"><span><%= data[i].goodsname%></span></p>
+              <p class="opennew-times">还剩 
+                    <!-- <span>3</span>:<span>24</span>:<span>5</span> -->
+                    <span>两天</span>
+              </p>
+            </div>
+            <p class="opennew-price"> <span style="margin-right: 1.5rem"><%= data[i].price1%></span><span style="margin-right: 0.3rem"></span><%=data[i].price2%></p>
+        </div>
+        <% } %>   
+
+</div>
+
+<script language="javascript"> 
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        paginationClickable: true  ,
+        autoplay:3000
+    })
+
+    function getDistanceTime(time,showInterval){
+            var endTime= new Date(Date.parse(time.replace(/-/g, "/")));/*replace将时间字符串中所有的'-'替换成'/',parse将时间格式的字符串转换成毫秒*/
+            var nowTime = new Date();
+            var distance =endTime.getTime() - nowTime.getTime();/*getTime把一个date对象转换成毫秒*/
+    
+            var day = 0;
+            var hour = 0;
+            var minute = 0;
+            var second = 0;
+    
+            if(distance >= 0){
+                day = Math.floor(distance/1000/60/60/24);
+                hour = Math.floor(distance/1000/60/60%24);
+                minute = Math.floor(distance/1000/60%60);
+                second = Math.floor(distance/1000%60);
+            }
+            else{
+                alert("目标日期小于当前日期!")
+            }
+            document.getElementById(showInterval).innerHTML = day + "天" +  hour + "时" + minute + "分" + second + "秒";
+        }
+        setInterval(function(){getDistanceTime('2019-11-20 12:00:00','showInterval');},0);
+  
+</script>
+
 
 
 <% include base/foot.ejs%>
