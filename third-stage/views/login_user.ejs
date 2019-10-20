@@ -1,0 +1,40 @@
+<% include base/head.ejs %>
+<link rel="stylesheet" href="/stylesheets/login/login_user.css">
+<style>
+.background{
+    width: 37.5rem;
+    height: 19rem;
+    background: #f6f6f6 url(../images/login/login_bg.3a93a8bf.jpg) no-repeat 0 0;
+    margin: 0 auto;
+}
+</style>
+<div class="x">
+    <span>X</span>
+</div>
+<div class="background">
+    <div class="vip">
+        <img src="../images/login/logo.ac5608f4.png">
+    </div>
+</div>
+<div  id="div" class="container">
+    <form>
+        <div id="bottom">
+            <p id="p1">登录名</p><input id="input1" type="text" name="username" placeholder="请输入手机号或邮箱" aria-describedby="sizing-addon1" class="form-control">
+        </div>
+        <div id="bottom">
+            <p id="p2">密码</p><input id="input2" type="text" name="password" placeholder="请输入密码" aria-describedby="sizing-addon1" class="form-control">
+        </div>
+        <button id="button" type="submit" class="btn btn-primary btn-lg">登录</button>
+    </form>
+</div>
+<div class="password">
+    <span>忘记密码</span>
+</div>
+<div class="h">
+    <div class="hr1"></div>
+    <div class="huo">或</div>
+    <div class="hr2"></div>
+</div>
+<div class="zhuce"><a href="/shop/login">手机注册登录</a></div>
+<!-- <script src="/javascripts/ajax/login.js"></script> -->
+<% include base/foot.ejs %>

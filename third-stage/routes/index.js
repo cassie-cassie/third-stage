@@ -9,7 +9,9 @@ Router.get('/index',require('../controller/nav.js'))
 Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
 
 // // 登录路由
-// Router.get('/login',require('../controller/login.js'))
+Router.get('/login',require('../controller/login.js'))
+Router.get('/login_user',require('../controller/login_user.js'))
+Router.get('/user',require('../controller/user.js'))
 
 // // 登录后路由
 // Router.get('/user',require('../controller/user.js'))
