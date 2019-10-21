@@ -14,7 +14,7 @@ Router.get('/login_user',require('../controller/login_user'))
 Router.get('/user',require('../controller/user.js'))
 
 // // 最后疯抢
-// Router.get('/lastCrazy',require('../controller/lastCrazy'))
+Router.get('/lastcrazy',require('../controller/lastcrazy'))
 
 // // 美妆
 // Router.get('/newbeauty',require('../controller/newbeauty'))
