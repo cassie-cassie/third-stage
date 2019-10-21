@@ -19,16 +19,9 @@
 
    <!-- 类型入口 -->
    <div class="sectionlist-type">
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/3.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/4.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/12.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/5.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/6.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/7.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/8.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/9.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/10.jpg" class="wd100"></a>
-        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/11.jpg" class="wd100"></a>
+       <% for(var i=0;i<sectionlisttype.length;i++){%>
+        <a href="" class="sectionlist-item-type he50"><img src=<%=sectionlisttype[i].src%> class="wd100"></a>
+        <% } %>
    </div>
    <!-- 精彩活动 -->
    <div class="sectionlist-Wdfact wd100">
