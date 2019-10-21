@@ -2,7 +2,9 @@ const express = require('express');
 const Router = express.Router();
 
 // 首页路由
-// Router.get('/',require('../controller/nav.js'))
+Router.get('/index',require('../controller/nav.js'))
+// 首页女装详情
+Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
 
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
