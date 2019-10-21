@@ -1,5 +1,6 @@
 .container{
     padding:0;
+    background:#F3F4F8;
 }
 a{
     display:block;
@@ -101,10 +102,20 @@ a{
 .sectionlist-flagship-eglistnav{
     width: 25%;
 }
+.sectionlist-3c-nav{
+    flex:1;
+}
+.sectionlist-3c-nav>img{
+    width: 100%;
+}
 .sectionlist-flagship-eglistnav>img{
     width: 100%;
 }
+
 /* 具体店铺 */
+.sectionlist-flagship{
+    margin-bottom:0;
+}
 .opennew{
     width:95%;
     background:#fff;
@@ -141,6 +152,7 @@ a{
 .sectionlist-hot-navbox{
     width:100%;
     position: relative;
+    margin-top:1rem;
 }
 .sectionlist-hot-navlist{
     width:95%;
