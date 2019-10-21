@@ -1,0 +1,327 @@
+<style>
+        .nav{
+        width:100%;
+        height:8rem;
+        background:#FAFAF9
+    }
+    #login{
+        width:100%;
+        height:4rem;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .nav1{
+        width:100%;
+        height:4rem;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .login{
+        width:3rem;
+        height:2.3rem;
+        font-size:14px;
+        color:#AAACB0;
+    }
+    .search{
+        width:26rem;
+        height:3rem;
+        border-radius:7rem;
+        border:none;
+        outline:0;
+        font-size:15px;
+        padding:0 2rem;
+        border:1px solid #EDEDED;
+        background:#F3F4F5;
+        color:#C1C2C6;
+    }
+    .list{
+        width:2.5rem;
+        height:2.3rem;
+    }
+    .list img{
+        width:100%
+    }
+    .scrollBar{
+        width: 90%;
+        overflow: hidden;
+    }
+    .scrollBarItem{
+        width: 60rem;
+        height:4rem
+    }
+    .scrollBarItem ul{
+        padding: 0 0.5rem;
+        height: 4rem;
+    }
+    .scrollBarItem ul li{
+        height: 4rem;
+        width: 5em;
+        float: left;
+        line-height: 4rem; 
+        text-align: center;
+        font-size:13px;
+    }
+    .clear:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .nav-img-box{
+        width:10%;
+        height:4rem;
+        position: relative;
+        color: #7b7a7a;
+        text-align: center;
+    }
+    .fs12{
+        font-size: 30px;
+        line-height:4rem
+    }
+    .color-gray{
+        color: #999;
+    }
+    a{
+        color:#585C64
+    }
+    .color{
+        color:#D34BA8
+    }
+    .active{
+        border-bottom:2px solid #D34BA8;
+    }
+    #active{
+        border-bottom:2px solid #D34BA8;
+    }
+    #index{
+        width:100%
+    }
+    .select{
+        position:absolute;
+        top:4rem;
+        width:100%; 
+        height:100%;
+        background:#fff;
+        color:#585C64;
+        display:none;
+    }
+    .select1{
+        height:4rem;
+        border-bottom:1px solid #EDEDED;
+        padding:0 1rem;
+        line-height:4rem;
+        display:flex;
+        justify-content:space-between;
+        color:#585C64
+    }
+    .select1 span:nth-of-type(1){
+        font-size:13px;
+    }
+    .select1 span:nth-of-type(2){
+        font-size:25px;
+    }
+    .select1-goods{
+        height:24rem;
+    }
+    .select1-goods-desc{
+        height:8rem;
+        border-bottom:1px solid #EDEDED;
+        display:flex;
+        justify-content: space-around;
+        align-items:center
+    }
+    .select1-goods-desc div{
+        width:20%;
+        height:6rem;
+        text-align:center;
+    }
+    .select1-goods-desc img{
+        width:2rem;
+        height:2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.7rem;
+        background:green
+    }
+    .select1-goods-desc p{
+        font-size:12px;
+    }
+    .select-more{
+        height:20rem;
+    }
+    .select-more-desc{
+        height:5rem;
+        display:flex;
+        justify-content:space-around;
+    }
+    .select-more-desc div{
+        width:20%;
+        height:4rem;
+        text-align:center;
+        line-height:4rem;
+        border-radius:0.4rem;
+        background:#F3F4F5;
+        color:#585C64;
+        font-size:12px
+    }
+    .clear p{
+        margin:0
+    }
+    </style>
+    <div class="nav">
+        <div id="login">
+            <a href="/login"><span class="login">登录</span></a>
+            <input class="search" placeholder="大家正在搜：护肤套装">
+            <span class="list"><img src="/images/index/list1.png"></span>
+        </div>
+        <!-- 搜索下方导航栏 -->
+        <div class="clear nav1">
+            <div class="scrollBar fl">
+                <div class="scrollBarItem">
+                    <ul>
+                        <li><a href="/shop/index">今日推荐</a></li>
+                        <li ><a href="/shop/lastcrazy">最后疯抢</a></li>
+                        <li ><a href="">美妆</a></li>
+                        <li ><a href="">母婴</a></li>
+                        <li ><a href="">国际</a></li>
+                        <li ><a href="/shop/homeapp">家电</a></li>
+                        <li ><a href="">家居</a></li>
+                        <li  id="active"><a href="/shop/life" class="color">生活</a></li>
+                        <li ><a href="/shop/vipcostly">唯品奢</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr nav-img-box" id="angledown">
+                <p class="fs12 color-gray"><i class="fa fa-angle-down"></i></p>
+            </div>
+            <!-- 导航出下拉列表 -->
+            <div class="select" id="angleup" style="z-index: 2;">
+                <div class="select1">
+                    <span>精品推荐</span>
+                    <span><i class="fa fa-angle-up"></i></span>
+                </div>
+                <div class="select1-goods">
+                    <div class="select1-goods-desc">
+                        <div>
+                            <img src="/images/index/index.png" alt="">
+                            <p>今日推荐</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/lastCrazy.png" alt="">
+                            <p>最后疯抢</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/newbeauty.png" alt="">
+                            <p>美妆</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/baby.png" alt="">
+                            <p>母婴</p>
+                        </div>
+                    </div>
+                    <div class="select1-goods-desc">
+                        <div>
+                            <img src="/images/index/intervational.png" alt="">
+                            <p>国际</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/homeapp.png" alt="">
+                            <p>家电</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/furniture.png" alt="">
+                            <p>家居</p>
+                        </div>
+                        <div>
+                            <img src="/images/index/life.png" alt="">
+                            <p>生活</p>
+                        </div>
+                    </div>
+                    <div class="select1-goods-desc" style="border:none">
+                        <div>
+                            <img src="/images/index/vipcostly.png" alt="">
+                            <p>唯品奢</p>
+                        </div>
+                        <div></div><div></div><div></div>
+                    </div>
+    
+                </div>
+                <div class="select1" style="border:none">
+                    <span style="color:#585C64;font-size:12px">精品推荐</span>
+                </div>
+                <div class="select-more">
+                    <div class="select-more-desc">
+                        <div>女装</div>
+                        <div>男装</div>
+                        <div>鞋包</div>
+                        <div>童装童鞋</div>
+                    </div>
+                    <div class="select-more-desc">
+                        <div>面部护肤</div>
+                        <div>手表配饰</div>
+                        <div>内衣</div>
+                        <div>运动户外</div>
+                    </div>
+                    <div class="select-more-desc">
+                        <div>护肤彩妆</div>
+                        <div>手机数码</div>
+                        <div>轻奢</div>
+                        <div>旗舰店</div>
+                    </div>
+                    <div class="select-more-desc">
+                        <div>国际</div>
+                        <div>母婴</div>
+                        <div>家居家纺</div>
+                        <div>大家电</div>
+                    </div>
+                    <div class="select-more-desc">
+                        <div>家具家装</div>
+                        <div>生活超市</div>
+                        <div>医药健康</div>
+                        <div>国际品牌</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 购物车图标 一键回顶部 -->
+        <div id="shopcar" style="width:5rem;height:5rem;background:#22262D;position:fixed;top:90%;left:1rem;z-index:2;border-radius:50%;text-align: center;line-height: 5rem;"><i class="fa fa-shopping-cart" style="font-size:27px;color:#fff;"></i></div>
+        <div id="back" style="width:5rem;height:5rem;background:#22262D;position:fixed;top:90%;right:1rem;z-index:2;border-radius:50%;text-align: center;line-height: 5rem;display:none"><i class="fa fa-angle-up" style="font-size:27px;color:#fff;"></i></div>
+        <!-- <div><i class="fa fa-long-arrow-up"></i></div> -->
+    </div>
+    
+    <script>
+         var myScroll1 = new IScroll('.scrollBar',{
+                scrollX: true
+            })
+    
+            // 下拉列表的js
+            var angledown=document.querySelector('#angledown')
+            var angleup=document.querySelector('#angleup')
+            angledown.onclick=function(){
+                angleup.style.display='block'
+            }
+            angleup.onclick=function(){
+                angleup.style.display='none'
+            }
+            //    一键回顶部
+            var back=document.querySelector('#back')
+            window.onscroll=function(){
+                if(window.scrollY>1000){
+                    back.style.display='block'
+                }else{
+                    back.style.display='none'
+                }
+            }
+            back.onclick=function(e){
+                window.scrollTo(0,0)
+            }
+    
+           
+    
+    </script>
