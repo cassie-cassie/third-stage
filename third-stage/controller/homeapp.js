@@ -1,5 +1,37 @@
 function showhomeapp(req,res){
     res.render('homeapp',{
+    //类型入口
+    sectionlisttype:[{
+        src:'/images/homeapp/3.jpg',
+        num:"1"
+    },{
+        src:'/images/homeapp/4.jpg',
+        num:"2"
+    },{
+        src:'/images/homeapp/12.jpg',
+        num:"3"
+    },{
+        src:'/images/homeapp/5.jpg',
+        num:"4"
+    },{
+        src:'/images/homeapp/6.jpg',
+        num:"5"
+    },{
+        src:'/images/homeapp/7.jpg',
+        num:"6"
+    },{
+        src:'/images/homeapp/8.jpg',
+        num:"7"
+    },{
+        src:'/images/homeapp/9.jpg',
+        num:"8"
+    },{
+        src:'/images/homeapp/10.jpg',
+        num:"9"
+    },{
+        src:'/images/homeapp/11.jpg',
+        num:"10"
+    }],
     //唯品快抢 
      homeappnav:[{
          src1:"/images/homeapp/19.jpg",
