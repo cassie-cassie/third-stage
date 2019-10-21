@@ -3,12 +3,12 @@
 <link rel="stylesheet" href="/stylesheets/lastcrazy/classify.css">
 
     <div class="top">
-        <div class="fa fa-angle-left"></div>
+        <div class="fa fa-angle-left backindex"></div>
         <div class="top-content">
             <div class="tc1">分类</div>
             <div class="tc2">品牌</div>
         </div>
-        <div class="fa fa-home"></div>
+        <div class="fa fa-home backindex"></div>
     </div>
     <!-- 搜索界面 -->
     <div class="search clear">
@@ -134,7 +134,13 @@
             scrollX:true
         });
 
-
+        // 左边箭头右边房子回当前页
+        var backindex=document.querySelectorAll('.backindex')
+        for(var i=0;i<backindex.length;i++){
+            backindex[i].onclick=function(){
+                location.href='/shop/index'
+            }
+        }
         // 切换
         var fenlei = document.querySelector('.tc1')
         var pinpai = document.querySelector('.tc2')
