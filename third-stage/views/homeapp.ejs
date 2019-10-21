@@ -8,44 +8,126 @@
     <div class="swiperbox wd100">
         <div class="swiper-container wd100 he100">
             <div class="swiper-wrapper wd100 he100">
-                <div class="swiper-slide"><a href=""><img src="/images/homeapp/1.jpg" class="wd100"></img></a></div>
-                <div class="swiper-slide"><a href=""><img src="/images/homeapp/2.jpg" class="wd100"></img></a></div>
+              <div class="swiper-slide"><a href="" style="height:12.8rem"><img src="/images/homeapp/1.jpg"  class="wd100"></a></div>
+              <div class="swiper-slide"><a href="" style="height:12.8rem"><img src="/images/homeapp/2.jpg" class="wd100"></a></div>
             </div>
             <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
         </div>
-   </div>
+    </div>
+
    <!-- 类型入口 -->
    <div class="sectionlist-type">
-       <div class="sectionlist-item-type he50 "><a href=""><img src="/images/homeapp/3.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/4.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/12.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/5.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/6.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/7.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/8.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/9.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/10.jpg" class="wd100"></a></div>
-       <div class="sectionlist-item-type he50"><a href=""><img src="/images/homeapp/11.jpg" class="wd100"></a></div>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/3.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/4.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/12.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/5.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/6.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/7.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/8.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/9.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/10.jpg" class="wd100"></a>
+        <a href="" class="sectionlist-item-type he50"><img src="/images/homeapp/11.jpg" class="wd100"></a>
    </div>
    <!-- 精彩活动 -->
    <div class="sectionlist-Wdfact wd100">
        <!-- 精彩活动顶部 -->
-          <div class="sectionlist-Wdfact-title">
-                <a href=""><img src="/images/homeapp/13.jpg" class="wd100"></a>
-          </div>
+       <div class="sectionlist-Wdfact-title">
+            <img src="/images/homeapp/13(1).jpg" class="wd100">
+        </div>
         <!-- oppo手机疯抢 -->
-          <div class="sectionlist-Wdfact-navt flex wd100">
-                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/14.jpg"  class="wd100"></a></div>
-                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/15.jpg" class="wd100"></a></div>
-                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/16.jpg" class="wd100"></a></div>
-                <div class="sectionlist-item-Wdfact-item wd50"><a href=""><img src="/images/homeapp/17.jpg" class="wd100"></a></div>
-          </div>
+        <div class="sectionlist-Wdfact-navt flex wd100">
+            <a href="" class="wd50"><div class="sectionlist-item-Wdfact-item "><img src="/images/homeapp/14.jpg"  class="wd100"></div></a>
+            <a href="" class="wd50"><div class="sectionlist-item-Wdfact-item"><img src="/images/homeapp/15.jpg" class="wd100"></div></a>
+            <a href="" class="wd50"><div class="sectionlist-item-Wdfact-item"><img src="/images/homeapp/16.jpg" class="wd100"></div></a>
+            <a href="" class="wd50"><div class="sectionlist-item-Wdfact-item"><img src="/images/homeapp/17.jpg" class="wd100"></div></a>
+        </div>
         <!-- 唯品快抢 -->
-        <div class="sectionlist-homeapp">
-                
+        <a href=''>
+            <div class="sectionlist-homeapp">
+                <img src="/images/homeapp/18.jpg" class="wd100">
+                <div class="sectionlist-homeappnavbox">
+                    <% for(var i=0;i<homeappnav.length;i++){%>
+                    <div class="sectionlist-homeappnav">
+                        <img src=<%=homeappnav[i].src1 %> style="width:100%;height:auto">
+                        <div class="sectionlist-homeappnav-logo" >
+                            <img src=<%=homeappnav[i].src2 %> style="width:45%">
+                        </div>
+                        <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">￥<%=homeappnav[i].logoprice %></span></div>
+                     </div>
+                     <% } %>
+                </div>
+            </div>
+        </a>
+        <!-- 超值爆款 -->
+        <a href="">
+          <div class="section-superhotbox">
+           <img src="/images/homeapp/23.gif" class="wd100">
+          </div>
+        </a>
+   </div>
+   <!-- 官方旗舰店-->
+   <div class="sectionlist-flagship">
+       <!-- 官方旗舰店顶部 -->
+        <div class="sectionlist-flagship-title">
+            <img src="/images/homeapp/13(2).jpg" class="wd100">
+        </div>
+       <!-- 旗舰店 -->
+       <a href=""> 
+           <div class="sectionlist-flagship-eg">
+                <img src="/images/homeapp/24.gif" class="wd100">
+           </div>
+       </a>
+       <!-- 其他旗舰店 -->
+       <div class="sectionlist-flagship-eglistbox">
+           <div class="sectionlist-flagship-eglistnavbox">
+               <a href=""  class="sectionlist-flagship-eglistnav"><img src="/images/homeapp/25(1).jpg"></a>
+               <a href=""  class="sectionlist-flagship-eglistnav"><img src="/images/homeapp/25(2).jpg"></a>
+               <a href=""  class="sectionlist-flagship-eglistnav"><img src="/images/homeapp/25(3).jpg"></a> 
+               <a href=""  class="sectionlist-flagship-eglistnav"><img src="/images/homeapp/25(4).gif"></a>
+           </div>
+       </div>
+       <!-- 每日活动 -->
+       <div class="sectionlist-flagship-title">
+            <img src="/images/homeapp/26.jpg" class="wd100">
+        </div>
+        <!-- 具体店铺 -->
+        <a href="">
+            <div class="specific-shopbox">
+            <% for(var j=0;j<specificshop.length;j++){%>
+                <div class="opennew">        
+                    <div class="opennew-top">
+                        <img width="100%" src=<%=specificshop[j].img %> >
+                    </div>
+                    <div class='clear' style="margin:0.2rem 0">
+                        <p class="opennew-goodsname"><span><%=specificshop[j].name %></span></p>
+                    </div>
+                    <p class="opennew-price"><span class="color"><%=specificshop[j].price %></span>折起</p>
+                </div>
+            <% } %>
+            </div>
+        </a>
+   </div>
+   <!--精选爆款  -->
+   <div class="sectionlist-hot">
+         <!-- 爆款顶部 -->
+        <div class="sectionlist-flagship-title">
+            <img src="/images/homeapp/13(3).jpg" class="wd100">
+        </div>
+        <!-- 爆款猜你喜欢 -->
+        <div class="sectionlist-hot-navbox">
+             <img src="/images/homeapp/31.jpg" class="wd100">
 
+             <div class="sectionlist-hot-navlist">
+                <% for(var x=0;x<sectionlisthot.length;x++){%>
+                     <a class="sectionlist-hot-nav">
+                        <div class="hotlistimg"><img src=<%=sectionlisthot[x].hotlistimg %>  width="100%"></div>
+                        <p class="hotlistdesc"><%=sectionlisthot[x].hotlistdesc %></p>
+                     </a>
+                <% } %>
+             </div>
         </div>
    </div>
+
 </div>
 
 <script language="javascript"> 
