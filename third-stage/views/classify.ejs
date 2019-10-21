@@ -1,0 +1,154 @@
+<% include base/head.ejs%>
+
+<link rel="stylesheet" href="/stylesheets/lastcrazy/classify.css">
+
+    <div class="top">
+        <div class="fa fa-angle-left"></div>
+        <div class="top-content">
+            <div class="tc1">分类</div>
+            <div class="tc2">品牌</div>
+        </div>
+        <div class="fa fa-home"></div>
+    </div>
+    <!-- 搜索界面 -->
+    <div class="search clear">
+        <button>
+            <span  class="fa fa-search"></span>
+            <span>搜索品牌或商品</span>
+        </button>
+    </div>
+    <!-- 分类界面 -->
+    <div class="content">
+        <ul class="content-list">
+            <li>为你推荐</li>
+            <li>女装</li>
+            <li>男装</li>
+            <li>男女内衣</li>
+            <li>女鞋</li>
+            <li>男鞋</li>
+            <li>箱包皮具</li>
+            <li>手表配饰</li>
+            <li>护肤彩妆</li>
+            <li>个人护理</li>
+            <li>母婴</li>
+            <li>运动户外</li>
+            <li>手机数码</li>
+            <li>家用电器</li>
+            <li>家居家纺</li>
+            <li>生活超市</li>
+            <li>唯品国际</li>
+            <li>唯品.奢</li>
+            <li>唯品金融</li>
+            <li>医药健康</li>
+            <li>图书文娱</li>
+        </ul>
+        <div class="content-xiangqing">
+            <h2>好物推荐</h2><br>
+            <div class="xiangqing">
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
+                    <p class="ta-center fs12">连衣裙</p>
+                </div>
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
+                    <p class="ta-center fs12">女鞋</p>
+                </div>
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
+                    <p class="ta-center fs12">女式卫衣</p>
+                </div>
+            </div>
+            <h2>品质精选</h2><br>
+            <div class="xiangqing">
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
+                    <p class="ta-center fs12">连衣裙</p>
+                </div>
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
+                    <p class="ta-center fs12">女鞋</p>
+                </div>
+                <div>
+                    <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
+                    <p class="ta-center fs12">女式卫衣</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 品牌界面 -->
+    <div class="pinpai">
+        <!-- 导航界面 -->
+        <div class="scrollBar ">
+            <ul class="scrollBarItem">
+                <ul>
+                    <li> <span class="fa fa-star-o"></span> 猜你喜欢</li>
+                    <li> <span class="fa fa-female"></span>推荐</li>
+                    <li> <span class="fa fa-black-tie"></span> 男装</li>
+                    <li><span class="fa fa-gift"></span> 美妆</li>
+                    <li><span class="fa fa-gift"></span>精品</li>
+                    <li><span class="fa fa-soccer-ball-o"></span> 运动户外</li>
+                    <li><span class="fa fa-hotel"></span> 家居家纺</li>
+                    <li><span class="fa fa-desktop"></span>家电数码</li>
+                    <li><span class="fa fa-coffee"></span> 唯品生活</li>
+                    <li><span class="fa fa-glass"></span> 唯品奢</li>
+                </ul>
+            </ul>
+        </div>
+        <!-- end -->
+        <div class="pp-pro">
+            <h3>箱包
+                <a>更多 <span class="fa fa-angle-right"></span></a>
+            </h3>
+            <div class="pp-img">
+                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
+            </div>
+            <h3>箱包
+                <a>更多 <span class="fa fa-angle-right"></span></a>
+            </h3>
+            <div class="pp-img">
+                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
+                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        // 导航栏
+        var myScroll = new IScroll('.scrollBar',{
+            // mouseWheel:true,
+            // scrollbars:true,
+            scrollX:true
+        });
+
+
+        // 切换
+        var fenlei = document.querySelector('.tc1')
+        var pinpai = document.querySelector('.tc2')
+        var fenleiview = document.querySelector('.content')
+        var pinpaiview = document.querySelector('.pinpai')
+        fenlei.onclick = function(){
+            fenleiview.style.display = 'block'
+            pinpaiview.style.display = 'none'
+        }
+        pinpai.onclick = function(){
+            pinpaiview.style.display = 'block'
+            fenleiview.style.display = 'none'
+        }
+
+    </script>
+    
+<% include base/foot.ejs%>
