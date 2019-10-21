@@ -1,5 +1,7 @@
 <% include base/head.ejs %>
-<% include base/nav.ejs %>
+<!-- 导航 -->
+<% include base/navhomeapp.ejs %>
+
 <!-- homeapp 家电页面 -->
 <link rel="stylesheet" href="/stylesheets/homeapp/homeapp.css">
 <script src="/javascripts/quadro/swiper/swiper.js"></script>
@@ -125,7 +127,93 @@
                      </a>
                 <% } %>
              </div>
+    
         </div>
+        <!-- 猜你喜欢店铺 -->
+        <a href="">
+            <div class="specific-shopbox">
+            <% for(var y=0;y<specifichotshop.length;y++){%>
+                <div class="opennew">        
+                    <div class="opennew-top">
+                        <img width="100%" src=<%=specifichotshop[y].img %> >
+                    </div>
+                    <div class='clear' style="margin:0.2rem 0">
+                        <p class="opennew-goodsname"><span><%=specifichotshop[y].name %></span></p>
+                    </div>
+                    <p class="opennew-price"><span class="color"><%=specifichotshop[y].price %></span>折起</p>
+                </div>
+            <% } %>
+            </div>
+        </a>
+        <!-- 猜你喜欢推荐图片 -->
+        <a href="">
+            <div class="sectionlist-flagship-title">
+                <img src="/images/homeapp/34.jpg" class="wd100">
+            </div>
+        </a>
+   </div>
+   <!-- 3c数码 -->
+   <div class="sectionlist-3c">
+          <!-- 3c顶部 -->
+          <div class="sectionlist-flagship-title">
+                <img src="/images/homeapp/35.jpg" class="wd100">
+                <a href=""><img src="/images/homeapp/36.jpg" class="wd100"></a>
+                <a href=""><img src="/images/homeapp/37.jpg" class="wd100"></a>
+                <div class="sectionlist-flagship-eglistbox">
+                    <div class="sectionlist-flagship-eglistnavbox">
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/38(1).jpg"></a>
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/38(2).jpg"></a>
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/38(3).jpg"></a> 
+                    </div>
+                </div>
+          </div>
+          <!-- 3c店铺推荐 -->
+          <a href="">
+            <div class="specific-shopbox">
+            <% for(var z=0;z<specific3cshop.length;z++){%>
+                <div class="opennew">        
+                    <div class="opennew-top">
+                        <img width="100%" src=<%=specific3cshop[z].img %> >
+                    </div>
+                    <div class='clear' style="margin:0.2rem 0">
+                        <p class="opennew-goodsname"><span><%=specific3cshop[z].name %></span></p>
+                    </div>
+                    <p class="opennew-price"><span class="color"><%=specific3cshop[z].price %></span>折起</p>
+                </div>
+            <% } %>
+            </div>
+        </a>
+   </div>
+   <!-- 应季热销 -->
+   <div class="sectionlist-senson">
+        <!-- 顶部 -->
+        <div class="sectionlist-flagship-title">
+                <img src="/images/homeapp/40.jpg" class="wd100">
+                <a href=""><img src="/images/homeapp/39.jpg" class="wd100"></a>
+                <div class="sectionlist-flagship-eglistbox">
+                    <div class="sectionlist-flagship-eglistnavbox">
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/39(1).jpg"></a>
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/39(2).jpg"></a>
+                        <a href=""  class="sectionlist-3c-nav"><img src="/images/homeapp/39(3).jpg"></a> 
+                    </div>
+                </div>
+        </div>
+        <!--应季热销店铺-->
+        <a href="">
+            <div class="specific-shopbox">
+            <% for(var z=0;z<specificsensonshop.length;z++){%>
+                <div class="opennew">        
+                    <div class="opennew-top">
+                        <img width="100%" src=<%=specificsensonshop[z].img %> >
+                    </div>
+                    <div class='clear' style="margin:0.2rem 0">
+                        <p class="opennew-goodsname"><span><%=specificsensonshop[z].name %></span></p>
+                    </div>
+                    <p class="opennew-price"><span class="color"><%=specificsensonshop[z].price %></span>折起</p>
+                </div>
+            <% } %>
+            </div>
+        </a>
    </div>
 
 </div>
