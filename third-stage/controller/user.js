@@ -1,4 +1,4 @@
-function showLogin(req,res){
+function showUser(req,res){
     res.render('user')
 }
-module.exports = showLogin
+module.exports = showUser
