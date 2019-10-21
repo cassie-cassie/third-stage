@@ -61,6 +61,60 @@ function showhomeapp(req,res){
     },{
         hotlistimg:"/images/homeapp/32(8).jpg",
         hotlistdesc:"电饼铛烤饼机"
+    }],
+    //爆款猜你喜欢店铺
+    specifichotshop:[{
+        img:"/images/homeapp/33(1).jpg",
+        name:'九阳厨房电器特卖专场',
+        price:"3.4"
+    },{
+        img:"/images/homeapp/33(2).jpg",
+        name:'samsung数码电子品质专场',
+        price:"4.8"
+    },{
+        img:"/images/homeapp/33(3).jpg",
+        name:'华为数码电子特卖专场',
+        price:"4.9"
+    },{
+        img:"/images/homeapp/33(4).jpg",
+        name:'华硕数码电子专场',
+        price:"4.1"
+    }],
+    //3c店铺
+    specific3cshop:[{
+        img:"/images/homeapp/38(4).jpg",
+        name:'荣耀数码电子专场',
+        price:"4.5"
+    },{
+        img:"/images/homeapp/38(5).jpg",
+        name:'B&O耳机音响折扣专场',
+        price:"5"
+    },{
+        img:"/images/homeapp/38(6).jpg",
+        name:'LIFE ELEMENT厨房电器品质专场',
+        price:"1.3"
+    },{
+        img:"/images/homeapp/38(7).jpg",
+        name:'vivo数码电子精选专场',
+        price:"6"
+    }],
+    // 应季热销
+    specificsensonshop:[{
+        img:"/images/homeapp/39(4).jpg",
+        name:'CUCKOO厨房电器专场',
+        price:"2"
+    },{
+        img:"/images/homeapp/39(5).jpg",
+        name:'佳能数码电子特卖专场',
+        price:"5"
+    },{
+        img:"/images/homeapp/39(6).jpg",
+        name:'ThinkPad电脑/游戏机品质专场',
+        price:"6.2"
+    },{
+        img:"/images/homeapp/39(7).jpg",
+        name:'人气小米家用电器品牌联促专场',
+        price:"6.2"
     }]
     })
 }
