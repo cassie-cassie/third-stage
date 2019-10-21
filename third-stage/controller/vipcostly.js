@@ -1,5 +1,6 @@
 function showVipcostly(req,res){
     res.render('vipcostly',{
+data:[{ 
         img:"/images/vipcostly/ming.jpg",
         goodsname:'moiselle女装-名媛挚爱',
         price1:'5折封顶',
@@ -44,6 +45,7 @@ function showVipcostly(req,res){
         goodsname:'意式',
         price1:'3.2折起',
         price2:'剩两天'
+    }]
     })
 }
 module.exports = showVipcostly
