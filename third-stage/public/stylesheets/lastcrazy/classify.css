@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f3f4f5;
+    /* position: relative; */
+}
+
+/* top部分全部 */
+.top{
+    height: 2.5rem;
+    width: 100%;
+    background: white;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    /* position: fixed; */
+    z-index: 1;
+    margin-top: 0;
+}
+.top>div{
+    line-height: 2.5rem;
+    font-size: 26px;
+    float: left;
+}
+.top div:last-child{
+    float: right;
+}
+.top-content{
+    width: 45%;
+    margin-left: 25%;
+}
+.top-content>div{
+    width: 50%;
+    border: 1px solid #585c64;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #585c64;
+    line-height: 1.5rem;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+.tc1{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.bg-gray{
+    background: #585c64;    
+}
+.tc2{
+    border-radius: 0 0.5rem  0.5rem  0rem;
+}
+.top-content div:hover{
+    border: 1px solid #585c64;
+    background: #585c64;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* 搜索框 */
+
+.search{
+    width: 100%;
+    background: #f3f4f5;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.search>button{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    border:#d8d8d8 1px solid;
+    box-sizing: border-box;
+    outline: none;
+    background: white;
+    color: #98989f;
+}
+
+ /* content内容部分 */
+.content{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+.content-list{
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.content-list>li{
+    text-align: center;
+    color: #585c64;
+    font-size: 14px;
+    line-height: 3rem;
+    position: relative;
+}
+.content-list>li:hover{
+    background: white;
+    color: #222222;
+}
+.content-list>li:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .2rem;
+    height: 100%;
+    font-size: 0;
+    background-color: #de3d96;
+}
+.content-list>li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 38%;
+    top: 0;
+    width: 50%;
+    margin-left: -.73333rem;
+    height: .03rem;
+    background: #e3e5e7;
+}
+.content-xiangqing{
+    width: 75%;
+    height: 50rem;
+    /* height: 100%; */
+    background: white;
+    box-sizing: border-box;
+    float: right;
+    padding: 0.5rem 1.5rem 
+}
+.content-xiangqing>h2{
+    padding-top: 1rem;
+    font-size: 12px;
+}
+.xiangqing{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    border-bottom: #d8d8d8 1px solid
+}
+.xiangqing>div{
+    height:6rem;
+    width: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.xiangqing>div img{
+    height: 75%;
+
+}
+.ta-center{
+    text-align: center;
+}
+.fs12{
+    font-size: 12px;
+}
+
+/* 品牌界面 */
+
+.scrollBar{
+    width:100%;
+    overflow: hidden;
+    height: 4.5rem;
+    background: white;
+}
+
+.scrollBarItem{
+    width: 40rem;
+    height:4rem;
+    border-bottom: #d8d8d8 1px solid;
+}
+.scrollBarItem ul{
+    height:4rem;
+    color: #585c64;
+}
+.scrollBarItem ul li{
+    height: 3rem;
+    margin: 0 0.8em;
+    float: left;
+    line-height: 36px; 
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 12px;
+}
+.scrollBarItem ul li:hover{
+    color: #e83a98;
+}
+.scrollBarItem ul li span{
+    font-size: 16px;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 下面箱包部分 */
+.pp-pro{
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    background: white;
+}
+.pp-pro>h3{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    color: #222222;
+    font-weight: 400;
+    padding: 1rem;
+}
+.pp-pro>h3>a{
+    text-decoration: none;
+    color: #585c64;
+}
+.pp-img{
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.pp-img>img{
+    width: 32%;
+}

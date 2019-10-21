@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#img{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    /* height: 7rem; */
+    width: 100%;
+    background: #ED7A04;
+}
+.content{
+    /* height: 20rem; */
+    background: #ED7A04;
+    box-sizing: border-box;
+    /* padding: 0.5rem 1rem 0.7rem 1rem; */
+}
+.box{
+    height: 100%;
+    width: 100%;
+    background: lightpink;
+}
+.color-white{
+    color: white;
+}
+.bg-white{
+    background: white;
+}
+.hrem4{
+    height:4rem;
+}
+.w100{
+    width: 100%;
+}
+.bg-red{
+    background: red;
+}
+.color-pink{
+    color: #ec3790;
+}
+.color-gray{
+    color: #98989f;
+}
+.bg-pink{
+    background: #ec3790;    
+}
+.w50{
+    width: 50%;
+}
+.h100{
+    height: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs10{
+    font-size: 10px;
+}
+.lsnone{
+    list-style: none;
+}
+.fs14{
+    font-size: 14px;
+}
+.nav-text1:hover{
+    color: #ec3790;
+    border-bottom:#ec3790 solid 2px;   
+}
+.nav-text1{
+    width: 50%;
+    line-height: 4rem;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nav-text2{
+    font-size: 14px;
+    width: 50%;
+    line-height: 4rem;
+    float: left;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+}
+.nav-text2:hover{
+    color: #ec3790;
+    border-bottom:#ec3790 solid 2px;   
+}
+
+/* 上新部分 */
+.shangxin{
+    height: 80rem;
+    width: 100%;
+    background: #F5F5F5;
+    clear: both;  
+}
+
+.sxtitle img{
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+.sxpinpai{
+    /* height: 18rem; */
+    width: 100%;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+    margin-top: 0rem;
+    background: white;
+}
+.sx1{
+    position: relative;
+}
+.sx1 img{
+    height: 20%;
+    width: 100%;
+    border-radius: 0.4rem 0.4rem 0rem 0rem ;
+}
+.sx1>span{
+    width: 40%;
+    top:60%;
+    left: 30%;
+    border: white 1px solid;
+    color: white;
+    position: absolute;
+    text-align: center;
+    border-radius:0.8rem;
+    font-size: 12px;
+}
+
+.sx2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 1rem;
+}
+.sx2-1{
+    height: 50%;
+    width: 33%;
+    box-sizing: border-box;
+    position: relative;
+}
+#dazhe{
+    border: #ec3790 1px solid;
+    position: absolute;
+    top: 62%;
+    left: 0.3rem;
+    width:30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.bd-pink{
+    border: 1px solid #ec3790;
+}
+.line-throught{
+    text-decoration: line-through;
+}
+.sx3{
+    float: left;
+    height:13%;
+    width: 100%;
+    padding: 1rem 0rem ;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+}
+.bg-gray{
+    background:#585c64;
+}
+.lh12{
+    line-height: 12px;
+}
+.sx3>span{
+    height: 1rem;
+    /* width: 2rem; */
+    font-size: 12px;
+    line-height: 2rem;
+    color: #666;
+}
+#color-white{
+    color: white;
+}
+.sx3-r{
+    margin-left: 30%;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 预告部分 */
+.yugao{
+    height: 80rem;
+    width: 100%;
+    display: none; 
+    background: white;
+}
+.yg1{
+    width: 100%;
+    /* height: 10rem; */
+    box-sizing: border-box;
+    position:  relative;
+    padding: 0.5rem 1rem;
+}
+.yg1>img{
+    width: 100%;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+.yg1>span{
+    /* height: 1.2rem; */
+    width: 35%;
+    left: 32%;
+    top: 55%;
+    border: white 1px solid;
+    color: white;
+    position: absolute;
+    text-align: center;
+    border-radius:1rem;
+    font-size: 12px;
+}
+.kaiqiang{
+    position: absolute;
+    width: 55%;
+    top: 75%;
+    text-align: center;
+    left: 20%;
+    line-height: 22px;
+}
+.kaiqiang>span{
+    text-align: center;
+    font-size: 12px;
+    color: white
+}
+#time{
+    padding: 0 0.2rem;
+    background: black;
+}
+.kaiqiang>button{
+    background: black;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 0 0.7rem ;
+    font-size: 10px;
+    line-height: 22px;
+}
+.fw{
+    font-weight: 600;
+}
