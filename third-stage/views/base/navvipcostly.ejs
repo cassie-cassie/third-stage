@@ -299,7 +299,12 @@
          var myScroll1 = new IScroll('.scrollBar',{
                 scrollX: true
             })
-    
+            // 搜索框右边的列表
+            var list=document.querySelector('.list')
+                list.onclick=function(){
+                    location.href='/shop/index/classify'
+                }
+
             // 下拉列表的js
             var angledown=document.querySelector('#angledown')
             var angleup=document.querySelector('#angleup')
