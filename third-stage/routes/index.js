@@ -1,15 +1,15 @@
-﻿const express = require('express');
+const express = require('express');
 const Router = express.Router();
 
+// 首页路由
+// Router.get('/',require('../controller/nav.js'))
 
-// // 首页路由
-Router.get('/',require('../controller/nav.js'))
+// 登录路由
+Router.get('/login',require('../controller/login.js'))
+Router.get('/login_user',require('../controller/login_user'))
 
-// // 登录路由
-// Router.get('/login',require('../controller/login.js'))
-
-// // 登录后路由
-// Router.get('/user',require('../controller/user.js'))
+// 登录后路由
+Router.get('/user',require('../controller/user.js'))
 
 // // 最后疯抢
 // Router.get('/lastCrazy',require('../controller/lastCrazy'))
@@ -33,6 +33,6 @@ Router.get('/homeapp',require('../controller/homeapp'))
 Router.get('/life',require('../controller/life'))
 
 // // 唯品奢
-// Router.get('/vipcostly',require('../controller/vipcostly'))
+Router.get('/vipcostly',require('../controller/vipcostly'))
 
 module.exports = Router

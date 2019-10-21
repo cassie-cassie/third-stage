@@ -1,0 +1,44 @@
+.womenclothes-top{
+    width:100%;
+    background:#fff;
+}
+.womenclothes-top-list-desc{
+    height:9rem;
+    margin:1.5rem 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.womenclothes-top-list-desc div{
+    width:20%;
+    height:100%;
+}
+.womenclothes-center{
+    width:95%;
+    margin:0 auto;
+}
+.opennew{
+    background:#fff;
+    border-radius:1rem;
+    overflow:hidden;
+    margin:0.8rem 0;
+}
+.opennew-top{
+    /* height:18.5rem; */
+    background:red
+}
+.opennew-bottom{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:0.5rem;
+}
+.womenclothes-sell{
+    font-size:16px;
+    padding:1rem 0 0 0;
+}
+.womenclothes-sell-go{
+    background:#E70068;
+    font-size:12px;
+    color:#fff;
+    padding:0.3rem 0.5rem 0 0.5rem;
+    margin-top:0.3rem;
+}
