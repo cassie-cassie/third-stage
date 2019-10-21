@@ -1,5 +1,14 @@
 <% include base/head.ejs%>
-<% include base/nav.ejs%>
+<!-- 导航 -->
+<% include base/navvipcostly.ejs%>
+
+
+
+
+<!-- 导航栏下方内容 -->
+
+
+
 <link rel="stylesheet" href="/stylesheets/vipcostly/vipcostly.css">
     <script src="/javascripts/quadro/jquery.js"></script>
     <script src="/javascripts/quadro/swiper/swiper.js"></script>
@@ -46,11 +55,11 @@
     <img width="100%" src="/images/vipcostly/shangxin.jpg" alt="">
 </div>
 
-<p style="margin: 0 auto;width: 100%; text-align:center;font-size: 16px; font-weight:600; color: #000; margin-bottom: 1rem;">每天早10点 晚8点上新</p>
-            <% for (var j=0;j<data.length;j++){% >
+<p style="margin: 0 auto;width: 100%; text-align:center;font-size: 16px; font-weight:600; color: #000;margin-top:1rem; margin-bottom: 1rem;">每天早10点 晚8点上新</p>
+            <%for (var j=0;j<data.length;j++){ %>
         <div  class="opennew">
             <div class="opennew-top">
-                <img  width="100%"src="<% data[j].img%>" alt="">
+                <img  width="100%"src=<%=data[j].img %> alt="">
             </div>
             <div class="clear" style="margin:0.2rem 0">
               <p class="opennew-goodsname"><span><%= data[j].goodsname%></span></p>
@@ -60,7 +69,7 @@
             </div>
             <p class="opennew-price"> <span style="margin-right: 1.5rem"><%= data[j].price1%></span><span style="margin-right: 0.3rem"></span><%=data[j].price2%></p>
         </div>
-        <% } %>   
+ <% } %>
 
 
   
