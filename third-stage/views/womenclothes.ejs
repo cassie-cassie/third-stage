@@ -29,7 +29,7 @@
                     </div>
                     <p style="color:#222222;text-align:center;font-size:15px">针织毛衣</p>
                 </div>
-            </div>
+            </div>          
             <div class="womenclothes-top-list-desc">
                 <div>
                     <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
@@ -81,7 +81,7 @@
                     </div>
                     <p style="color:#222222;text-align:center;font-size:15px">羽绒服</p>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
     <div class="womenclothes-center">
@@ -89,7 +89,7 @@
         <% for(var i=0;i<data.length;i++){ %>
         <div class="opennew">
             <div class="opennew-top">
-                <img width="100%" src=<%= data[i].img%> alt="">
+                <img width="100%" src="<%= data[i].img%>" alt="">
             </div>
             <div class="opennew-bottom" style="padding:0 5%;">
                 <span class="womenclothes-sell"><%= data[i].sell%></span>
@@ -100,9 +100,6 @@
         <div style="width:70%;height:3rem;background:#4A90E2;margin:0 auto;text-align:center;line-height: 3rem;margin-top:1rem;color:#fff">
             查看更多<span><i class="fa fa-angle-down"></i></span>
         </div>
-        <!-- <div>
-            kjkkhjkhjkhjkhjkh
-        </div> -->
     </div>
     
 <% include base/foot.ejs%>
