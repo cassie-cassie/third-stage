@@ -23,7 +23,7 @@ body{
 #input1,#input2{
     width: 15rem;
     /* float: left; */
-    margin-right: 7rem;
+    /* margin-right: 7rem; */
     border: none;
     background-color: white !important;
     box-shadow: none;
