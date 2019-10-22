@@ -27,9 +27,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // 配置路由
+app.get('/add',require('./api/Project'))
 app.use('/shop',require('./routes/index'))
 app.use('/users', usersRouter);
 app.use('/', indexRouter);
+
+// // 配置功能路由  登录
+// app.post('/login',require('./api/login'))
 
 
 // catch 404 and forward to error handler

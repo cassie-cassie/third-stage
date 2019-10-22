@@ -3,11 +3,19 @@
 const mongoose=require('mongoose')
 
 // 设置 Schema 结构
-const mongooseSchema = new mongoose.Schema({
-    type:String
+const projectSchema = new mongoose.Schema({
+    type:String,
+    imgdesc:String,
+    list:Array,
+    smallimage:String,
+    listdesc:String,
+    largelist:Array,
+    largeimage:String,
+    sell:String,
+    img:String
 });
 
 // 设置Model
-const project = mongoose.model('Project', mongooseSchema)
+const project = mongoose.model('project', projectSchema)
 
 module.exports = project
