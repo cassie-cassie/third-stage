@@ -1,0 +1,208 @@
+.container{
+    padding:0;
+    background:#F3F4F8;
+}
+a{
+    display:block;
+}
+.swiperbox{
+    display:flex;
+    position: relative;
+}
+.swiper-pagination{
+    position: absolute;
+    z-index:1;
+    width:98% !important;
+    text-align:right;
+    bottom:0 !important;
+}
+.swiper-pagination-bullet-active{
+    background:#000;
+    border: 1px solid #fff;
+}
+.wd100{
+    width:100%;
+}
+.he100{
+    height:100%;
+}
+.he{
+    height:50%
+}
+.wd50{
+    width:50%
+}
+.top{
+    width:100%;
+    display:flex;
+}
+.top-nav{
+   flex:1;
+}
+/* 类型入口 */
+.sectionlist-type{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sectionlist-item-type{
+    width:20%;
+}
+/* 精彩活动 */
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+/* 唯品快抢 */
+.sectionlist-homeapp {
+    display:flex;
+    justify-content: center;
+    position:relative;
+    width:100%;
+}
+.sectionlist-homeappnavbox{
+   width:96%;
+   position: absolute;
+   top:30%;
+   display:flex;
+   justify-content:space-between;
+}
+.sectionlist-homeappnav{
+    width:24%;
+}
+.sectionlist-homeappnav-logo{
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+}
+.sectionlist-homeappnav-text{
+    width:80%;
+    font-size:1.2rem;
+    color:rgb(222, 61, 150);
+    font-weight:700;
+    display:flex;
+}
+.logodesc{
+    flex:1;
+    background-color:rgb(222, 61, 150);
+    text-align:center;
+    font-size:1rem;
+    color: rgb(255, 255, 255);
+    font-weight:500;
+    height:1.8rem;
+    line-height:1.8rem;
+}
+.logoprice{
+    flex:1
+}
+
+/* 热销榜单 */
+.sectionlist-Hotlist{
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.sectionlist-Hotnavbox{
+    width:96%;
+    height:10rem;
+    background:red;
+    position:absolute;
+    top:25%;
+    display:flex;
+}
+.sectionlist-Hotnav{
+    width:33%;
+    height:100%;
+    
+}
+/* 超值爆款 */
+.section-superhotbox{
+    width:100%;
+}
+.sectionlist-flagship-eglistbox{
+    width:100%;
+}
+.sectionlist-flagship-eglistnavbox{
+    width:100%;
+    display:flex;
+}
+.sectionlist-flagship-eglistnav{
+    width: 25%;
+}
+.sectionlist-3c-nav{
+    flex:1;
+}
+.sectionlist-3c-nav>img{
+    width: 100%;
+}
+.sectionlist-flagship-eglistnav>img{
+    width: 100%;
+}
+
+/* 具体店铺 */
+.sectionlist-flagship{
+    margin-bottom:0;
+}
+.opennew{
+    width:95%;
+    background:#fff;
+    margin:0 auto;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-radius:1rem;
+    overflow:hidden;
+}
+.opennew-top{
+    height:75%;
+}
+.opennew-goodsname{
+    float:left;
+    margin:0;
+    font-size:13px;
+    color:#000;
+    font-weight:600;
+    width:90%;
+    margin-left:2rem;
+}
+.opennew-price,.opennew-goodsname{
+    padding:0 0.8rem 0 1rem;
+    margin-top:1rem;
+}
+.opnenew-price{
+    font-size:12px;
+    padding:0 0.8rem 0 1rem;
+}
+.color{
+    color:rgb(222, 61, 150)
+}
+/* 精选爆款 */
+.sectionlist-hot-navbox{
+    width:100%;
+    position: relative;
+    margin-top:1rem;
+}
+.sectionlist-hot-navlist{
+    width:95%;
+    position: absolute;
+    top:0;
+    left:2.5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+} 
+.sectionlist-hot-nav{
+    width:24.5%;
+    height:48%;
+    background:#fff;
+    margin-bottom:0.3rem;
+}
+.hotlistimg{
+    width:100%;
+    height:100%;
+}
+.hotlistdesc{
+    color:#333;
+    font-size:1.2rem;
+    text-align:center;
+    margin-bottom:0;
+}
