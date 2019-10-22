@@ -3,14 +3,16 @@
     background:#fff;
 }
 .womenclothes-top-list-desc{
-    height:9rem;
+    /* height:9rem; */
     margin:1.5rem 5%;
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-between;
 }
 .womenclothes-top-list-desc div{
     width:20%;
     height:100%;
+    margin:0 0.5rem;
 }
 .womenclothes-center{
     width:95%;

@@ -30,10 +30,11 @@
     height:8rem;
     text-align:center;
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-around
 }
 .index-desc-list{
-    width:15%;
+    width:17%;
     height: 8rem;
     position: relative;
 }
@@ -47,7 +48,6 @@
     width: 100%;
     height: 8rem;
     float: left;
-    /* height: 8rem; */
     position: absolute;
     top: 0;
     left: 0;
@@ -59,6 +59,9 @@
     margin:0 auto;
     border-radius:0.8rem;
     margin:1rem;
+}
+.fastbuy1{
+    margin-top: 9rem;
 }
 .fastbuy-top{
     height:6rem;
@@ -91,7 +94,7 @@
 }
 .opennew{
     width:95%;
-    height:23rem;
+    /* height:23rem; */
     background:#fff;
     margin:0 auto;
     margin-top:1rem;
