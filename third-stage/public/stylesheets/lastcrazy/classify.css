@@ -14,9 +14,11 @@ body{
     background: white;
     padding: 0 1rem;
     box-sizing: border-box;
-    /* position: fixed; */
+    position: absolute;
     z-index: 1;
-    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .top>div{
     line-height: 4rem;
@@ -61,6 +63,7 @@ body{
 /* 搜索框 */
 
 .search{
+    margin-top:4rem;
     width: 100%;
     background: #f3f4f5;
     padding: 0 1.5rem;
@@ -81,16 +84,25 @@ body{
  /* content内容部分 */
 .content{
     width: 100%;
+    height: 57rem;
     box-sizing: border-box;
     /* display: block; */
-    display: none;
-
+    overflow: hidden;
+    position: relative;
+}
+/* 分类左边 */
+.contentl{
+    height: 57rem;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
 }
 .content-list{
     width: 25%;
-    height: 100%;
+    /* height: 85rem; */
     box-sizing: border-box;
     float: left;
+    position: absolute;
 }
 .content-list>li{
     text-align: center;
@@ -124,10 +136,16 @@ body{
     height: .1rem;
     background: #e3e5e7;
 }
-.content-xiangqing{
+
+/* 分类右边 */
+.contentr{
+    height: 57rem;
     width: 75%;
-    height: 50rem;
-    /* height: 100%; */
+    background: white;
+    /* overflow: hidden; */
+    float: right;
+}
+.content-xiangqing{
     background: white;
     box-sizing: border-box;
     float: right;
@@ -166,9 +184,9 @@ body{
 }
 
 /* 品牌界面 */
-.pinpai{
-    display: block;
-}
+/* .pinpai{
+    display: none;
+} */
 .scrollBar{
     width:100%;
     overflow: hidden;
@@ -203,11 +221,11 @@ body{
 .scrollBarItem ul li span{
     font-size: 16px;
 }
-.clear:after{
+/* .clear:after{
     content: '';
     display: block;
     clear: both;
-}
+} */
 
 /* 下面箱包部分 */
 .pp-pro{
@@ -236,4 +254,19 @@ body{
 }
 .pp-img>img{
     width: 32%;
+    margin-bottom:0.3rem ;
+}
+
+#back{
+    width:5rem;
+    height:5rem;
+    position:fixed;
+    top:90%;
+    right:1rem;
+    z-index:2;
+    line-height: 5rem;
+    display:none;
+    background: url(//h2.vipstatic.com/h5.vipstatic.com/img/go-top.a02bb338.png) 50% no-repeat;
+    background-size: 100% 100%;
+    -webkit-tap-highlight-color: transparent;
 }
