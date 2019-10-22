@@ -37,10 +37,10 @@
             </div>
             <div class="index-desc-list clear">
                 <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList5.gif" alt="">
+                <img width="100%" src="/images/index/indexList5.png" alt="">
             </div>
-        </div>
-        <div class="index-desc clear">
+        <!-- </div>
+        <div class="index-desc clear"> -->
             <div class="index-desc-list clear">
                 <div class="cirle-white"></div>
                 <img width="100%" src="/images/index/indexList6.png" alt="">
@@ -64,7 +64,7 @@
         </div>
     </div>
     <!-- 唯品快抢 -->
-    <div class="fastbuy">
+    <div class="fastbuy fastbuy1">
         <div class="fastbuy-top">
             <p class="fastbuy-desc1"><span style="color:#DE3E97">唯品快抢</span>.品质好物 天天特价</p>
             <p class="fastbuy-desc2">美好生活抢先到<i class="fa fa-angle-right" style="margin-left: 0.5rem;"></i></p>
@@ -140,7 +140,7 @@
     <% for(var i=0;i<data.length;i++){%>
     <div class="opennew">
         <div class="opennew-top">
-            <img width="100%" src="/images/index/new (1).jpg" alt="">
+            <img width="100%" src=<%= data[i].img%> alt="">
         </div>
         <div class="clear" style="margin:0.2rem 0">
             <p class="opennew-goodsname"><span><%= data[i].goodsname%></span></p>
@@ -151,6 +151,14 @@
     <% } %>
 </div>
 
+
+
+    <script>
+        var indexlist=document.getElementsByClassName('index-desc-list')[0]
+        indexlist.onclick=function(){
+            location.href='/shop/index/womenclothes'
+        }
+    </script>
 
     <% include base/bottom.ejs%>
 <% include base/foot.ejs%>
