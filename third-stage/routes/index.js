@@ -80,4 +80,7 @@ Router.get('/vipcostly',require('../controller/vipcostly'))
 // 分类
 Router.get('/index/classify',require('../controller/classify'))
 
+// 列表页路由
+Router.get('/clothing',require('../controller/clothing'))
+
 module.exports = Router
