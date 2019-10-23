@@ -6,9 +6,6 @@ Router.get('/index',require('../controller/nav.js'))
 // 首页女装详情
 Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
 
-// 购物车
-Router.get('/shoppingcar',require('../controller/shoppingcar'))
-
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
 Router.get('/login_user',require('../controller/login_user'))
