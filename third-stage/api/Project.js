@@ -2,7 +2,7 @@ const Project = require('../model/Project')
 
 function showProject(req,res){
     Project.create({
-        type:'女装',
+        type:'womenclothes',
         type1:'index',
         imgdesc:'/images/index/indexList1.png',
         list:[{
@@ -74,7 +74,7 @@ function showProject(req,res){
             sell:'zk裙装特卖专场'
         }]
     },{
-        type:'男装',
+        type:'manclothes',
         type1:'index',
         imgdesc:'/images/index/indexList2.png',
         list:[{
@@ -146,7 +146,7 @@ function showProject(req,res){
             sell:'骆驼男装特卖专场'
         }]
     },{
-        type:'鞋包',
+        type:'shoes',
         type1:'index',
         imgdesc:'/images/index/indexList3.png',
         list:[{
@@ -218,7 +218,7 @@ function showProject(req,res){
             sell:'蓝狄斯丹女装专场'
         }]
     },{
-        type:'手表配饰',
+        type:'clock',
         type1:'index',
         imgdesc:'/images/index/indexList4.png',
         list:[{
@@ -290,7 +290,8 @@ function showProject(req,res){
             sell:'潮宏基珠宝饰品精选专场'
         }]
     },{
-        type:'内衣',
+        // 内衣
+        type:'underwear',
         type1:'index',
         imgdesc:'/images/index/indexList5.png',
         list:[{
@@ -362,8 +363,8 @@ function showProject(req,res){
             sell:'Triumph女士内衣专场'
         }]
     },{
-        // outdoors
-        type:'运动户外',
+        // 运动户外
+        type:'outdoors',
         type1:'index',
         imgdesc:'/images/index/indexList6.png',
         list:[{
@@ -435,8 +436,8 @@ function showProject(req,res){
             sell:'Columbia运动户外折扣专场'
         }]
     },{
-        //childrenwear
-        type:'童装童鞋',
+        //童装童鞋
+        type:'childrenwear',
         type1:'index',
         imgdesc:'/images/index/indexList7.png',
         list:[{
@@ -508,8 +509,8 @@ function showProject(req,res){
             sell:'帝客童装特卖专场'
         }]
     },{
-        // skincare
-        type:'面部护肤',
+        // 日常护肤
+        type:'skincare',
         type1:'index',
         imgdesc:'/images/index/indexList8.png',
         list:[{
@@ -581,8 +582,8 @@ function showProject(req,res){
             sell:'花肌粹面部护理专场'
         }]
     },{
-        // internationalbrand
-        type:'国际大牌',
+        // 国际大牌
+        type:'international',
         type1:'index',
         imgdesc:'/images/index/indexList9.png',
         list:[{
@@ -654,8 +655,8 @@ function showProject(req,res){
             sell:'花肌粹面部护理专场'
         }]
     },{
-        // internationalbrand
-        type:'清仓特惠',
+        // 清仓特惠
+        type:'clearance',
         type1:'index',
         imgdesc:'/images/index/indexList10.png',
         list:[{
