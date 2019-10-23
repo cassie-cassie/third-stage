@@ -1,51 +1,16 @@
 const express = require('express');
 const Router = express.Router();
-
 // 首页路由
 Router.get('/index',require('../controller/nav.js'))
 
 // 首页女装详情
-Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
+// Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
 
-// // 动态路由
-// Router.get('/index/:type',function showclothes(req,res){
-    
-// })
+// 搜索路由
+Router.get('/search',require('../controller/search'))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 动态路由   首页的10个分类  女装 男装等
+Router.get('/index/:type',require('../controller/index/womenclothes'))
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
 Router.get('/login_user',require('../controller/login_user'))
