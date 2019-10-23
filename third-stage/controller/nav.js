@@ -1,5 +1,6 @@
-// const project = require('../api/Project')
+const project = require('../model/Project')
 function showNav(req,res){
+    
     res.render('index',{
         data:[{
             img:"https://h2.appsimg.com/a.appsimg.com/upload/brand/upcb/2019/10/16/180/ias_157121756031936_1135x545_85.jpg",
