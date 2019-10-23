@@ -5,6 +5,7 @@ const mongoose=require('mongoose')
 // 设置 Schema 结构
 const projectSchema = new mongoose.Schema({
     type:String,
+    type1:String,
     imgdesc:String,
     list:Array,
     smallimage:String,
