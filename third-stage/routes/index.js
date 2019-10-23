@@ -40,4 +40,8 @@ Router.get('/vipcostly',require('../controller/vipcostly'))
 // 分类
 Router.get('/index/classify',require('../controller/classify'))
 
+
+//购物车 
+Router.get('/fullcar',require('../controller/car/fullcar')) //结算
+Router.get('/nullcar',require('../controller/car/nullcar'))//空购物车
 module.exports = Router
