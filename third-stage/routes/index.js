@@ -3,8 +3,48 @@ const Router = express.Router();
 
 // 首页路由
 Router.get('/index',require('../controller/nav.js'))
+
 // 首页女装详情
 Router.get('/index/womenclothes',require('../controller/index/womenclothes'))
+
+// // 动态路由
+// Router.get('/index/:type',function showclothes(req,res){
+    
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
@@ -40,8 +80,4 @@ Router.get('/vipcostly',require('../controller/vipcostly'))
 // 分类
 Router.get('/index/classify',require('../controller/classify'))
 
-
-//购物车 
-Router.get('/fullcar',require('../controller/car/fullcar')) //结算
-Router.get('/nullcar',require('../controller/car/nullcar'))//空购物车
 module.exports = Router
