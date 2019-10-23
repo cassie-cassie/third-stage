@@ -3,6 +3,7 @@ const Project = require('../model/Project')
 function showProject(req,res){
     Project.create({
         type:'女装',
+        type1:'index',
         imgdesc:'/images/index/indexList1.png',
         list:[{
             smallimage:'/images/index/womenclothes(1).webp',
@@ -74,6 +75,7 @@ function showProject(req,res){
         }]
     },{
         type:'男装',
+        type1:'index',
         imgdesc:'/images/index/indexList2.png',
         list:[{
             smallimage:'/images/index/manclothes(1).webp',
@@ -145,6 +147,7 @@ function showProject(req,res){
         }]
     },{
         type:'鞋包',
+        type1:'index',
         imgdesc:'/images/index/indexList3.png',
         list:[{
             smallimage:'/images/index/womenclothes(1).webp',
@@ -216,6 +219,7 @@ function showProject(req,res){
         }]
     },{
         type:'手表配饰',
+        type1:'index',
         imgdesc:'/images/index/indexList4.png',
         list:[{
             smallimage:'/images/index/clock(1).webp',
@@ -287,7 +291,8 @@ function showProject(req,res){
         }]
     },{
         type:'内衣',
-        imgdesc:'/images/index/indexList1.png',
+        type1:'index',
+        imgdesc:'/images/index/indexList5.png',
         list:[{
             smallimage:'/images/index/underwear(1).webp',
             listdesc:'睡衣家居服'
@@ -359,6 +364,7 @@ function showProject(req,res){
     },{
         // outdoors
         type:'运动户外',
+        type1:'index',
         imgdesc:'/images/index/indexList6.png',
         list:[{
             smallimage:'/images/index/outdoors(1).webp',
@@ -431,6 +437,7 @@ function showProject(req,res){
     },{
         //childrenwear
         type:'童装童鞋',
+        type1:'index',
         imgdesc:'/images/index/indexList7.png',
         list:[{
             smallimage:'/images/index/childrenwear(1).webp',
@@ -503,6 +510,7 @@ function showProject(req,res){
     },{
         // skincare
         type:'面部护肤',
+        type1:'index',
         imgdesc:'/images/index/indexList8.png',
         list:[{
             smallimage:'/images/index/skincare(1).webp',
@@ -575,6 +583,7 @@ function showProject(req,res){
     },{
         // internationalbrand
         type:'国际大牌',
+        type1:'index',
         imgdesc:'/images/index/indexList9.png',
         list:[{
             smallimage:'/images/index/internationalbrand(1).webp',
@@ -647,6 +656,7 @@ function showProject(req,res){
     },{
         // internationalbrand
         type:'清仓特惠',
+        type1:'index',
         imgdesc:'/images/index/indexList10.png',
         list:[{
             smallimage:'/images/index/internationalbrand(1).webp',
