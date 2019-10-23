@@ -20,7 +20,7 @@
     <div class="index-list clear">
         <div class="index-desc clear">
             <%for(var i =0;i<indeximage.length;i++){%>
-            <div class="index-desc-list clear">
+            <div id="indeximage[i].type" class="index-desc-list clear">
                 <div class="cirle-white"></div>
                 <img width="100%" src="<%= indeximage[i].imgdesc%>" alt="">
             </div>
@@ -115,14 +115,21 @@
     <% } %>
 </div>
 
-
+    <!-- <script src="../public/javascripts/ajax/index.js"></script> -->
 
     <script>
-        var indexlist=document.getElementsByClassName('index-desc-list')[0]
-        indexlist.onclick=function(){
-            location.href='/shop/index/womenclothes'
+        var indexlist=document.getElementsByClassName('index-desc-list')
+        for(var i=0;i<indexlist.length;i++){
+            indexlist[i].onclick=function(){
+                location.href=`/index/${this.id}`
+                // req.para;ms.id
+                // .find({type: req.para;ms.id},(err,data)=>{
+                //     con data
+                //     res.re
+                // })
+            }
         }
-    </script>
+    </script> 
 
     <% include base/bottom.ejs%>
 <% include base/foot.ejs%>
