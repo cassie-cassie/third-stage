@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // 配置路由
+app.use('/shopping',require('./routes/index'))
 app.get('/add',require('./api/Project'))
 app.use('/shop',require('./routes/index'))
 app.use('/users', usersRouter);
