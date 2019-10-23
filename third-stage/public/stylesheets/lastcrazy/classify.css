@@ -105,7 +105,7 @@ body{
     /* height: 85rem; */
     box-sizing: border-box;
     float: left;
-    position: absolute;s
+    position: absolute;
 }
 .content-list>li{
     text-align: center;
@@ -214,7 +214,7 @@ body{
 
 /* 品牌界面 */
 .pinpai{
-    display: none;
+    /* display: none; */
 }
 .scrollBar{
     width:100%;
@@ -255,6 +255,9 @@ body{
     display: block;
     clear: both;
 } */
+#navlike{
+    color: #e83a98;
+}
 
 /* 下面箱包部分 */
 .pp-pro{

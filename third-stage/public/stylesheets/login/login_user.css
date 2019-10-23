@@ -1,22 +1,29 @@
 body{
     background: #FFFFFF;
 }
+.x{
+    position: absolute;
+    top: 1rem;
+    right: 4%;
+    font-size: 2.5rem;
+    color: #818181;
+}
 
 .vip{
-    margin-left: 11rem;
-    padding-top: 7rem;
+    margin-left: 34%;
+    padding-top: 17%;
 }
 .vip img{
-    width: 16rem;
+    width: 55%;
 }
 #div{
     padding-left: 0;
     padding-right: 0;
 }
 #input1,#input2{
-    width: 20rem;
+    width: 40%;
     float: right;
-    margin-right: 7rem;
+    margin-right: 35%;
     border: none;
     background-color: white !important;
     box-shadow: none;
@@ -24,7 +31,7 @@ body{
 #button{
     border-radius: 30rem;
     margin-top: 1.5rem;
-    width: 32rem;
+    width: 84%;
     margin-left: 3rem;
     background: #CACCD2;
     border: none;
@@ -48,23 +55,67 @@ body{
     padding-top: 0.5rem;
     height: 5.3rem;
 }
+/* #bottom1{
+    border-bottom: 0.15rem #F3F3F3 solid;
+    padding-top: 0.5rem;
+    width: 25rem;
+    height: 5.3rem;
+    float: left;
+}
+#bottom2{
+    border-bottom: 0.15rem #F3F3F3 solid;
+    border-left: 0.15rem #F3F3F3 solid;
+    padding-top: 0.5rem;
+    width: 12.55rem;
+    height: 5.45rem;
+    position: absolute;
+    top: 24.15rem;
+    left: 25rem;
+} */
+ #p3{
+    /* float: left; */
+    width: 12.55rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    border:none;
+    margin-left: 0.1rem;
+    color: #007AFF;
+}
+#p3:hover{
+    background: none;
+}
 .password{
     width: 37.5rem;
     height: 4rem;
     color: #5DAAFF;
-    float: left;
-    padding-left: 25rem;
-    font-size: 1.5rem;
+    /* float: left; */
+    padding-left: 2rem;
+    font-size: 1.17rem;
     margin-top: 1rem;
 }
+.password-span{
+    color: black;
+    padding-left: 0.2rem;
+}
+.password1{
+    float: left;
+    height: 4rem;
+    /* font-size: 1rem; */
+    margin-left: 1rem;
+}
+.password2{
+    float: left;
+    height: 4rem;
+}
 .h{
-    width: 37.5rem;
+    width: 100%;
     height: 3rem;
     /* background: palegreen; */
     margin-top: 5rem;
 }
 .hr2{
-    width: 17rem;
+    width: 45.05%;
     height: 1.2rem;
     /* background: #5069c6; */
     float: right;
@@ -78,7 +129,7 @@ body{
     margin-right: 1rem;
 }
 .hr1{
-    width: 17rem;
+    width: 45.05%;
     height: 1.2rem;
     /* background: #5069C6; */
     float: right;
@@ -87,27 +138,20 @@ body{
 .zhuce{
     border-radius: 8rem;
     margin-top: 0.9rem;
-    width: 12rem;
+    width: 9rem;
     height: 3rem;
-    margin-left: 13rem;
-    line-height: 3rem;
+    margin-left: 14.3rem;
     background: white;
+    line-height: 3rem;
     border: 0.15rem #F180BF solid;
 }
 .zhuce a{
     color: #F180BF;
     border: none;
-    font-size: 1.4rem;
-    margin-left: 1.5rem;
+    margin-left: 1.6rem;
     border-radius: 20rem;
+    font-size: 1.4rem;
 }
 .zhuce a:hover{
     background: white;
-}
-.x{
-    position: absolute;
-    top: 1rem;
-    left: 35rem;
-    font-size: 2.5rem;
-    color: #818181;
 }
