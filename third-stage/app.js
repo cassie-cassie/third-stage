@@ -26,9 +26,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// 配置路由
-app.use('/shopping',require('./routes/index'))
+
+// 配置启动数据库添加内容的路由
 app.get('/add',require('./api/Project'))
+
+// 配置路由
 app.use('/shop',require('./routes/index'))
 app.use('/users', usersRouter);
 app.use('/', indexRouter);
