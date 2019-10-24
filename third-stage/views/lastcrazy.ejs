@@ -20,32 +20,19 @@
             <div class="sxpinpai clear ">
                 <div class="sx1">
                     <img src=<%= data[i].img%> alt="">
-                    <span><%= data[i].fengding%></span>
+                    <span><%= data[i].fengding%></span>  
                 </div>
-        <% for (var j=0;j<data[i].list.length;j++){%>
-                 
-                <div class="sx2">
+            <div class="sx2">
+                <% for (var j=0;j<data[i].list.length;j++){%>
                     <div class="sx2-1">
-                        <img src=<%= list[j].img1%> alt="" width="100%">
-                        <span class="fs10 color-pink  bg-white" id="dazhe"><%= list[j].dazhe%></span>
-                        <span class="color-pink fs14 fw"><%= list[j].money%></span>
-                        <span class="color-gray fs14 line-throught">￥998</span>
+                        <img src=<%= data[i].list[j].img1%> alt="" width="100%">
+                        <span class="fs10 color-pink  bg-white" id="dazhe"><%= data[i].list[j].dazhe%></span>
+                        <span class="color-pink fs14 fw"><%= data[i].list[j].money%></span>
+                        <span class="color-gray fs14 line-throught"><%= data[i].list[j].yuanjia%></span>
                     </div>
-                    <div class="sx2-1">
-                        <img src=<%= list[j].img1%> alt="" width="100%">
-                        <span class="fs10 color-pink  bg-white" id="dazhe">1.7折</span>
-                        <span class="color-pink fs14 fw">￥299</span>
-                        <span class="color-gray fs14 line-throught">￥1780</span>
-                    </div>
-                    <div class="sx2-1">
-                        <img src=<%= list[j].img1%> alt="" width="100%">
-                        <span class="fs10 color-pink bg-white" id="dazhe">1.7折</span>
-                        <span class="color-pink fs14 fw">￥99</span>
-                        <span class="color-gray fs14 line-throught">￥598</span>
-                    </div>
-                </div>
-        <% } %> 
-
+                <% } %> 
+            </div>
+           
                 <div class="sx3">
                     <span><%= data[i].shop%></span>
                     <span class="sx3-r">仅剩</span>
