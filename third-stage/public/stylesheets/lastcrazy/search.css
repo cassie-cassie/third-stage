@@ -1,0 +1,124 @@
+#login{
+    width:100%;
+    height:4rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background: white;
+}
+.nav1{
+    width:100%;
+    height:4rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.fa.fa-angle-left{
+    width: 10%;
+    height:2.3rem;
+    font-size:30px;
+    color:#585c64;
+}
+.search .placeholder{
+    color: #98989f;
+}
+.search{
+    width:26rem;
+    height:3rem;
+    border-radius:7rem;
+    border:none;
+    outline:0;
+    font-size:15px;
+    padding:0 2rem;
+    border:1px solid #EDEDED;
+    background:#F3F4F5;
+    color:#C1C2C6;
+}
+.list{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #585c64;
+}
+
+
+
+.k3-top{
+    width:100%;
+    height:4rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#k3-topp{
+    padding:5px 0px 0px 10px;
+    font-size: 30px;
+    color: #999;
+}
+.k3-search{
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding:15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.k3-search>span{
+    top: 22px;
+    left: 23px;
+    width: 10%;
+    height: 25px;
+    position: absolute;
+    font-weight: 10px;
+    color: #999;
+    font-size: 14px;
+
+}
+.k3-search>input{
+    height: 30px;
+    width: 88%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-weight: 10px;
+    background: #f8f8f8;
+}
+.k3-search>button{
+    height: 30px;
+    width: 10%;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 900px;
+    float: right;
+    border:none;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+}
+.k3-remenbiaoqian{
+    height:600px;
+    background: white;
+}
+.k3-remen{
+    padding:0px 0px 0px 15px;
+    font-size: 16px;
+    color: rgb(90, 87, 87);
+    background: white;
+}
+.k3-biaoqian{
+    padding: 0px 15px 15px 15px;
+    width: 100%;
+    height: 80%;
+}
+.k3-biaoqian>button{
+    margin:15px 10px 0px 0px ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #666666;
+    border:none;
+    font-size: 14px;
+    outline: none;
+    background: #f8f8f8;
+}
