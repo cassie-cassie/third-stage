@@ -51,4 +51,8 @@ Router.get('/classify',require('../controller/classify.js'))
 // 列表页路由
 Router.get('/clothing',require('../controller/clothing'))
 
+// //购物车路由
+Router.get('/fullcar',require('../controller/car/fullcar'))  //结算购物车
+Router.get('/nullcar',require('../controller/car/nullcar'))  //结算购物车
+
 module.exports = Router
