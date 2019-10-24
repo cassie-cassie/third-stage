@@ -55,4 +55,7 @@ Router.get('/clothing',require('../controller/clothing'))
 Router.get('/fullcar',require('../controller/car/fullcar'))  //结算购物车
 Router.get('/nullcar',require('../controller/car/nullcar'))  //结算购物车
 
+// 物品详情路由
+Router.get('/details',require('../controller/\/details/details'))
+
 module.exports = Router
