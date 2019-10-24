@@ -1,31 +1,35 @@
 <% include base/head.ejs%>
+    <link rel="stylesheet" href="/stylesheets/lastcrazy/search.css">
 
-<style>
-    #search{
-        width:100%;
-        background:white;
-        display:flex;
-        align-items:flex-start
-    }
-   .search-top{
-       height:4rem;
-   }
-   .search-center{
-       height:10rem;
-   }
-   .search-bottom{
-       height:20rem;
-   }
-</style>
-    <div id="search-top">
-        <div class="search">
-kjasihdjd
-        </div>
-        <div class="search-center">
-9iojskljdxknjsd
-        </div>
-        <div class="search-bottom">
-mndjkansjkahjhajhajajas
-        </div>
+    <div id="login">
+        <a href="/login"><span class="fa fa-angle-left"></span></a>
+        <input class="search" placeholder="大家正在搜：护肤套装">
+        <span class="list">登录</span>
     </div>
-<% include base/foot.ejs%>
+
+
+    <!-- <div id="login">
+        <p class="fa fa-angle-left" id="k3-topp"></p>
+        <div class="k3-search">
+            <span  class="fa fa-search"></span>
+            <input type="text" placeholder="输入商家、商品名称">
+            <button>搜索</button>
+        </div>
+    </div> -->
+    <!-- <div class="k3-xiala"></div>
+    <div class="k3-remenbiaoqian">
+        <p class="k3-remen">热门搜索</p>
+        <div class="k3-biaoqian">
+            <button>青橙蛋糕</button>
+            <button>水果捞</button>
+            <button>饺子</button>
+            <button>黄焖鸡</button>
+            <button>香辣鸡排</button>
+            <button>蛋糕</button>
+            <button>米线</button>
+            <button>焖面</button>
+            <button>小炒肉</button>
+            <button>奶茶</button>
+        </div>
+    </div> -->
+    <% include base/foot.ejs%>

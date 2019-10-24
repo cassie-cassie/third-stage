@@ -14,40 +14,46 @@
         <li class="nav-text1 fw" id="jrfq">今日疯抢(215) </li>
         <li class="nav-text2 fw" id="xqyg">下期预告(29)</li>
     </ul>
-    <div class="shangxin ">
+    <div class="shangxin">
         <div class="sxtitle"><img src="/images/lastcrazy/shangxin.webp" alt=""></div>
-        <div class="sxpinpai clear ">
-            <div class="sx1">
-                <img src="/images/lastcrazy/shangxin1(1).webp" alt="">
-                <span>到手价3折封顶</span></div>
-            <div class="sx2">
-                <div class="sx2-1">
-                    <img src="/images/lastcrazy/sx2-1.webp" alt="" width="100%">
-                    <span class="fs10 color-pink  bg-white" id="dazhe">2.2折</span>
-                    <span class="color-pink fs14 fw">￥224</span>
-                    <span class="color-gray fs14 line-throught">￥998</span>
+        <% for (var i=0;i<data.length;i++){%>
+            <div class="sxpinpai clear ">
+                <div class="sx1">
+                    <img src=<%= data[i].img%> alt="">
+                    <span><%= data[i].fengding%></span>
                 </div>
-                <div class="sx2-1">
-                    <img src="/images/lastcrazy/sx2-2.webp" alt="" width="100%">
-                    <span class="fs10 color-pink  bg-white" id="dazhe">1.7折</span>
-                    <span class="color-pink fs14 fw">￥299</span>
-                    <span class="color-gray fs14 line-throught">￥1780</span>
+        <% for (var j=0;j<data[i].list.length;j++){%>
+                 
+                <div class="sx2">
+                    <div class="sx2-1">
+                        <img src=<%= list[j].img1%> alt="" width="100%">
+                        <span class="fs10 color-pink  bg-white" id="dazhe"><%= list[j].dazhe%></span>
+                        <span class="color-pink fs14 fw"><%= list[j].money%></span>
+                        <span class="color-gray fs14 line-throught">￥998</span>
+                    </div>
+                    <div class="sx2-1">
+                        <img src=<%= list[j].img1%> alt="" width="100%">
+                        <span class="fs10 color-pink  bg-white" id="dazhe">1.7折</span>
+                        <span class="color-pink fs14 fw">￥299</span>
+                        <span class="color-gray fs14 line-throught">￥1780</span>
+                    </div>
+                    <div class="sx2-1">
+                        <img src=<%= list[j].img1%> alt="" width="100%">
+                        <span class="fs10 color-pink bg-white" id="dazhe">1.7折</span>
+                        <span class="color-pink fs14 fw">￥99</span>
+                        <span class="color-gray fs14 line-throught">￥598</span>
+                    </div>
                 </div>
-                <div class="sx2-1">
-                    <img src="/images/lastcrazy/sx2-3.webp" alt="" width="100%">
-                    <span class="fs10 color-pink bg-white" id="dazhe">1.7折</span>
-                    <span class="color-pink fs14 fw">￥99</span>
-                    <span class="color-gray fs14 line-throught">￥598</span>
+        <% } %> 
+
+                <div class="sx3">
+                    <span><%= data[i].shop%></span>
+                    <span class="sx3-r">仅剩</span>
+                    <span class="bg-gray" id="color-white"><%= data[i].daojishi%></span>
+                    <span >天</span>
                 </div>
             </div>
-            <div class="sx3">
-                <span>太平鸟男装品牌疯抢日专场</span>
-                <span class="sx3-r">仅剩</span>
-                <span class="bg-gray" id="color-white">01</span>
-                <span >天</span>
-            </div>
-        </div>
-        </div>
+        <% } %> 
     </div>
     <div class="yugao">
         <div class="yg1">
@@ -107,10 +113,14 @@
         jrfq.onclick = function(){
             shangxin.style.display = 'block'
             yugao.style.display = 'none'
+            jrfq.style.color = '#ec3790'
+            jrfq.style.border ='#ec3790'
         }
         xqyg.onclick = function(){
             shangxin.style.display = 'none'
             yugao.style.display = 'block'
+            jrfq.style.color = 'black'
+            jrfq.style.border ='white'
         }
 
     </script>
