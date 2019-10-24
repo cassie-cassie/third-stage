@@ -213,9 +213,9 @@ body{
 }
 
 /* 品牌界面 */
-.pinpai{
-    /* display: none; */
-}
+/* .pinpai{
+    display: none;
+} */
 .scrollBar{
     width:100%;
     overflow: hidden;
@@ -295,7 +295,7 @@ body{
     position:fixed;
     top:90%;
     right:1rem;
-    z-index:2;
+    z-index:99;
     line-height: 5rem;
     display:none;
     background: url(//h2.vipstatic.com/h5.vipstatic.com/img/go-top.a02bb338.png) 50% no-repeat;
