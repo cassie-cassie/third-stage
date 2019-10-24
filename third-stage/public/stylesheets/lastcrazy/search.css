@@ -1,0 +1,85 @@
+#login{
+    width:100%;
+    height:4rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background: white;
+}
+.nav1{
+    width:100%;
+    height:4rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.fa.fa-angle-left{
+    width: 10%;
+    height:2.3rem;
+    font-size:30px;
+    color:#585c64;
+}
+.search.placeholder{
+    color: #98989f;
+    font-size: .37333rem;
+    left: .26667rem;
+    text-align: left;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    line-height: .8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    -webkit-transform: translate3d(0,-50%,0);
+}
+.search{
+    width:70%;
+    height:3rem;
+    border-radius:7rem;
+    border:none;
+    outline:0;
+    font-size:15px;
+    padding:0 1rem;
+    border:1px solid #EDEDED;
+    background:#F3F4F5;
+    color:#C1C2C6;
+}
+.list{
+    width: 10%;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #585c64;
+    right: 0;
+}
+.remenbiaoqian{
+    height:600px;
+    background: white;
+}
+.remen{
+    padding:2rem 0px 0px 15px;
+    font-size: 12px;
+    color: black;
+    background: white;
+}
+.biaoqian{
+    padding: 0px 15px 15px 15px;
+    width: 100%;
+    height: 80%;
+}
+.biaoqian>button{
+    margin:1rem 1rem  0px 0px ;
+    padding: 0.5rem 1rem ;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    color: #5d78ab;
+    border:#5d78ab 0.0333333333rem solid;
+    font-size: 12px;
+    outline: none;
+}
+.biaoqian>button:first-child{
+    color: #e4007f;
+    border-color: #f7add6;
+}

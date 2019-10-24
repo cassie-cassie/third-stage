@@ -3,7 +3,7 @@
 const mongoose=require('mongoose')
 
 // 设置 Schema 结构
-const projectSchema = new mongoose.Schema({
+const shopSchema = new mongoose.Schema({
     type:String,
     type1:String,
     imgdesc:String,
@@ -17,6 +17,6 @@ const projectSchema = new mongoose.Schema({
 });
 
 // 设置Model
-const project = mongoose.model('project', projectSchema)
+const shop = mongoose.model('shop', projectSchema)
 
-module.exports = project
+module.exports = shop 

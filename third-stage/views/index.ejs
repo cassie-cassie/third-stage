@@ -19,48 +19,12 @@
     </div>
     <div class="index-list clear">
         <div class="index-desc clear">
-            <div class="index-desc-list clear">
+            <% for(var i =0;i<indeximage.length;i++){%>
+            <div id="<%= indeximage[i].type%>" class="index-desc-list clear">
                 <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList1.png" alt="">
+                <img width="100%" src="<%= indeximage[i].imgdesc%>" alt="">
             </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList2.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList3.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList4.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList5.png" alt="">
-            </div>
-        <!-- </div>
-        <div class="index-desc clear"> -->
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList6.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList7.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList8.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList9.png" alt="">
-            </div>
-            <div class="index-desc-list clear">
-                <div class="cirle-white"></div>
-                <img width="100%" src="/images/index/indexList10.png" alt="">
-            </div>
+            <% } %>
         </div>
     </div>
     <!-- 唯品快抢 -->
@@ -151,14 +115,16 @@
     <% } %>
 </div>
 
-
+    <!-- <script src="../public/javascripts/ajax/index.js"></script> -->
 
     <script>
-        var indexlist=document.getElementsByClassName('index-desc-list')[0]
-        indexlist.onclick=function(){
-            location.href='/shop/index/womenclothes'
+        var indexlist=document.getElementsByClassName('index-desc-list')
+        for(var i=0;i<indexlist.length;i++){
+            indexlist[i].onclick=function(){
+                location.href=`/index/${this.id}`
+            }
         }
-    </script>
+    </script> 
 
     <% include base/bottom.ejs%>
 <% include base/foot.ejs%>

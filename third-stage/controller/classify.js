@@ -1,4 +1,7 @@
 function showclassify(req,res){
-    res.render('classify')
+    console.log('123')
+    res.render('classify',{
+
+    })
 }
 module.exports = showclassify

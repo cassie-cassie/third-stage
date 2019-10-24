@@ -179,7 +179,6 @@ a{
         <a href="/login"><span class="login">登录</span></a>
         <input class="search" placeholder="大家正在搜：护肤套装">
         <span class="list"><img src="/images/index/list1.png"></span>
-
     </div>
     <!-- 搜索下方导航栏 -->
     <div class="clear nav1">
@@ -300,14 +299,21 @@ a{
      var myScroll1 = new IScroll('.scrollBar',{
             scrollX: true
         })
+
+        // 点击搜索跳转不同连接
+        var search=document.querySelector('.search')
+        search.onclick=function(){
+            location.href='/shop/search'
+        }
+
         // 搜索框右边的列表
         var list=document.querySelector('.list')
         list.onclick=function(){
-            location.href='/shop/index/classify'
+            location.href='/shop/classify'
         }
 
         // 下拉列表的js
-        var angledown=document.querySelector('#angledown')
+        var angledown=document.getElementById('angledown')
         var angleup=document.querySelector('#angleup')
         angledown.onclick=function(){
             angleup.style.display='block'
@@ -315,6 +321,7 @@ a{
         angleup.onclick=function(){
             angleup.style.display='none'
         }
+        
         //    一键回顶部
         var back=document.querySelector('#back')
         window.onscroll=function(){

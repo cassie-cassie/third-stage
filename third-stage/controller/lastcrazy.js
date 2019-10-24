@@ -1,4 +1,30 @@
 function showlastcrazy(req,res){
-    res.render('lastcrazy')
+    res.render('lastcrazy',{
+        data:[{
+            img:"/images/lastcrazy/shangxin1(0).webp",
+            fengding:'到手价三折封顶',
+            list:[{
+                    img1:"/images/lastcrazy/sx2-1.webp",
+                    img2:"/images/lastcrazy/sx2-2.webp",
+                    img3:"/images/lastcrazy/sx2-3.webp",
+                    dazhe:"2.2折",
+                    money:"￥224",
+            }],
+            shop:"百斯盾男女装-最后疯抢专场",
+            daojishi:"01"
+        },{
+            img:"/images/lastcrazy/shangxin1(0).webp",
+            fengding:'到手价三折封顶',
+            list:[{
+                    img1:"/images/lastcrazy/sx2-1.webp",
+                    img2:"/images/lastcrazy/sx2-2.webp",
+                    img3:"/images/lastcrazy/sx2-3.webp",
+                    dazhe:"2.2折",
+                    money:"￥224",
+            }],
+            shop:"百斯盾男女装-最后疯抢专场",
+            daojishi:"01"
+        }]
+    })
 }
 module.exports = showlastcrazy
