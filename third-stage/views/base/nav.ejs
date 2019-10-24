@@ -299,19 +299,21 @@ a{
      var myScroll1 = new IScroll('.scrollBar',{
             scrollX: true
         })
+
         // 点击搜索跳转不同连接
-        var search=focument.querySelector('.search')
+        var search=document.querySelector('.search')
         search.onclick=function(){
-            location.href='/search'
+            location.href='/shop/search'
         }
+
         // 搜索框右边的列表
         var list=document.querySelector('.list')
         list.onclick=function(){
-            location.href='/shop/index/classify'
+            location.href='/shop/classify'
         }
 
         // 下拉列表的js
-        var angledown=document.querySelector('#angledown')
+        var angledown=document.getElementById('angledown')
         var angleup=document.querySelector('#angleup')
         angledown.onclick=function(){
             angleup.style.display='block'
@@ -319,6 +321,7 @@ a{
         angleup.onclick=function(){
             angleup.style.display='none'
         }
+        
         //    一键回顶部
         var back=document.querySelector('#back')
         window.onscroll=function(){
