@@ -7,7 +7,7 @@ const projectSchema = new mongoose.Schema({
     type:String,
     type1:String,
     imgdesc:String,
-    list:Array,
+    list:Object,
     smallimage:String,
     listdesc:String,
     largelist:Array,
