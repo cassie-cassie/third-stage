@@ -1,6 +1,181 @@
 <!-- 具有结算功能的购物车 -->
 <% include base/head.ejs %>
-这里是商品结算界面
+<link rel="stylesheet" href="/stylesheets/car/fullcar.css">
+<div class="top">
+    <a class="fa fa-angle-left fa-2x backindex"></a>
+    <div class="top-content">购物车</div>
+</div>
+<!-- 商品列表 -->
+<div class="contentbox">
+    <% for(var i=0;i<cargoods.length;i++){%>
+        <div class="content">
+                <div class="content-head"><%=cargoods[i].goodshop%></div>
+                <div class="content-body">
+                    <div class="content-left">
+                            <input type="checkbox" class="xuan">
+                    </div>
+                    <div class="content-right">
+                            <div class="imgbox">
+                                <img src=<%=cargoods[i].goodsimg%> style="width:100%">
+                            </div>
+                            <div class='descbox'>
+                                <div class="goodsname"><%=cargoods[i].goodsname%></div>
+                                <div class="goodsdesc"><%=cargoods[i].goodsdesc%></div>
+                                <!-- 价格 -->
+                                <div class="pricebox">
+                                    <p class="goodsprice">￥<span class="danjia"><%=cargoods[i].goodsprice%></span></p>
+                                    <p class="jinger">123</p>
+                                    <!-- 按钮 -->
+                                    <div class="btnbox">
+                                        <button class="numminus">-</button>
+                                        <input type="num" class="onenum" value="1">
+                                        <button class="numadd">+</button>
+                                    </div>
+                                </div>
+                                <!-- 移出 -->
+                                <button class="remove">删除</button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    <% } %>
+</div>
+<!-- 底部 -->
+<div id="bottombox">
+        <!-- 全选按钮 -->
+        <div id="bottom">
+            <div class="btnallbox">
+                    <div class="btnall">
+                        <input type="checkbox" id="quanxuan">
+                    </div>
+                    <p>全选</p>
+            </div>
+            <!-- 总计 -->
+            <div class="totalbox">
+                    <div class="total">
+                            合计：<span class="totalpricebox">¥&nbsp;<span id="totalprice">0</span></span>
+                    </div>
+                    <div class="buybox">
+                        <!-- 总件数 -->
+                        去结算<span id="totalnumbox">( <span id="totalnum" class="jianshu">0</span> 件)</span>
+                    </div>
+            </div>
+        </div>
+        
+</div>
+<script>
+ var buybox=document.querySelector(".buybox")
+ var jianshu=document.querySelector(".jianshu")
+ var ipt=document.getElementsByClassName("onenum") // 商品数量
+ var down=document.getElementsByClassName('numminus') // -
+ var up=document.getElementsByClassName('numadd') // +
+ var danjias=document.getElementsByClassName("danjia") //商品单价
+ var jingers=document.getElementsByClassName("jinger") // 某商品 数量*单价
+ var allnum=document.querySelector('#totalnum') //总件数
+ var totalprice=document.querySelector('#totalprice') //总价格
+ var quanxuan=document.getElementById("quanxuan") //全选
+ var xuan=document.getElementsByClassName('xuan') // 选择按钮
+ // 数量-
 
+for(i=0;i<down.length;i++){
+    down[i].index=i
+    down[i].onclick=function(){
+        if(ipt[this.index].value<2){
+            layer.msg('不能再减了噢')
+        }else{
+            if(xuan[this.index].checked==""){
+                ipt[this.index].value--
+                jingers[this.index].innerHTML=danjias[this.index].innerHTML*ipt[this.index].value
+            }else{
+                ipt[this.index].value--
+                jingers[this.index].innerHTML=danjias[this.index].innerHTML*ipt[this.index].value
+                allnum.innerHTML=parseInt(allnum.innerHTML)-1
+                totalprice.innerHTML=parseInt(totalprice.innerHTML)-parseInt(danjias[this.index].innerHTML)
+            }
+          
+        }
+    }
+}
 
+//数量+
+for(i=0;i<up.length;i++){
+    up[i].index=i
+    up[i].onclick=function(){
+         if(xuan[this.index].checked==""){
+             ipt[this.index].value++
+             jingers[this.index].innerHTML=danjias[this.index].innerHTML*ipt[this.index].value
+         }else{
+            ipt[this.index].value++
+            jingers[this.index].innerHTML=danjias[this.index].innerHTML*ipt[this.index].value
+            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(1)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(danjias[this.index].innerHTML)
+         }
+            
+    }
+}
+
+//商品数量
+for(var i=0;i<ipt.length;i++){
+    ipt[i].a=i
+    ipt[i].onchange=function(){
+        if(this.value<=1){
+            layer.msg('不能再减了噢')
+            this.value=1
+            jingers[this.a].innerHTML=danjias[this.a].innerHTML*ipt[this.a].value
+            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[i].value)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[i].innerHTML)
+        }else{
+            jingers[this.a].innerHTML=danjias[this.a].innerHTML*ipt[this.a].value
+            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[i].value)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[i].innerHTML)
+        }
+    }
+}
+//全选
+quanxuan.onclick=function(){
+    allnum.innerHTML=0
+    totalprice.innerHTML='0.00'
+    for(i=0;i<xuan.length;i++){
+        if(quanxuan.checked==''){
+            xuan[i].checked=''
+            allnum.innerHTML=0;
+            totalprice.innerHTML='0.00'
+            buybox.classList.remove('add')
+            jianshu.classList.remove("white")
+        }else{
+            xuan[i].checked='checked'
+            buybox.classList.add('add')
+            jianshu.classList.add("white")
+            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[i].value)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[i].innerHTML)
+        }
+    }
+}
+ 
+for(j=0;j<xuan.length;j++){
+    xuan[j].a=j
+    xuan[j].onclick=function(){
+        if(this.checked==false){
+            buybox.classList.remove('add')
+            jianshu.classList.remove("white")
+            allnum.innerHTML=parseInt(allnum.innerHTML)-parseInt(ipt[this.a].value)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)-parseInt(jingers[this.a].innerHTML)
+        }else{
+            buybox.classList.add('add')
+            jianshu.classList.add("white")
+            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[this.a].value)
+            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[this.a].innerHTML)
+        }
+    }
+}
+
+//删除
+var remove=document.querySelector(".remove")
+for(var i=0;i<remove.length;i++){
+    remove[i].a=i
+    remove[i].onclick=function(){
+        //清除数据库的内容
+    }
+}
+</script>
 <% include base/foot.ejs %>
