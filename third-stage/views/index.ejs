@@ -19,8 +19,8 @@
     </div>
     <div class="index-list clear">
         <div class="index-desc clear">
-            <%for(var i =0;i<indeximage.length;i++){%>
-            <div id="indeximage[i].type" class="index-desc-list clear">
+            <% for(var i =0;i<indeximage.length;i++){%>
+            <div id="<%= indeximage[i].type%>" class="index-desc-list clear">
                 <div class="cirle-white"></div>
                 <img width="100%" src="<%= indeximage[i].imgdesc%>" alt="">
             </div>
@@ -122,11 +122,6 @@
         for(var i=0;i<indexlist.length;i++){
             indexlist[i].onclick=function(){
                 location.href=`/index/${this.id}`
-                // req.para;ms.id
-                // .find({type: req.para;ms.id},(err,data)=>{
-                //     con data
-                //     res.re
-                // })
             }
         }
     </script> 

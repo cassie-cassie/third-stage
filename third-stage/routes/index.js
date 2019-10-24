@@ -11,6 +11,9 @@ Router.get('/search',require('../controller/search'))
 
 // 动态路由   首页的10个分类  女装 男装等
 Router.get('/index/:type',require('../controller/index/womenclothes'))
+
+// 动态路由    10个分类里面的12个小分类
+Router.get('/clothing/:type',require('../controller/clothing'))
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
 Router.get('/login_user',require('../controller/login_user'))
@@ -43,9 +46,16 @@ Router.get('/life',require('../controller/life'))
 Router.get('/vipcostly',require('../controller/vipcostly'))
 
 // 分类
-Router.get('/index/classify',require('../controller/classify'))
+Router.get('/classify',require('../controller/classify.js'))
 
 // 列表页路由
 Router.get('/clothing',require('../controller/clothing'))
+
+// //购物车路由
+Router.get('/fullcar',require('../controller/car/fullcar'))  //结算购物车
+Router.get('/nullcar',require('../controller/car/nullcar'))  //结算购物车
+
+// 物品详情路由
+Router.get('/details',require('../controller/\/details/details'))
 
 module.exports = Router

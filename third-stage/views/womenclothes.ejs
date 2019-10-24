@@ -1,12 +1,14 @@
 <% include base/head.ejs%>
+
 <link rel="stylesheet" href="/stylesheets/index/womenclothes.css">
     <div class="womenclothes-top">
         <input type="text" placeholder="搜索商品或品牌" style="width:90%;height:2.5rem;font-size:13px;background:#F3F4F4;color:#98989E;margin-left:5%;margin-top:1.5rem">
         <span style="position:absolute;top:1.7rem;right:10%;font-size:14px;color:#98989E"><i class="fa fa-search"></i></span>
         <div class="womenclothes-top-list">
             <div class="womenclothes-top-list-desc">
-                <% for (var i=0;i<data[0].list.length;i++){ %>
-                <div>
+                
+                <% for(var i=0;i<data[0].list.length;i++){ %>
+                <div id="qunzi">
                     <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
                         <img width="100%" src="<%= data[0].list[i].smallimage%>" alt="">
                     </div>
@@ -32,5 +34,11 @@
             查看更多<span><i class="fa fa-angle-down"></i></span>
         </div>
     </div>
+    <script>
+        var qunzi=document.getElementById('qunzi')
+        qunzi.onclick=function(){
+            location.href='/clothing'
+        }
+    </script>
     
 <% include base/foot.ejs%>
