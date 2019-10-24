@@ -147,7 +147,7 @@ function showlastcrazy(req,res){
                         }],
                 shop:"百斯盾男女装-最后疯抢专场",
                 daojishi:"01"  
-            },]
+            }]
     })
 }
 module.exports = showlastcrazy
