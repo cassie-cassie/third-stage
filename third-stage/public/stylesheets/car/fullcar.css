@@ -1,0 +1,203 @@
+    
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    display:block;
+}
+.top{
+    height:4rem;
+    width: 100%;
+    background: white;
+    line-height:4rem;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+}
+.backindex{
+    width:10%;
+    color:#555;
+}
+.top-content{
+    width:90%;
+    font-size: 20px;
+    box-sizing:border-box;
+    padding-right:10%;
+    color: #000;
+}
+.contentbox{
+    width:100%;
+}
+.content{
+    width:95%;
+    margin:1rem auto 1rem auto;
+    border-radius:1rem;
+    overflow:hidden;
+    background:#fff;
+}
+.content-head{
+    width:100%;
+    height:3rem;
+    padding-left:3.1rem;
+    line-height:3rem;
+}
+.content-body{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.content-left{
+    width:8%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+.btn-all{
+    width:8%;
+    height:100%;
+}
+.content-left>input{
+    width:1.8rem;
+    height:1.8rem;
+    margin-top:3rem;
+}
+.content-right{
+    width:92%;
+    height:100%;
+    padding:1rem 1rem 1rem 0;
+    display:flex;
+    justify-content: space-around;
+}
+.imgbox{
+    width:30%;
+    height:90%;
+    overflow: hidden;
+}
+.descbox{
+    width:70%;
+    padding-left:0.8rem;
+}
+.goodsname{
+    width:100%;
+    height:3rem;
+    line-height:3rem;
+    font-size:1.7rem;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.goodsdesc{
+    box-sizing: border-box;
+    margin-top:0.5rem;
+    width:100%;
+    height:2.5rem;
+    line-height:2.5rem;
+    background:#e5e5e5;;
+    color:rgb(152, 152, 159);
+    font-size:1.2rem;
+    border-radius:0.5rem;
+}
+.pricebox{
+    width:100%;
+    height:3rem;
+    margin-top:0.5rem;
+    display:flex;
+    justify-content:space-between;
+}
+.goodsprice{
+    color: #de3c96;
+    font-size:2rem;
+}
+.danjia{
+    font-size:1.6rem;
+}
+.jinger{
+    display:block;
+}
+.btnbox{
+    width:40%;
+    margin-top:0.2rem;
+    display:flex;
+    justify-content:space-between;
+}
+.numminus,.numadd,.onenum{
+    width:25%;
+    height:2rem;
+    padding:0;
+}
+.onenum{
+    width:50%;
+    box-sizing:border-box;
+    padding-left:15%;
+}
+.remove{
+    box-sizing:border-box;
+    font-size:1.1rem;
+    float:right;
+    padding:0.2rem;
+}
+/* 底部 */
+#bottombox{
+    width:100%;
+    background:#fff;
+    height:3.8rem;
+    position:fixed;
+    bottom:0rem;
+    left:0;
+    right:0;
+}
+#bottom{
+    width:95%;
+    height:100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.btnallbox{
+    width:18%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    line-height:4rem;
+}
+.btnall{
+    width:30%;
+    height:100%;
+}
+.btnall>input{
+    width:1.8rem;
+    height:1.8rem;
+}
+.btnallbox>p{
+    color:#333;
+    font-size:1.4rem;
+} 
+.totalbox{
+    width:70%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    line-height:4rem;
+    font-size:1.4rem;
+}
+.totalpricebox{
+    color:#de3c96;
+}
+.buybox{
+    margin-top:0.3rem;
+    border-radius:1rem;
+    border:0.1rem solid #de3c96;
+    line-height:3.5rem;
+    padding:0 0.5rem;
+}
+.add{
+    color:#fff;
+    background:#de3c96
+}
+.jianshu{
+    color:#de3c96;
+}
+.white{
+    color:#fff;
+}
