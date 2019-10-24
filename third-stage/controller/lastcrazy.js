@@ -1,5 +1,6 @@
 function showlastcrazy(req,res){
     res.render('lastcrazy',{
+        // 今日疯抢
         data:[{
                 img:"/images/lastcrazy/sx1.webp",
                 fengding:'到手价三折封顶',
@@ -40,7 +41,7 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"乔伊思-女装最后疯抢专场",
                 daojishi:"01"  
             },{
                 img:"/images/lastcrazy/sx3.webp",
@@ -61,7 +62,7 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"鲨鱼VISHARK鞋包-最后疯抢专场",
                 daojishi:"01"  
             },{
                 img:"/images/lastcrazy/sx4.webp",
@@ -82,7 +83,7 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"三枪内衣-最后疯抢",
                 daojishi:"01"  
             },{
                 img:"/images/lastcrazy/sx5.webp",
@@ -103,7 +104,7 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"裂帛女装专场",
                 daojishi:"01"  
             },{
                 img:"/images/lastcrazy/sx6.webp",
@@ -124,7 +125,7 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"卡帝乐鳄鱼女装-最后疯抢专场",
                 daojishi:"01"  
             },{
                 img:"/images/lastcrazy/sx7.webp",
@@ -145,9 +146,27 @@ function showlastcrazy(req,res){
                             money:"￥99",
                             yuanjia:"￥598"
                         }],
-                shop:"百斯盾男女装-最后疯抢专场",
+                shop:"大嘴猴paul frank-最后疯抢专场",
                 daojishi:"01"  
-            }]
+            }],
+            // 下期预告
+        yugao:[{
+            img:"/images/lastcrazy/yg-1(1).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(2).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(3).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(4).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(5).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(6).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(7).webp",
+        },{
+            img:"/images/lastcrazy/yg-1(7).webp",
+        }]
     })
 }
 module.exports = showlastcrazy
