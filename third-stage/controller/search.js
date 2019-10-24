@@ -1,4 +1,4 @@
-function search(req,res){
+function showsearch(req,res){
     res.render('search')
 }
-module.exports = search
+module.exports = showsearch
