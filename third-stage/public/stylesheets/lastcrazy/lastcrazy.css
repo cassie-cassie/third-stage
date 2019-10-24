@@ -22,6 +22,9 @@
     width: 100%;
     background: lightpink;
 }
+#ul{
+    margin-bottom: 0;
+}
 .color-white{
     color: white;
 }
@@ -102,7 +105,7 @@
 
 /* 上新部分 */
 .shangxin{
-    height: 80rem;
+    /* height: 80rem; */
     width: 100%;
     background: #F5F5F5;
     clear: both;  
@@ -143,21 +146,22 @@
 
 .sx2{
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: flex;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 }
 .sx2-1{
     height: 50%;
     width: 33%;
     box-sizing: border-box;
     position: relative;
+    padding: 0 0.5rem;
 }
 #dazhe{
     border: #ec3790 1px solid;
     position: absolute;
     top: 62%;
-    left: 0.3rem;
+    left: 0.8rem;
     width:30%;
     text-align: center;
     box-sizing: border-box;
@@ -204,10 +208,10 @@
 
 /* 预告部分 */
 .yugao{
-    height: 80rem;
     width: 100%;
     display: none; 
     background: white;
+    padding: 1rem 0 5rem 0;
 }
 .yg1{
     width: 100%;
@@ -262,4 +266,19 @@
 }
 .fw{
     font-weight: 600;
+}
+
+/* 回到顶部 */
+#back{
+    width:5rem;
+    height:5rem;
+    position:fixed;
+    top:90%;
+    right:1rem;
+    z-index:99;
+    line-height: 5rem;
+    display:none;
+    background: url(//h2.vipstatic.com/h5.vipstatic.com/img/go-top.a02bb338.png) 50% no-repeat;
+    background-size: 100% 100%;
+    -webkit-tap-highlight-color: transparent;
 }

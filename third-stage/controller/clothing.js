@@ -1,8 +1,10 @@
 
-const shop=require('../model/shop')
+const shop=require('../model/Project')
 
 function showclothing(req,res){
-    shop.find().then((results)=>{
+    console.log(req.params.id)
+    console.log('==============================================================')
+    shop.find({"id":1}).then((results)=>{
         console.log(results)
         if(results){
             // console.log('-----------')

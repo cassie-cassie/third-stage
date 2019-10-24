@@ -6,9 +6,8 @@
         <span style="position:absolute;top:1.7rem;right:10%;font-size:14px;color:#98989E"><i class="fa fa-search"></i></span>
         <div class="womenclothes-top-list">
             <div class="womenclothes-top-list-desc">
-                
                 <% for(var i=0;i<data[0].list.length;i++){ %>
-                <div id="qunzi">
+                <div class="qunzi" id="<%= data[0].list[i].id%>">
                     <div style="width:100%;height:7rem;background:#F3F4F4;border-radius:3.5rem">
                         <img width="100%" src="<%= data[0].list[i].smallimage%>" alt="">
                     </div>
@@ -35,9 +34,11 @@
         </div>
     </div>
     <script>
-        var qunzi=document.getElementById('qunzi')
-        qunzi.onclick=function(){
-            location.href='/clothing'
+        var qunzi=document.querySelectorAll('.qunzi')
+        for(let i=0;i<qunzi.length;i++){
+            qunzi[i].onclick=function(){
+                location.href=`/clothing/${this.id}`
+            }
         }
     </script>
     

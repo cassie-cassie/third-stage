@@ -1,27 +1,26 @@
 <% include base/head.ejs%>
 <link rel="stylesheet" href="/stylesheets/clothing/clothing.css">
  <div class="content">
-        <% for(var i=0;i<data.length;i++){ %>
+        <% for(var i=0;i<data[0].list.length;i++){ %>
         <div class="wanzhengdiv">
                 <div class="top">
                         <div class="imagebox">
-                                <img  class="image"  src="<%= data[i].img%>" alt="">
+                                <img  class="image"  src="<%= data[0].list[i].img%>" alt="">
                         </div>
                 </div>
                 <div class="below">
                     <div class="linediv">
-                                <% if(data[i].method=='疯抢价'){%>
-                                <span class="by"><%=data[i].method%></span>
-                                <%}%>  
-                                <% if(data[i].zhijiang=='直降20%'){%>
-                                        <span class="zhi"><%=data[i].zhijiang%></span>
-                                <%}%>  
-                      
-                        <span class="fs14 mt5"><%= data[i].price %></span>
-                        <span  id="fs13"><%= data[i].oldprice %></span>
-                        <span id="fs12"><%= data[i].zhekou %></span>
+                        <% if(data[0].list[i].method=='疯抢价'){%>
+                        <span class="by"><%=data[0].list[i].method%></span>
+                        <%}%>  
+                        <% if(data[0].list[i].zhijiang=='直降20%'){%>
+                                <span class="zhi"><%=data[0].list[i].zhijiang%></span>
+                        <%}%>  
+                        <span class="fs14"><%= data[0].list[i].price %></span>
+                        <span  id="fs13"><%= data[0].list[i].oldprice %></span>
+                        <span id="fs12"><%= data[0].list[i].zhekou %></span>
                     </div>
-                        <span  class=" fs1"><%= data[i].desc %></span>
+                        <span  class=" fs1"><%= data[0].list[i].desc %></span>
                 </div>
         </div>
        <% } %>

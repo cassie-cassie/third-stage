@@ -13,7 +13,14 @@ const projectSchema = new mongoose.Schema({
     largelist:Object,
     largeimage:String,
     sell:String,
-    img:String
+    img:String,
+    price:String,
+    oldprice:String,
+    method:String,
+    desc:String,
+    zhekou:String,
+    id:Number,
+    zhijiang:String
 });
 
 // 设置Model
