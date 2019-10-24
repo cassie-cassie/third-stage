@@ -17,6 +17,6 @@ const shopSchema = new mongoose.Schema({
 });
 
 // 设置Model
-const shop = mongoose.model('shop', projectSchema)
+const shop = mongoose.model('shop', shopSchema)
 
 module.exports = shop 
