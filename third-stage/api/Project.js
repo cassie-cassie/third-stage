@@ -67,65 +67,67 @@ function showProject(req,res){
     },{
         id:2,
         list:[{
-            img:"/images/clothing/2.jpg",
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/07/26/42/73cb1cb5-0e48-475f-89cf-c21011d97696_360x456_100.jpg!75.webp",
             method:"疯抢价",
-            price:"￥169",
-            oldprice:"1099",
-            desc:"2019秋冬女新款系带收腰中长款针织打底毛衣过膝连衣裙"
+            price:"￥104",
+            oldprice:"359",
+            zhekou:'2.9折',
+            desc:"春款薄款风衣女中长款字母印花韩版宽松连帽拉链外套"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107314/10004400/2044501679-157702776448294912-157702776448299047-1_360x456_100.jpg",
-            price:"￥269",
-            oldprice:"999",
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/10/30/50d2faf6-f6db-4839-864e-d1173792fba6_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥89",
+            oldprice:"499",
             zhekou:"1.7折",
-            desc:"【商场同款】GMXY2018冬女装新品X型翻领连衣裙G587217"
+            desc:"【大口袋 文艺百搭】秋季新品外套女舒适百搭中长款款风衣"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107314/10004400/1995351244-964410061175570432-964410061175570440-1_360x456_100.jpg",
-            zhijiang:"直降20%",
-            price:"￥239",
-            oldprice:"1399",
-            desc:"新款 字母印花连帽加绒保暖中长裙 女款连衣裙"
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/01/29/77/541e8f7d-3c8e-48a0-8b0c-87d51fda262d_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥132",
+            desc:"女装外套连帽开衫卫衣女新品"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/28/111/f90ba552-0322-4351-aba5-e9a8e342d17e_360x456_100.jpg",
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/607826/2019/0926/1/2e802fa2-59a8-47db-90bf-992bde28134a_360x456_100.jpg!75.webp",
             method:"疯抢价",
-            price:"￥209",
-            oldprice:"1039",
-            desc:"GMXY2019夏季新款连衣裙碎花中袖宽松衬衫裙文艺休闲"
+            price:"￥134",
+            oldprice:"688",
+            desc:"春秋新款韩版女装宽松显瘦中长款翻领格子休闲女士小西装"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/604017/2019/0917/16/e721c0c2-b5db-4aa7-9e2f-d944457613e6_360x456_100.jpg",
-            price:"￥200",
-            oldprice:"1309",
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/11/92/d9390b36-daee-4e64-a5fe-cc7a4ac51762_360x456_100.jpg!75.webp",
+            price:"￥135",
+            oldprice:"668",
+            zhekou:"2.0折",
+            desc:"【2019年冬季新品】女款时尚百搭收口袖仿水貂绒无领外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/607826/2019/0926/1/2e802fa2-59a8-47db-90bf-992bde28134a_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥150",
+            oldprice:"959",
+            zhekou:"1.6折",
+            desc:"【100%羊毛】秋冬女装外套2019新款休闲短款羊毛外套女"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10023325/601559362-1017608832572956672-1017608832572960769-1_360x456_100.jpg!75.webp",
+            price:"￥499",
+            oldprice:"1699",
+            zhekou:"2.9折",
+            desc:"2019冬季新款仿貂毛长款大衣女气质流苏时尚保暖女式外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/09/140/95b5a2ff-c3da-454d-b203-3577411f8bd5_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥179",
             zhekou:"1.5折",
-            desc:"【商场同款】GMXY2018冬女装新品格子棒球领连衣裙G187309"
+            desc:"女长款连帽侧边织带帽绳新品"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/06/28/6e771027-a9a6-4987-a03f-b1f90936bb9a_360x456_100.jpg",
-            price:"￥850",
-            oldprice:"1009",
-            zhekou:"1.5折",
-            desc:"女装羊毛阿尔巴卡混纺喇叭袖连衣裙"
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2019/1018/173/3d45a740-e530-4ec6-a121-6f5a29ecd15f_360x456_100.jpg!75.webp",
+            price:"￥199",
+            oldprice:"359",
+            zhekou:"5.5折",
+            desc:"灯芯绒森马冬季新款连帽外套韩版工装复古潮流学生ins夹克女"
         },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/24/84/7f4bc452-bd7c-4b8c-ac48-1b3f6da5dcd2_360x456_100.jpg",
-            price:"￥230",
-            oldprice:"1059",
-            zhekou:"1.5折",
-            desc:"女优雅直身毛织连衣裙"
-        },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/17/182/e0eb7f53-b890-4a32-8c59-e69017884e22_360x456_100.jpg",
-            price:"￥140",
-            oldprice:"1379",
-            zhekou:"1.5折",
-            desc:"100%山羊绒 女式V领羊绒连衣裙"
-        },{
-            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/08/25/141/068d89ca-bf62-4a74-954b-d6edaa88b1c1_360x456_100.jpg",
-            price:"￥230",
-            oldprice:"439",
-            zhekou:"1.5折",
-            desc:"中长款卫衣裙森马秋季新款运动风抽绳连帽刺绣连衣裙女"
-        },{
-            img:"/images/clothing/1.jpg",
-            price:"￥279",
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10023325/1033494218-368527534747619328-368527534747623425-1_360x456_100.jpg!75.webp",
+            price:"￥150",
             method:"疯抢价",
             oldprice:"399",
-            desc:"百图betu女装修身显瘦纯色高领打底毛衫裙腰带款针织连衣裙"
+            desc:"2019冬季新款女装短外套超柔兔毛面料翻领保暖女式外套"
         }]
     },{
         id:3,
@@ -757,7 +759,125 @@ function showProject(req,res){
             oldprice:"399",
             desc:"百图betu女装修身显瘦纯色高领打底毛衫裙腰带款针织连衣裙"
         }]
+    },{
+        id:13,
+        list:[{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/26/167/1b7091f3-8650-450a-94bc-e9ae4afcd6b8_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥188",
+            oldprice:"1099",
+            desc:"斯凯奇男款休闲运动外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/610023/2019/1011/129/30095d87-8647-498b-9fae-faf89def8698_360x456_100.jpg!75.webp",
+            price:"￥156",
+            oldprice:"999",
+            zhekou:"1.9折",
+            desc:"冬季款时髦贴布连帽舒适男士棉衣外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/05/21/155/61793e9e-970f-4b50-a839-d2ddae22d648_360x456_100.jpg!75.webp",
+            price:"￥69",
+            oldprice:"638",
+            desc:"舒适透气 棒球领休闲运动服男士外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/11/12/38/1f45c1df-a14d-4b4e-a3d5-8f0c8fdfc707_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥138",
+            oldprice:"1339",
+            desc:"冬季款时髦贴布连帽舒适男士棉衣外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/30/95/7cb8c1b5-d071-4aa4-adf2-8ddd213d92c6_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥209",
+            oldprice:"699",
+            zhekou:"3.5折",
+            desc:"Skechers斯凯奇 男装新款 梭织棉外套 休闲保暖外套"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/05/21/134/7a9504e8-3f59-4e5c-9d22-7d404bf6d62a_360x456_100.jpg!75.webp",
+            price:"￥69",
+            oldprice:"678",
+            zhekou:"1折",
+            desc:"运动休闲 棒球领男款撞色开衫男运动外套"
+        }]
+    },{
+        id:14,
+        list:[{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/20/12/3d9dcf8e-9722-45d5-918f-d922b626e481_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥219",
+            oldprice:"369",
+            desc:"彪马卫衣男2019秋季李现同款运动服圆领设计"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612262/2019/1014/55/7e02ef03-0083-4fed-b28d-1ee0eb2bbfe0_360x456_100.jpg!75.webp",
+            price:"￥148",
+            oldprice:"629",
+            zhekou:"2.4折",
+            desc:"2019冬季加绒加厚卫衣男连帽卫衣男百搭男士卫衣男士新品"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/05/75/257c07f7-588b-4d31-ace0-ebad96a3d74a_360x456_100.jpg!75.webp",
+            price:"￥69",
+            oldprice:"299",
+            desc:"圆领卫衣男青少年春秋长袖T恤情侣装男款运动男秋装"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612262/2019/1021/78/7c873cb8-8130-4163-b62f-cdf9cc8225ac_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥68",
+            oldprice:"489",
+            desc:"卫衣男19年冬季男士家绒卫衣纯棉男款运动卫衣保暖男士"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10023325/1019026808-9928302641856519-9928302641856566-1_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥49",
+            oldprice:"476",
+            zhekou:"1.0折",
+            desc:"【售完为止】秋季新款男士胸口字母刺绣时尚休闲长袖卫衣"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/12/40/31dc828b-322a-426b-8f37-4c115cfe4d16_360x456_100.jpg!75.webp",
+            price:"￥79",
+            oldprice:"259",
+            zhekou:"3.1折",
+            desc:"2019秋季新款韩版修身男士上衣个性印花男士圆领卫衣"
+        }]
+    },{
+        id:15,
+        list:[{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/615683/2019/0917/6/bc8f1974-ac2b-4d35-acc0-a58a4f30abee_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥59",
+            oldprice:"498",
+            desc:"【售完即止】秋冬男款运动裤男士休闲裤商务韩版潮流修长"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/09/6/1dbc8335-eddb-4fc7-89a0-2b06089068b1_360x456_100.jpg!75.webp",
+            price:"￥99",
+            oldprice:"359",
+            zhekou:"2.8折",
+            desc:"2019秋季新款时尚潮流工装束脚运动男裤运动裤"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612262/2019/1023/148/6393398c-a887-4423-b665-538045af1076_360x456_100.jpg!75.webp",
+            price:"￥69",
+            oldprice:"769",
+            desc:"男款运动裤19年男裤子秋冬束脚百搭男裤舒适保暖男士休闲裤"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10023325/860564713-679275779839127552-679275779839127554-1_360x456_100.jpg!75.webp",
+            method:"疯抢价",
+            price:"￥49",
+            oldprice:"489",
+            desc:"【售完即止】秋季新款男士休闲裤舒适纯色直筒百搭休闲裤"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612262/2019/0911/39/67a654af-00b3-4956-aede-2a15c7d3f045_360x456_100.jpg!75.webp",
+            method:'疯抢价',
+            price:"￥69",
+            oldprice:"799",
+            zhekou:"1.0折",
+            desc:"裤子男19年男士休闲裤加绒加厚男裤运动裤纯色束脚运动裤"
+        },{
+            img:"https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/21/189/5d42c666-f1e6-438d-b609-d85a317abd4b_360x456_100.jpg!75.webp",
+            price:"￥98",
+            oldprice:"498",
+            zhekou:"3.1折",
+            desc:"2019秋冬新款加绒加厚保暖工装裤男潮牌修身哈伦裤"
+        }]
     })
+    res.end('123')
 }
 
 module.exports = showProject
