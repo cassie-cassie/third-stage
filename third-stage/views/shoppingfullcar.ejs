@@ -75,6 +75,10 @@
  var totalprice=document.querySelector('#totalprice') //总价格
  var quanxuan=document.getElementById("quanxuan") //全选
  var xuan=document.getElementsByClassName('xuan') // 选择按钮
+ var buy=document.querySelector(".buybox")
+ buy.onclick=function(){
+    location.href='/checkout'
+}
  // 数量-
 
 for(i=0;i<down.length;i++){
