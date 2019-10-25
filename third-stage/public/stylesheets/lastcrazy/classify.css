@@ -115,37 +115,14 @@ body{
     line-height:5rem;
     position: relative;
 }
-.content-list>li:hover{
-    background: white;
-    color: #222222;
-}
 #tuijian{
     background: white;
     color: #222222;
-}
-#tuijian::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width:0.3rem;
-    height: 100%;
-    font-size: 0;
-    background-color: #de3d96;
-}
-#tuijian:hover::after{
-    left: 0%;
+    border-left:0.3rem solid #de3d96;
 }
 
-.content-list>li:hover::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width:0.3rem;
-    height: 100%;
-    font-size: 0;
-    background-color: #de3d96;
+#tuijian:hover::after{
+    left: 0%;
 }
 .content-list>li::before{
     content: "";
@@ -157,7 +134,7 @@ body{
     margin-left: -.73333rem;
     height: .1rem;
     background: #e3e5e7;
-}
+} 
 
 /* 分类右边 */
 .contentr{
@@ -167,19 +144,23 @@ body{
     overflow: hidden;
     float: right;
 }
-.contentr1{
-    height: 57rem;
+.rightlist{
+    height: 80rem;
+}
+/* .contentr1{
+    height:80rem;
     width: 75%;
     background: white;
     overflow: hidden;
     float: right;
     display:none;
-}
+} */
 .content-xiangqing{
     background: white;
     box-sizing: border-box;
     float: right;
-    padding: 0.5rem 1.5rem 
+    padding: 0.5rem 1.5rem ;
+    margin-left: 1rem;
 }
 .content-xiangqing>h2{
     padding-top: 1rem;
@@ -195,6 +176,7 @@ body{
     /* height:6rem; */
     width: 25%;
     margin-bottom: 1rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,22 +194,11 @@ body{
 .fs12{
     font-size: 12px;
 }
-.xq-1{
-    display: block;
-}
-.xq-2{
+.rightlist{
     display: none;
 }
-/* .womenwear:hover.xq-2{
-    display: block;
-    z-index: 1;
-}
-.tuijian:hover .xq-1{
-    display: inline; */
-}
-.content-list>li:hover .xq-2{
-    display: block;
-}
+
+
 
 /* 品牌界面 */
 /* .pinpai{
@@ -267,11 +238,6 @@ body{
 .scrollBarItem ul li span{
     font-size: 16px;
 }
-/* .clear:after{
-    content: '';
-    display: block;
-    clear: both;
-} */
 #navlike{
     color: #e83a98;
 }
@@ -279,7 +245,7 @@ body{
 /* 下面箱包部分 */
 .pp-pro{
     width: 100%;
-    padding: 0 1rem 1rem 1rem ;
+    padding: 0 1rem 6rem 1rem ;
     box-sizing: border-box;
     background: white;
 }
