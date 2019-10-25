@@ -1,5 +1,19 @@
 //订单详情
 function showcheckout(req,res){
-    res.render('checkout')
+    res.render('checkout',{
+        data:[{
+              goodsname:'百丽春夏新商场同款低跟单鞋玛丽珍鞋',
+              goodsimg:'//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/09/06/25/9662387a-e4ac-4cac-a817-fed3668c3b52_5t.jpg',
+              goodsdesc:'34',
+              goodsprice:113,
+              goodsnum:1
+        },{
+              goodsname:'xixixixiixixix',
+              goodsimg:'//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/11/139/66e9e127-ee07-43d7-9770-828aed49deaa_420_531.jpg',
+              goodsdesc:'xl',
+              goodsprice:122,
+              goodsnum:2
+        }]
+    })
 }
 module.exports=showcheckout
