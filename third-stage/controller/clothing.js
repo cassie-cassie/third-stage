@@ -2,9 +2,9 @@
 const shop=require('../model/Project')
 
 function showclothing(req,res){
-    console.log(req.params.id)
+    console.log(req.params.type)
     console.log('==============================================================')
-    shop.find({"id":1}).then((results)=>{
+    shop.find({"id":req.params.type}).then((results)=>{
         console.log(results)
         if(results){
             // console.log('-----------')
