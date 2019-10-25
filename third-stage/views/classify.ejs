@@ -13,7 +13,7 @@
     <!-- 搜索框 -->
     <div class="search ">
         <button>
-            <span  class="fa fa-search"></span>
+            <span class="fa fa-search"></span>
             <span>搜索品牌或商品</span>
         </button>
     </div>
@@ -21,74 +21,47 @@
     <div class="content">
         <div class="contentl ">
             <ul class="content-list">
-                    <li class="tuijian" id="tuijian">为你推荐</li>
-                    <li class="womenwear">女装</li>
-                    <li class="menwear">男装</li>
-                    <li class="nieyi">内衣</li>
-                    <li class="wshoe">女鞋</li>
-                    <li class="mshoe">男鞋</li>
-                    <li class="xiangbao">箱包皮具</li>
-                    <li>手表配饰</li>
-                    <li>护肤彩妆</li>
-                    <li>个人护理</li>
-                    <li>母婴</li>
-                    <li>运动户外</li>
-                    <li>手机数码</li>
-                    <li>家用电器</li>
-                    <li>家居家纺</li>
-                    <li>生活超市</li>
-                    <li>唯品国际</li>
-                    <li>唯品.奢</li>
-                    <li>唯品金融</li>
-                    <li>医药健康</li>
-                    <li>图书文娱</li>
+                    <li class="leftlist" style="border-left:0.3rem solid #de3d96;background: white;color: #222222;">为你推荐</li>
+                    <li class="leftlist">女装</li>
+                    <li class="leftlist">男装</li>
+                    <li class="leftlist">内衣</li>
+                    <li class="leftlist">女鞋</li>
+                    <li class="leftlist">男鞋</li>
+                    <li class="leftlist">箱包皮具</li>
+                    <li class="leftlist">手表配饰</li>
+                    <li class="leftlist">护肤彩妆</li>
+                    <li class="leftlist">个人护理</li>
+                    <li class="leftlist">母婴</li>
+                    <li class="leftlist">运动户外</li>
+                    <li class="leftlist">手机数码</li>
+                    <li class="leftlist">家用电器</li>
+                    <li class="leftlist">家居家纺</li>
+                    <li class="leftlist">生活超市</li>
+                    <li class="leftlist">唯品国际</li>
+                    <li class="leftlist">唯品.奢</li>
+                    <li class="leftlist">唯品金融</li>
+                    <li class="leftlist">医药健康</li>
+                    <li class="leftlist">图书文娱</li>
             </ul>
         </div>
         <div class="contentr">
-            <div class="xq-1">
+            <% for(var r=0;r<fenlei.length;r++){%>
+            <div class="rightlist" style="display: block;">
                 <div class="content-xiangqing">
-                    <h2>品质精选</h2><br>
+                    <h2><%= fenlei[r].h2%></h2><br>
                     <div class="xiangqing">
+                        <% for(var x=0;x<fenlei[r].xqimg.length;x++){%>
                         <div>
-                            <img src="/images/classify/p(2).jpg" alt="">
-                            <p class="ta-center fs12">连衣裙</p>
+                            <img src=<%= fenlei[r].xqimg[x].img%> alt="">
+                            <p class="ta-center fs12"><%= fenlei[r].xqimg[x].title%></p>
                         </div>
-                        <div>
-                            <img src="/images/classify/p(3).jpg" alt="">
-                            <p class="ta-center fs12">女鞋</p>
-                        </div>
-                        <div>
-                            <img src="/images/classify/p(4).jpg" alt="">
-                            <p class="ta-center fs12">女式卫衣</p>
-                        </div>
+                        <%}%>
                     </div>
                 </div>
             </div>
-            <div class="xq-2">
-                <div class="content-xiangqing">
-                    <h2>冬季热买</h2><br>
-                    <div class="xiangqing">
-                        <div>
-                            <img src="/images/classify/p(1).jpg" alt="">
-                            <p class="ta-center fs12">连衣裙</p>
-                        </div>
-                        <div>
-                            <img src="/images/classify/p(1).jpg" alt="">
-                            <p class="ta-center fs12">女鞋</p>
-                        </div>
-                        <div>
-                            <img src="/images/classify/p(1).jpg" alt="">
-                            <p class="ta-center fs12">女式卫衣</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contentr1">
-            
+            <%}%>
         </div>
     </div>
-
     <!-- 品牌界面 -->
     <div class="pinpai ">
         <!-- 导航界面 -->
@@ -96,7 +69,7 @@
             <ul class="scrollBarItem">
                 <ul>
                     <li id="navlike"> <span class="fa fa-star-o"></span> 猜你喜欢</li>
-                    <li> <span class="fa fa-female"></span>推荐</li>
+                    <li> <span class="fa fa-female"></span>女装</li>
                     <li> <span class="fa fa-black-tie"></span> 男装</li>
                     <li><span class="fa fa-gift"></span> 美妆</li>
                     <li><span class="fa fa-gift"></span>精品</li>
@@ -145,13 +118,13 @@
 
 
         // 左边箭头右边房子回当前页
-        
         var backindex=document.querySelectorAll('.backindex')
         for(var i=0;i<backindex.length;i++){
             backindex[i].onclick=function(){
                 location.href='/shop/index'
             }
         }
+
         // 切换
         var fenlei = document.querySelector('.tc1')
         var pinpai = document.querySelector('.tc2')
@@ -174,30 +147,6 @@
             pinpai.style.color = 'white'
         }
 
-        // li女装等切换
-        // var tuijianmoren = document.querySelector('#tuijian')
-        // var wntuijian = document.querySelector('.tuijian')
-        // var womenwear = document.querySelector('.womenwear')
-        // var tuijian = document.querySelector('.xq-1')
-        // var nvzhuang= document.querySelector('.xq-2')
-        // womenwear.onclick = function(){
-        //     nvzhuang.style.display = 'block'
-        //     tuijian.style.display = 'none'
-        //     tuijianmoren.style.background = 'none'            
-        //     tuijianmoren.style.color = '#585c64'
-        // }
-        // wntuijian.onclick = function(){
-        //     tuijian.style.display = 'block'
-        //     nvzhuang.style.display = 'none'
-        //     tuijianmoren.style.background = 'white'
-        //     tuijianmoren.style.color = '#222222'
-        // }
-        
-        // nav切换
-        // var navlike = document.querySelector('#navlike')
-
-
-
          //  一键回顶部
         var back=document.querySelector('#back')
         window.onscroll=function(){
@@ -210,7 +159,31 @@
         back.onclick=function(e){
             window.scrollTo(0,0)
         }
-        
+
+
+        // li女装等切换
+        var leftlist  = document.querySelectorAll('.leftlist')
+        var rightlist = document.querySelectorAll('.rightlist')
+        console.log(rightlist)
+        for(var i=0;i<leftlist.length;i++){
+            leftlist[i].index = i
+            leftlist[i].onclick=function(){
+                for(var j=0;j<rightlist.length;j++){
+                    rightlist[j].style.display='none'
+                }
+                // 未点击时的效果
+                for(var h=0;h<leftlist.length;h++){
+                    leftlist[h].style.background='none'
+                    leftlist[h].style.color='#585c64'
+                    leftlist[h].style.border='none'
+                }
+                // 点击后的效果
+                rightlist[this.index].style.display='block'
+                leftlist[this.index].style.background='#fff'
+                leftlist[this.index].style.color='#222'
+                leftlist[this.index].style.borderLeft='0.3rem solid #de3d96'
+            }
+        }
     </script>
     
 <% include base/foot.ejs%>
