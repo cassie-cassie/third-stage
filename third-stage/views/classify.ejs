@@ -10,7 +10,7 @@
         </div>
         <div class="fa fa-home backindex"></div>
     </div>
-    <!-- 搜索界面 -->
+    <!-- 搜索框 -->
     <div class="search ">
         <button>
             <span  class="fa fa-search"></span>
@@ -47,33 +47,18 @@
         <div class="contentr">
             <div class="xq-1">
                 <div class="content-xiangqing">
-                    <h2>好物推荐</h2><br>
-                    <div class="xiangqing">
-                        <div>
-                            <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                            <p class="ta-center fs12">连衣裙</p>
-                        </div>
-                        <div>
-                            <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                            <p class="ta-center fs12">女鞋</p>
-                        </div>
-                        <div>
-                            <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                            <p class="ta-center fs12">女式卫衣</p>
-                        </div>
-                    </div>
                     <h2>品质精选</h2><br>
                     <div class="xiangqing">
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
+                            <img src="/images/classify/p(2).jpg" alt="">
                             <p class="ta-center fs12">连衣裙</p>
                         </div>
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
+                            <img src="/images/classify/p(3).jpg" alt="">
                             <p class="ta-center fs12">女鞋</p>
                         </div>
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
+                            <img src="/images/classify/p(4).jpg" alt="">
                             <p class="ta-center fs12">女式卫衣</p>
                         </div>
                     </div>
@@ -84,15 +69,15 @@
                     <h2>冬季热买</h2><br>
                     <div class="xiangqing">
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
+                            <img src="/images/classify/p(1).jpg" alt="">
                             <p class="ta-center fs12">连衣裙</p>
                         </div>
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
+                            <img src="/images/classify/p(1).jpg" alt="">
                             <p class="ta-center fs12">女鞋</p>
                         </div>
                         <div>
-                            <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
+                            <img src="/images/classify/p(1).jpg" alt="">
                             <p class="ta-center fs12">女式卫衣</p>
                         </div>
                     </div>
@@ -103,6 +88,7 @@
             
         </div>
     </div>
+
     <!-- 品牌界面 -->
     <div class="pinpai ">
         <!-- 导航界面 -->
@@ -124,51 +110,16 @@
         </div>
         <!-- end -->
         <div class="pp-pro">
-            <h3>箱包
+        <% for(var i=0;i<data.length;i++){%>
+            <h3><%= data[i].leixing%>
                 <a>更多 <span class="fa fa-angle-right"></span></a>
             </h3>
             <div class="pp-img">
-                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
+                <% for(var j=0;j<data[i].list.length;j++){%>
+                <img src=<%= data[i].list[j].src%> alt="">
+                <%}%>
             </div>
-            <h3>箱包
-                <a>更多 <span class="fa fa-angle-right"></span></a>
-            </h3>
-            <div class="pp-img">
-                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt=""><img src="/images/lastcrazy/fenlei1 (1).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (2).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (3).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (4).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (5).jpg" alt="">
-                <img src="/images/lastcrazy/fenlei1 (6).jpg" alt="">
-            </div>
+        <%}%>
         </div>
     </div>
     <!-- 回到顶部 -->
@@ -224,23 +175,23 @@
         }
 
         // li女装等切换
-        var tuijianmoren = document.querySelector('#tuijian')
-        var wntuijian = document.querySelector('.tuijian')
-        var womenwear = document.querySelector('.womenwear')
-        var tuijian = document.querySelector('.xq-1')
-        var nvzhuang= document.querySelector('.xq-2')
-        womenwear.onclick = function(){
-            nvzhuang.style.display = 'block'
-            tuijian.style.display = 'none'
-            tuijianmoren.style.background = 'none'            
-            tuijianmoren.style.color = '#585c64'
-        }
-        wntuijian.onclick = function(){
-            tuijian.style.display = 'block'
-            nvzhuang.style.display = 'none'
-            tuijianmoren.style.background = 'white'
-            tuijianmoren.style.color = '#222222'
-        }
+        // var tuijianmoren = document.querySelector('#tuijian')
+        // var wntuijian = document.querySelector('.tuijian')
+        // var womenwear = document.querySelector('.womenwear')
+        // var tuijian = document.querySelector('.xq-1')
+        // var nvzhuang= document.querySelector('.xq-2')
+        // womenwear.onclick = function(){
+        //     nvzhuang.style.display = 'block'
+        //     tuijian.style.display = 'none'
+        //     tuijianmoren.style.background = 'none'            
+        //     tuijianmoren.style.color = '#585c64'
+        // }
+        // wntuijian.onclick = function(){
+        //     tuijian.style.display = 'block'
+        //     nvzhuang.style.display = 'none'
+        //     tuijianmoren.style.background = 'white'
+        //     tuijianmoren.style.color = '#222222'
+        // }
         
         // nav切换
         // var navlike = document.querySelector('#navlike')
@@ -250,7 +201,7 @@
          //  一键回顶部
         var back=document.querySelector('#back')
         window.onscroll=function(){
-            if(window.scrollY>00){
+            if(window.scrollY>500){
                 back.style.display='block'
             }else{
                 back.style.display='none'
