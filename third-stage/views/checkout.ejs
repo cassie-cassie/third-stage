@@ -1,45 +1,99 @@
 <% include base/head.ejs%>
-<style>
-*{
-    padding:0;
-    margin:0;
-}
-a{
-    display:block;
-}
-.top{
-    height:4rem;
-    width: 100%;
-    background: white;
-    line-height:4rem;
-    text-align:center;
-    display:flex;
-    justify-content:space-between;
-}
-.backindex{
-    width:10%;
-    color:#555;
-}
-.top-content{
-    width:90%;
-    font-size: 20px;
-    box-sizing:border-box;
-    padding-right:10%;
-    color: #000;
-}
-.J-safety-tips{
-    width:100%;
-    height:3rem;
-    background:#e8eaf4;
-    padding:0.5rem 5%;
-}
-</style>
+<link rel="stylesheet" href="/stylesheets/car/checkout.css">
 <div class="top">
     <a class="fa fa-angle-left fa-2x backindex"></a>
     <div class="top-content">确认订单</div>
 </div>
-<!-- 安全提示 -->
-<div class="J-safety-tips">
-    <img src="/images/car/pay.png">
+<div class="wrapperbox">
+    <div id="wrapper">
+        <div class="scroll">
+            <!-- 安全提示 -->
+            <div class="J-safety-tips">
+                <img src="/images/car/pay.png">
+                <span>你正在安全购物环境中，请放心购买</span>
+            </div>
+            <!-- 设置收货地址 -->
+            <!-- <div class="item-innerbox">
+                <div class="top-content">设置收获地址</div>
+                <a class="fa fa-angle-right fa-2x backindexr"></a>
+            </div> -->
+            <!-- 收获地址 -->
+            <div class="addressbox">
+                <div class="addresstop"><span class="name">123468</span>&nbsp;&nbsp;<span class="phone">12345667890</span></div>
+                <div class="addressbottom">
+                    <div class="addresscontent">
+                        山西省 晋中市 榆次区 郭家堡乡 文华街 聚莘商务3层
+                    </div>
+                    <a class="fa fa-angle-right fa-2x backindexr"></a>
+                </div>
+            </div>
+            <!-- 订单商品 中间区域可滑动 -->
+            <div class="shoppingbox">
+                <div class="shopheader">精选特卖</div>
+                <!-- 商品信息 -->
+                <% for(var i=0;i<data.length;i++){%>
+                <div class="shopcontent">
+                        <!-- 图片 -->
+                        <div class="imgbox">
+                            <img src=<%=data[i].goodsimg%> width="100%">
+                        </div>
+                        <div class='shop-c-right'>
+                            <div class="shop-c-r-goodsname">
+                                    唯品自营 | <%=data[i].goodsname%>
+                            </div>
+                            <div class="shop-c-r-goodsdescbox">
+                                <p class="goodsdesc"><%=data[i].goodsdesc%></p>
+                                <p class="goodsdesc"><%=data[i].goodsnum%></p>
+                                <p class="jinerbox">金额：<span class="jiner"><%=data[i].goodsnum*data[i].goodsprice%></span></p>
+                                <p class="goodsprice">￥&nbsp;<span class="price"><%=data[i].goodsprice%></span></p>
+                            </div>
+                            <div class="tipsbox"><p class="tipsblue">不支持换货</p><p class="tipsred">唯品会好货精选</p></div>
+                            <button class="remove"><i class="fa fa-close"></i></button>
+                        </div>
+                </div>
+                <% } %>
+                <div class="line"></div>
+                <!-- 总价 -->
+                <div class="goodsall">
+                    ￥<span class="allprice">0</span>
+                </div>
+                <!-- 免邮提示 -->
+                <div class="postagebox">
+                        <p class="tipsblue">免邮</p>
+                        <div>唯品自营商品已享受新会员专享订单满38元免运费，限唯品自营商品，部分商品不可用</div>
+                </div>
+            </div>
+            <!-- 订单实际金额-->
+            <div class="ordermanagebox">
+                <span class="strong">订单金额</span>
+                <p>￥<span class="allprice"></span></p>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- 底部支付 -->
+<div class="paybox">
+     <div class="payall">还需支付:<p>￥<span class="allprice">335</span></p></div>
+     <button type='button' class="paybtn">结算</button>
+</div>
+<script>
+var myScroll = new IScroll('#wrapper');
+var allprice=document.getElementsByClassName("allprice")
+var jiner=document.getElementsByClassName("jiner")
+var allpone=allprice[0]
+var allptwo=allprice[1]
+var allpthree=allprice[2]
+for(var i=0;i<jiner.length;i++){
+    allpone.innerHTML=(jiner[i].innerHTML-0)+(allpone.innerHTML-0)
+    allptwo.innerHTML=allpone.innerHTML
+    allpthree.innerHTML=allpone.innerHTML
+}
+
+let paybtn=document.getElementsByClassName('paybtn')[0]
+
+paybtn.onclick=function(){
+    alert("123")
+    location.href='/finish'
+}
+</script>
 <% include base/foot.ejs%>
