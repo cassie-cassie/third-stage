@@ -19,7 +19,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-}
+}  
 .top>div{
     line-height: 4rem;
     font-size: 26px;
@@ -34,15 +34,15 @@ body{
 }
 .top-content>div{
     width: 50%;
-    border: 1px solid #585c64;
+    border: 0.05rem solid #585c64;
     box-sizing: border-box;
     font-size: 20px;
     color: #585c64;
-    line-height: 2rem;
+    line-height: 2.5rem;
     float: left;
     text-align: center;
     font-size: 16px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .tc1{
     border-radius: 0.5rem 0 0 0.5rem;
@@ -93,6 +93,7 @@ body{
     overflow: hidden;
     position: relative;
 }
+
 /* 分类左边 */
 .contentl{
     height: 57rem;
@@ -111,7 +112,7 @@ body{
     text-align: center;
     color: #585c64;
     font-size: 14px;
-    line-height:4rem;
+    line-height:5rem;
     position: relative;
 }
 .content-list>li:hover{
@@ -211,6 +212,22 @@ body{
 .fs12{
     font-size: 12px;
 }
+.xq-1{
+    display: block;
+}
+.xq-2{
+    display: none;
+}
+/* .womenwear:hover.xq-2{
+    display: block;
+    z-index: 1;
+}
+.tuijian:hover .xq-1{
+    display: inline; */
+}
+.content-list>li:hover .xq-2{
+    display: block;
+}
 
 /* 品牌界面 */
 /* .pinpai{
@@ -272,7 +289,7 @@ body{
     justify-content: space-between;
     color: #222222;
     font-weight: 400;
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin: 0;
 }
 .pp-pro>h3>a{
