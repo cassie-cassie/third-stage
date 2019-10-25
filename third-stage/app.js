@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 配置路由
 
-
+app.use('/finish',require('./controller/finish')) // 订单完成
 app.use('/checkout',require('./controller/checkout')) //订单详情界面
 app.use("/shopping",require("./routes/index"))
 app.use('/shop',require('./routes/index'))
