@@ -1,0 +1,66 @@
+<% include base/head.ejs%>
+    <% include base/navbaby.ejs%>
+
+    <link rel="stylesheet" href="/stylesheets/newbeauty/newbeauty.css">
+<script src="/javascripts/quadro/swiper/swiper.js"></script>
+<div class="container">
+    <!-- 轮播图 -->
+    <div class="swiperbox wd100">
+        <div class="swiper-container wd100 he100">
+            <div class="swiper-wrapper wd100 he100">
+            <div class="swiper-slide"><a href=""><img src="/images/newbeauty/lb(1).jpg"  class="wd100"></a></div>
+            <div class="swiper-slide"><a href=""><img src="/images/newbeauty/lb(2).jpg" class="wd100"></a></div>
+            </div>
+            <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+    </div>
+    <div class="top">
+           <a href="" class="top-nav"><img src="/images/newbeauty/2(1).jpg"  class="wd100"></a>
+           <a href="" class="top-nav"><img src="/images/newbeauty/2(2).jpg"  class="wd100"></a>
+    </div>
+     <!-- 类型入口 -->
+    <div class="sectionlist-type">
+        <% for(var i=0;i<sectionlisttype.length;i++){%>
+        <a href="" class="sectionlist-item-type he50"><img src=<%=sectionlisttype[i].src%> class="wd100"></a>
+        <% } %>
+    </div>
+    <!-- 唯品快抢 -->
+    <a href=''>
+        <div class="sectionlist-homeapp">
+            <img src="/images/homeapp/18.jpg" class="wd100">
+            <div class="sectionlist-homeappnavbox">
+                <% for(var i=0;i<homeappnav.length;i++){%>
+                <div class="sectionlist-homeappnav">
+                    <img src=<%=homeappnav[i].src1 %> style="width:100%;height:auto">
+                    <div class="sectionlist-homeappnav-logo" >
+                        <img src=<%=homeappnav[i].src2 %> style="width:45%">
+                    </div>
+                    <div class="sectionlist-homeappnav-text"><span class="logodesc">快抢价</span>&nbsp;<span class="logoprice">￥<%=homeappnav[i].logoprice %></span></div>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </a>
+    <!-- 热销榜单 -->
+    <div class="sectionlist-Hotlist">
+            <img src="/images/newbeauty/5.jpg" class="wd100">
+            <div class="sectionlist-Hotnavbox">
+                 <a href="">
+                     <div class="sectionlist-Hotnav"></div>
+                 </a>
+            </div>
+    </div>
+</div>
+<script language="javascript"> 
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination: '.swiper-pagination',
+            paginationClickable: true  
+        })
+    </script>
+
+
+
+
+<% include base/bottom.ejs%>
+
+<% include base/head.ejs%>

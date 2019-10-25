@@ -10,17 +10,37 @@
         <p class="remen">热门搜索</p>
         <div class="biaoqian">
             <button>口碑爆款</button>
-            <button>女式大衣</button>
+            <button class="dayi">女式大衣</button>
             <button>女鞋</button>
-            <button>护肤套装</button>
-            <button>连衣裙</button>
-            <button>女式羽绒服</button>
-            <button>女式外套</button>
-            <button>女皮衣/皮草</button>
-            <button>女式套装</button>
-            <button>女式风衣</button>
+            <button id="skincare">护肤套装</button>
+            <button class="dayi">连衣裙</button>
+            <button class="clearclothes">女式羽绒服</button>
+            <button class="dayi">女式外套</button>
+            <button class="clearclothes">女皮衣/皮草</button>
+            <button class="dayi">女式套装</button>
+            <button class="clearclothes">女式风衣</button>
             <button>女单鞋</button>
-            <button>女式针织衫</button>
+            <button class="clearclothes">女式针织衫</button>
         </div>
     </div>
+
+    <script>
+        var dayi=document.querySelectorAll('.dayi')
+        var clearclothes=document.querySelectorAll('.clearclothes')
+        for(var i=0;i<dayi.length;i++){
+            dayi[i].onclick=function(){
+            // alert(8)
+                location.href='/index/womenclothes'
+            }
+        }
+        for(var i=0;i<clearclothes.length;i++){
+            clearclothes[i].onclick=function(){
+            // alert(8)
+                location.href='/index/clearance'
+            }
+        }
+        skincare.onclick=function(){
+            location.href='/index/skincare'
+        }
+    </script>
     <% include base/foot.ejs%>
