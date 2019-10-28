@@ -93,7 +93,6 @@ function showclassify(req,res){
                 src:'/images/classify/p(36).jpg',
             }]
     }],
-    // 第一个分类显示界面
 
         // 分类界面
     fenlei:[{
@@ -171,73 +170,73 @@ function showclassify(req,res){
     },{
         h2:"女装",
         xqimg:[{
-            img:"/images/classify/p(5).jpg",
+            img:"/images/classify/p(21).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(6).jpg",
+            img:"/images/classify/p(22).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(7).jpg",
+            img:"/images/classify/p(23).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"男装",
         xqimg:[{
-            img:"/images/classify/p(8).jpg",
+            img:"/images/classify/p(24).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(9).jpg",
+            img:"/images/classify/p(25).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(10).jpg",
+            img:"/images/classify/p(26).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"箱包皮具",
         xqimg:[{
-            img:"/images/classify/p(11).jpg",
+            img:"/images/classify/p(27).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(12).jpg",
+            img:"/images/classify/p(28).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(13).jpg",
+            img:"/images/classify/p(29).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"手表配饰",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(30).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(31).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(32).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"护肤彩妆",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(33).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(34).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(35).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"个人护理",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(36).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(37).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(38).jpg",
             title:"连衣裙"
         }]
     },{
