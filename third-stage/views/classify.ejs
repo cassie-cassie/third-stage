@@ -12,7 +12,7 @@
     </div>
     <!-- 搜索框 -->
     <div class="search ">
-        <button>
+        <button class="classifysearch">
             <span class="fa fa-search"></span>
             <span>搜索品牌或商品</span>
         </button>
@@ -183,6 +183,15 @@
                 leftlist[this.index].style.color='#222'
                 leftlist[this.index].style.borderLeft='0.3rem solid #de3d96'
             }
+        }
+
+
+
+        // 搜索跳连接
+        var classifysearch=document.getElementsByClassName('classifysearch')[0]
+        classifysearch.onclick=function(){
+            // alert(1)
+            location.href='/shop/search'
         }
     </script>
     
