@@ -173,10 +173,16 @@ a{
 .clear p{
     margin:0
 }
+#login{
+    position:relative
+}
+#admin{
+    display:none
+}
 </style>
 <div class="nav">
     <div id="login">
-        <a href="/login"><span class="login">登录</span></a>
+        <a href="/login"><span class="login">登录</span><span style="position:absolute;left:1.5rem;top:1rem;font-size:22px" id="admin"><i class="fa fa-user-o"></i></span></a>
         <input class="search" placeholder="大家正在搜：护肤套装">
         <span class="list"><img src="/images/index/list1.png"></span>
     </div>
@@ -340,5 +346,13 @@ a{
             location.href='/shopping/nullcar'
         }
        
+
+        // 点击登录变成头像
+        var login=document.querySelector('.login')
+        var admin=document.querySelector('#admin')
+        login.onclick=function(){
+            login.style.display='none',
+            admin.style.display='block'
+        }
 
 </script>

@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+const submit = require('./controller/submit')
 const db = require('./model/db')
 
 
@@ -43,6 +43,11 @@ app.use('/', indexRouter);
 // // 配置功能路由  登录
 // app.post('/login',require('./api/login'))
 
+// 处理数据
+app.post('/submit',require('./controller/submit'))
+
+// 配置功能路由
+app.post('/login',require('./api/login'))  
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
