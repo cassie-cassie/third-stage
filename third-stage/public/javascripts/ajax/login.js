@@ -1,20 +1,19 @@
+
 $('form').on('submit',(e)=>{
-    e.preventDefault()      //阻止浏览器默认行为
+    e.preventDefault()
     $.ajax({
-        type:'post',
-        url:'/login',
-        data:$('form').serialize(),
-        success:function(data){
-            //提示层
+        url: '/login',
+        type: 'post',
+        data: $('form').serialize(),
+        success: function(data){
             layer.msg(data.msg);
-            if(data.code){
+            if (data.code) {
                 setTimeout(()=>{
-                    location.href='/shop/index'
+                    location.href = '/shop/index'
                 },2000)
             }
-            
         },
-        error:function(err){
+        error: function(err){
             console.log(err)
         }
     })

@@ -21,7 +21,7 @@ function get(){
     }
     // 判断用户名是否有，如果没有，回到登录界面重新登录
     if(!boo){
-        location.href='/admin/login'
+        location.href='/login_user'
     }
     console.log(arr)
 }

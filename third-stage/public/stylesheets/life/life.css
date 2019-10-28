@@ -62,13 +62,13 @@
      height: 3.5rem;
      position: absolute;
      top:35rem;
-     left:1rem;
+     left:1rem; 
      /* background: purple; */
-} 
+ }  
  #showInterval{
      font-size: 1.8rem;
      position: absolute;
-     top:2.5rem;
+     top:3rem;
      left:3rem;
      letter-spacing:1rem; 
      color:#fff;
