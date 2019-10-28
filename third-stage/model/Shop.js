@@ -4,16 +4,17 @@ const mongoose=require('mongoose')
 
 // 设置 Schema 结构
 const shopSchema = new mongoose.Schema({
-    type:String,
-    type1:String,
-    imgdesc:String,
+    img:String,
+    fengding:String,
     list:Object,
-    smallimage:String,
-    listdesc:String,
-    largelist:Array,
-    largeimage:String,
-    sell:String,
-    img:String
+    img1:String,
+    dazhe:String,
+    money:String,
+    yuanjia:String,
+    shop:String,
+    daojishi:String,
+    yugao:Object,
+    data:Object
 });
 
 // 设置Model

@@ -14,6 +14,8 @@ Router.get('/index/:type',require('../controller/index/womenclothes'))
 
 // 动态路由    10个分类里面的12个小分类
 Router.get('/clothing/:type',require('../controller/clothing'))
+
+Router.get('/clothing/details/:type',require('../controller/details/details'))
 // 登录路由
 Router.get('/login',require('../controller/login.js'))
 Router.get('/login_user',require('../controller/login_user'))
