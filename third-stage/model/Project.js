@@ -20,7 +20,10 @@ const projectSchema = new mongoose.Schema({
     desc:String,
     zhekou:String,
     id:Number,
-    zhijiang:String
+    zhijiang:String,
+    list1:Object,
+    list2:Object,
+    yanse1:String
 });
 
 // 设置Model

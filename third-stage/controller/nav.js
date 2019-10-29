@@ -2,7 +2,7 @@ const project = require("../model/Project")
 function showNav(req,res){
 
     project.find({"type1":"index"}).then((results)=>{
-        console.log(results)
+        // console.log(results)
         if(results){
             res.render('index',{
                 indeximage:results,

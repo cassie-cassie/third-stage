@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/stylesheets/clothing/clothing.css">
  <div class="content">
         <% for(var i=0;i<data[0].list.length;i++){ %>
-        <div class="wanzhengdiv">
+        <div class="wanzhengdiv" id="<%= data[0].list[i].id%>">
                 <div class="top">
                         <div class="imagebox">
                                 <img  class="image"  src="<%= data[0].list[i].img%>" alt="">
@@ -26,7 +26,14 @@
        <% } %>
 </div> 
 
-
+        <script>
+                var wanzhengdiv=document.getElementsByClassName('wanzhengdiv')
+                for(var i=0;i<wanzhengdiv.length;i++){
+                        wanzhengdiv[i].onclick=function(){
+                                location.href=`/clothing/details/${this.id}`
+                        }
+                }
+        </script>
 
 
 

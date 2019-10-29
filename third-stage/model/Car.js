@@ -18,4 +18,8 @@ const CarSchema = new mongoose.Schema({
 // 设置Model
 const Car = mongoose.model('Car', CarSchema)
 
-module.exports = project
+<<<<<<< HEAD
+module.exports = Car 
+=======
+module.exports = Car
+>>>>>>> 6e2b5e4a5d8d994f7e67a33af9356bb13b5384f9

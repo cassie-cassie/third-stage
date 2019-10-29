@@ -1,3 +1,197 @@
 <% include base/head.ejs%>
-hhhhhhhhhjghjhjghjghjg
+<link rel="stylesheet" href="/stylesheets/details/details.css">
+<div class="daohang">
+    <div class="kefu"><img src="/images/details/kefu.png"></div>
+    <div class="gouwuche"><img src="/images/details/gouwuche.png"></div>
+    <div class="jiaru"><span>加入购物车</span></div>
+</div>
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+           <% for(var i=0;i<data[0].list.length;i++){ %>
+                <div class="swiper-slide"><a href=""><img src=" <%= data[0].list[i].img%>" width="100%"></img></a></div>
+               
+            <% } %>
+        </div>
+        <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+        <div class="tubiao">
+            <div class="tubiao1"><img src="/images/details/fanhui.png"></div>
+            <div class="tubiao2"><img src="/images/details/shoucang.png"><img src="/images/details/zhuanfa.png"></div>
+        </div>
+</div>
+    <div class="jiage">
+        <div class="price-wrap">
+            <div class="price-bar"> 
+               <span class="feng">疯抢价</span> 
+                <% for(var i=0;i<data.length;i++){%>
+                <span class="price"><%= data[i].price %></span>&nbsp;
+                <span class=" oldprice"><%= data[i].oldprice %></span>&nbsp;
+                <span class="zhekou"><%= data[i].zhekou %></span>
+                <% } %>
+            </div>
+        </div>
+    </div>
+<div class="mingcheng-wai">
+    <div class="mingcheng">
+        <p class="mingcheng-p1">衣香丽影 | 【2019冬装新品】衣香丽影长袖针织连衣裙女气质洋气毛衣裙子</p>
+    </div>
+</div>
+
+<div class="product">
+    <div class="color">
+        <div class="yanse">
+            <span> 颜色</span>
+        </div>
+        <div class="grid">
+            <% for(var i=0;i<data[0].list1.length;i++){ %>
+            <div class="grid-option">
+                <img src="<%= data[0].list1[i].image%>" alt="">
+                <span ><%= data[0].list1[i].yanse1%></span>
+            </div>
+          
+            <% } %>
+        </div>
+    
+    <div class="size">
+        <div class="hd">
+            <span>尺码</span>
+        </div>   
+       <div class="seclect">
+           <div class="grid-select">
+                <% for(var i=0;i<data[0].list2.length;i++){ %>
+                <button class="grid-option2"> <%= data[0].list2[i].size%> </button>
+               
+            <% } %>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<div class="product-address">
+    <div class="product-box">
+        <span class="pei">配送至</span>&nbsp;&nbsp;
+        <span class="qing">请选择配送地址 <img src="/images/details/address.png" alt=""></span>
+        <i class="fa fa-address-icon icon-gps"></i>
+    </div>
+</div>
+
+
+<div class="services-bar">
+    <ul class="services-list">
+        <li class="service">
+            <img src="/images/details/ok.png" alt="">
+            <span>唯品会自营</span>
+        </li>
+        <li>
+                <img src="/images/details/ok.png" alt="">
+                <span>7天无理由退货</span>
+        </li>
+        <li>
+                <img src="/images/details/ok.png" alt="">
+                <span>退货返10元唯品币</span>
+        </li>
+        <li>
+                <img src="/images/details/ok.png" alt="">
+                <span>7天可换</span>
+        </li>
+        <li>
+                <img src="/images/details/ok.png" alt="">
+                <span>买赠唯品币</span>
+        </li>
+       
+    </ul>
+</div>
+
+<div class="product-params">
+    <div class="title">商品介绍</div>
+    <ul class="params-list">
+        <li class="item">
+            <span class="hui">风格 :</span>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <span class="xiu">优雅,经典,街头风</span>
+        </li>
+        <li>
+            <span class="hui">流行元素 :</span>
+            &nbsp; &nbsp; &nbsp;
+            <span class="xiu">编织</span>
+        </li>
+        <li>
+            <span class="hui">适用场合 :</span>
+            &nbsp; &nbsp; &nbsp;
+            <span class="xiu">约会</span>
+        </li>
+        <li>
+                <span class="hui">版型 :</span>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <span class="xiu">常规</span>
+        </li>
+    </ul>
+</div>
+<div class="tuwen" >图文详情</div>
+
+<div class="tupian">
+    <div class="tu">
+        <img src="/images/details/tu.jpg" alt="">
+    </div>
+    <div class="tu11">
+        <img src="/images/details/01.jpg" alt="">
+    </div>
+    <div class="tu22">
+        <img src="/images/details/1111.jpg" alt="">
+    </div>
+    <div class="tu33">
+            <img src="/images/details/02.jpg" >
+    </div>
+    <div class="tu44">
+            <img src="/images/details/2222.jpg" >
+    </div>
+</div>
+
+    <div>
+        <div id="back"><img src="/images/details/zhiding.png"></div> 
+    </div>
+</div>
+
+<script>
+var back=document.querySelector('#back')
+        window.onscroll=function(){
+            if(window.scrollY>1000){
+                back.style.display='block'
+            }else{
+                back.style.display='none'
+            }
+        }
+        back.onclick=function(e){
+            window.scrollTo(0,0)
+        }
+        var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        paginationClickable: true  ,
+        // autoplay:3000
+    })
+
+
+
+    // 尺码选择样式改变
+    var grid=document.querySelectorAll('.grid-option2')
+    for(var i=0;i<grid.length;i++){
+        if(grid[i].checked=="checked"){
+            grid[i].classList.add('grid_1')
+        }
+    }
+    //颜色
+    var grid1=document.querySelectorAll('.grid-option')
+    for(var i=0;i<grid1.length;i++){
+        if(grid1[i].checked=="checked"){
+            grid1[i].classList.add('grid_1')
+        }
+    }
+
+    // var details=document.getElementById('details')
+    // details.onclick=function(){
+    //     location.href='/details'
+    // }
+</script>
+
+
 <% include base/foot.ejs%>

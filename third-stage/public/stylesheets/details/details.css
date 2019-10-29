@@ -1,0 +1,304 @@
+.daohang{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    z-index:2
+}
+.kefu{
+    width: 12%;
+    height: 4rem;
+    background: white;
+    margin-left: 1rem;
+    border: 0.1rem #F0F0F0 solid;
+}
+.kefu img{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.gouwuche{
+    width: 30%;
+    height: 4rem;
+    background: white;
+    border: 0.1rem #F0F0F0 solid;
+}
+.gouwuche img{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.jiaru{
+    width: 47%;
+    height: 4rem;
+    background: #DE3D96;
+    margin-right: 1rem;
+    border: 0.1rem #F0F0F0 solid;
+    text-align: center;
+    line-height: 4rem;
+}
+.jiaru span{
+    color: white;
+    font-size: 1.5rem;
+}
+.tubiao{
+    width:100% !important;
+    height:10%;
+    position: absolute;
+    z-index:1;
+    text-align:right;
+    top:1rem !important;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.tubiao1{
+    width: 10%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    border-radius: 30rem;
+    float: left;
+}
+.tubiao1 img{
+    width: 55%;
+    margin-top: 0.9rem;
+    margin-right: 0.8rem !important;
+}
+.tubiao2{
+    width: 25%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    border-radius: 30rem;
+    margin-right: 1rem !important;
+    float: right;
+}
+.tubiao2 img{
+    width: 32%;
+    margin-top: 0.4rem;
+    margin-right: 0.8rem;
+}
+.swiper-container{
+    width:100%;
+}
+.swiper-wrapper{
+    width:100%;
+    height:100%;
+}
+.swiper-pagination{
+    position: absolute;
+    z-index:1;
+    width:65% !important;
+    text-align:right;
+    bottom:0 !important;
+}
+.jiage{
+    width:100%;
+    border-bottom: 0.15rem #F4F4F4 solid;
+    background: #FFFFFF;
+}
+.mingcheng-wai{
+    width:100%;
+    height: 5rem;
+    background: #FFFFFF;
+}
+.mingcheng{
+    width:90%;
+    height: 5rem;
+    margin-left: 5%;
+    background: #FFFFFF;
+}
+.mingcheng-p1{
+    height: 4rem;
+    color: black;
+    line-height: 2rem
+}
+.mingcheng-p2{
+    font-size: 1.2rem;
+}
+.weipinkuaiqiang{
+    width:100%;
+    height: 4rem;
+    text-align: center;
+    background: #FAFAFA;
+    border-bottom: 0.8rem #F3F4F5 solid;
+}
+.weipinkuaiqiang img{
+    width: 5%;
+    margin: 0.3rem 0.3rem 0.3rem 1.5rem;
+}
+.weipinkuaiqiang span{
+    line-height: 3.5rem;
+}
+#back{
+    width:5rem;
+    height:5rem;
+    background:#22262D;
+    position:fixed;
+    top:80%;
+    right:1rem;
+    z-index:2;
+    border-radius:50%;
+    display:none;
+}
+#back img{
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 0.55rem;
+}
+.price-wrap {
+    display:block;
+}
+.price-bar{
+   padding:1rem;
+    display:flex ;
+}
+.feng{
+   padding: 0 0.3rem;
+    background-image: linear-gradient(270deg,#cb78dc,#de3d96);
+    border-radius:10%;
+    color:#FFFFFF;
+}
+.price{
+    font-size: 3rem;  
+}
+.oldprice{
+   color:  #88888E;
+   font-size: 1.5rem;
+   text-decoration: line-through;
+}
+.zhekou{
+    color:  #88888E;
+    font-size: 1.5rem;
+}
+.product{
+     width:100%;
+     height: 11rem;   
+     background: #fff;
+     margin-top: 0.2rem;
+}
+.yanse span{
+    font-size: 1.5rem;
+     color: #000;
+     font-weight: 700;
+     padding:0 1.5rem;
+}
+.grid{
+    width: 100%;
+    height: 4rem;
+    display:flex;
+    background: #fff;
+    justify-content: flex-start;
+    padding:1rem;
+   
+}
+.grid-option{
+    width: 8rem;
+    height: 2rem;
+    border-color: #c5c5c5;
+    border-radius: 10%;
+    padding: 0 0.2rem  0.2rem;
+    margin-right: 0.1rem;
+}
+.grid-option:hover{
+    background:#EC91C3;
+    color:white
+ }
+.grid-option img{
+      height:100%;
+    }
+ .hd{
+     width: 100%;
+     height: 1.5rem;
+ }
+ .hd span {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+    padding:0 1.5rem;
+ }
+ .grid-select{
+     width: 100%;
+     padding:1rem;
+     display:flex;
+ }
+ .grid-option2{
+    width: 4rem;
+    height: 2rem;
+    border: #E2E2E2 1px solid;
+    border-radius: 10%;
+    padding: 0 0.2rem  0.2rem;
+    margin-right: 0.1rem;
+    text-align:center;
+    line-height:2rem;
+    margin-right: 0.5rem;
+ }
+ .grid-option2:hover{
+    background:#EC91C3;
+    color:white
+ }
+ .product-box{
+    width:100%;
+     height: 3rem;   
+     padding:1rem ;
+     background: #fff;
+     margin-top: 0.2rem;
+ }
+ .pei{
+     font-size: 1.5rem;
+     font-weight:700;
+ }
+ .qing{
+    font-size: 1.5rem;
+ }
+ .services-bar{
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+    padding: 1.2rem;
+    display: flex;
+ }
+ .services-list li{
+     float:left;
+     margin:0.5rem;
+     color:#585C64;
+     font-size: 1.3rem;
+ }
+ .product-params{
+     width: 100%;
+     height: 10rem;
+     background: #fff;
+     padding:1rem;
+ }
+ .title{
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
+.hui{
+    color:#98989F;
+    font-size: 1.5rem;
+}
+.xiu{
+    color:#585C64;
+    font-size: 1.5rem;
+}
+.tuwen{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.2rem;
+    padding:1rem;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.tupian img{
+    width: 100%;
+}
