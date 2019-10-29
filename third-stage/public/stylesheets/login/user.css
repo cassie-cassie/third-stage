@@ -73,7 +73,9 @@ a:hover{
 }
 .user{
     width: 37.5rem;
-    height: 8rem;
+    /* height: 8rem; */
+    display:flex;
+    justify-content: space-between;
     background: white;
     border-bottom: 0.13rem #CCCCCC solid;
 }
@@ -115,7 +117,8 @@ a:hover{
 }
 #J-user-menus{
     width: 37.5rem;
-    height: 67.5rem;
+    /* height: 67.5rem; */
+    display:flex;
     background: white;
     border-bottom: 0.13rem #CCCCCC solid;
 }

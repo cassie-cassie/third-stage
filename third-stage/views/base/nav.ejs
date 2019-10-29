@@ -339,17 +339,15 @@ a{
             window.scrollTo(0,0)
         }
        var login=document.querySelector('.login')
-        if(document.cookie!=''){
-            admin.style.display='block',
-            login.style.display='none',
-            location.href='/user'
-        }
-        login.onclick=function(){
+       login.onclick=function(){
             location.href='/login'
         }
-        // var a = document.cookie
-        // console.log(a)
-        // var arr = a.split('=')
-        // console.log(arr)
+        if(document.cookie!=''){
+            admin.style.display='block',
+            login.style.display='none'
+        }
+        admin.onclick=function(){
+            location.href='/user'
+        }
 
 </script>
