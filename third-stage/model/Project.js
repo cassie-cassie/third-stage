@@ -23,7 +23,8 @@ const projectSchema = new mongoose.Schema({
     zhijiang:String,
     list1:Object,
     list2:Object,
-    yanse1:String
+    yanse1:String,
+    desc:String
 });
 
 // 设置Model

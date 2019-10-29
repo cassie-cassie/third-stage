@@ -9,6 +9,7 @@ function showProject(req,res){
         price:"￥169",
         oldprice:"1099",
         zhekou:'2.2折',
+        desc:"2019秋冬女新款系带收腰中长款针织打底毛衣过膝连衣裙",
         list:[{
            img:'/images/details/02.jpg',
         },{
@@ -19,16 +20,6 @@ function showProject(req,res){
            img:'/images/details/05.jpg',
         },{
            img:'/images/details/06.jpg',
-        }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
         }],
         list2:[{
            size:'S'
@@ -44,6 +35,7 @@ function showProject(req,res){
         price:"￥269",
         oldprice:"999",
         zhekou:'2.2折',
+        desc:"【2019冬装新品】衣香丽影长袖针织连衣裙女气质洋气毛衣裙子",
         list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00104832/10000683/20170808-584418856060088320-584418856060088322-1_720x909_70.jpg',
       },{
@@ -55,16 +47,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00104832/10000683/1546157289-584418856060088320-584418856060088322-15_720x909_70.jpg',
       }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -79,6 +61,7 @@ function showProject(req,res){
         price:"￥239",
         oldprice:"1399",
         zhekou:'2.2折',
+        desc:"2019秋冬新款假两件蝴蝶结领拼色中长款毛衣打底针织连衣裙",
         list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/07/35/bb583cc7-ede9-4c57-adba-fc92e9b28963_720x909_70.jpg',
       },{
@@ -90,16 +73,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/07/135/662fe53d-7724-414c-84d5-e1b6f4f663d6_720x909_70.jpg',
       }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -114,6 +87,7 @@ function showProject(req,res){
         price:"￥209",
          oldprice:"1039",
         zhekou:'2.2折',
+        desc:"2019秋冬新款假两件蝴蝶结领拼色中长款毛衣打底针织连衣裙",
         list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/10/130/f0913cd1-ea01-4b78-b851-2d372bd5a9eb_720x909_70.jpg',
       },{
@@ -125,16 +99,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/10/27/059af8b2-0187-47ef-86e9-b41bc2418ed7_720x909_70.jpg',
       }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -149,6 +113,7 @@ function showProject(req,res){
         price:'￥200',
          oldprice:'￥1309',
          zhekou:'1.5折',
+         desc:'100%纯羊毛女士开叉半高领抽条女式连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/103/023a6e0d-820c-4206-a1f2-618a92c47faf_720x909_70.jpg',
          },{
@@ -160,16 +125,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/174/9f84e339-7658-4e20-956d-de8d94f9afe8_720x909_70.jpg',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -184,6 +139,7 @@ function showProject(req,res){
          price:'￥850',
          oldprice:'￥1000',
          zhekou:'1.5折',
+         desc:'海青蓝2019秋冬新款女时尚长袖针织裙高腰系带宽松连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/12/06/101/75f856d1-9821-4e91-af5b-29d5c3c908e0_720x909_70.jpg',
          },{
@@ -195,16 +151,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/09/22/20/4868cd0f-fb66-463d-8bd8-da600142730c_720x909_70.jpg',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -219,6 +165,7 @@ function showProject(req,res){
          price:'￥230',
          oldprice:'￥1799',
          zhekou:'2.2折',
+         desc:'100%纯羊毛经典女式半高领暗纹针织女式连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/06/05/130/8a978207-28b6-4a98-863b-b80563b1e7f2_720x909_70.jpg',
          },{
@@ -230,16 +177,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/06/05/153/510f022d-89d7-4b66-a125-26416fc07b36_720x909_70.jpg',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -254,6 +191,7 @@ function showProject(req,res){
          price:'￥140',
          oldprice:'￥799',
          zhekou:'1.5折',
+         desc:'女优雅直身毛织连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/07/09/56/50170168-f1a3-4028-a8b9-b1272f7fbb23_720x909_70.jpg',
          },{
@@ -265,16 +203,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/07/09/122/9600d837-b46e-4271-a1c0-026d06a4bff3_720x909_70.jpg',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -289,6 +217,7 @@ function showProject(req,res){
          price:'￥230',
          oldprice:'￥1799',
          zhekou:'2.2折',
+         desc:'100%山羊绒 女式V领羊绒连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10014935/2078488319-298440143194734592-298440143194734594-1_720x909_70.jpg!85.webp',
          },{
@@ -300,16 +229,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10014935/526261735-298440143194734592-298440143194734594-16_720x909_70.jpg!85.webp',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -324,6 +243,7 @@ function showProject(req,res){
         price:'￥279',
         oldprice:'￥399',
         zhekou:'2.2折',
+        desc:'中长款卫衣裙森马秋季新款运动风抽绳连帽刺绣连衣裙女',
         list:[{
            img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/149304/2018/0911/111/3032ba96-b048-4503-a0a1-371e56195596_720x909_70.jpg!85.webp',
         },{
@@ -334,16 +254,6 @@ function showProject(req,res){
            img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/149304/2018/0911/1/320aa304-2e11-4469-bac6-8086edc5bfba_720x909_70.jpg!85.webp',
         },{
            img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/149304/2018/0911/160/84d60000-ffa1-448b-ba2e-f3e5aebd2a42_720x909_70.jpg!85.webp',
-        }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
         }],
         list2:[{
            size:'S'
@@ -359,6 +269,7 @@ function showProject(req,res){
          price:'￥104',
          oldprice:'￥359',
          zhekou:'2.9折',
+         desc:'百图betu女装修身显瘦纯色高领打底毛衫裙腰带款针织连衣裙',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/607826/2019/0926/1/2e802fa2-59a8-47db-90bf-992bde28134a_720x909_70.jpg!85.webp',
          },{
@@ -370,16 +281,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/607826/2019/0926/1/2e802fa2-59a8-47db-90bf-992bde28134a_720x909_70.jpg!85.webp',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -394,6 +295,7 @@ function showProject(req,res){
          price:'￥89',
          oldprice:'￥299',
          zhekou:'1.7折',
+         desc:'春款薄款风衣女中长款字母印花韩版宽松连帽拉链外套',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/55/aa7f324a-20e4-4938-9d5c-a50a5e846479_720x909_70.jpg!85.webp',
          },{
@@ -405,16 +307,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/28/9f8b6159-5607-4a9d-aaa9-c25fb0e9463d_720x909_70.jpg!85.webp',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -429,6 +321,7 @@ function showProject(req,res){
          price:'￥132',
          oldprice:'￥1799',
          zhekou:'2.2折',
+         desc:'【大口袋 文艺百搭】秋季新品外套女舒适百搭中长款款风衣',
          list:[{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/30/101/0f995117-124a-4349-af4b-5d42007485fa_720x909_70.jpg!85.webp',
          },{
@@ -440,16 +333,6 @@ function showProject(req,res){
          },{
             img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/08/30/114/0ae2feef-d1c8-4715-b688-afe079841d3a_720x909_70.jpg!85.webp',
          }],
-        list1:[{
-           yanse1:'奶油白',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'杏色',
-           image:'/images/details/xiaotu1.jpg',
-        },{
-           yanse1:'红色',
-           image:'/images/details/01.jpg',
-        }],
         list2:[{
            size:'S'
         },{
@@ -464,6 +347,7 @@ function showProject(req,res){
       price:'￥134',
       oldprice:'￥1799',
       zhekou:'2.2折',
+      desc:'女装外套连帽开衫卫衣女新品',
       list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/04/24/113/fb0762b1-dea7-4ab6-803e-adadcc4ea704_720x909_70.jpg!85.webp',
       },{
@@ -475,16 +359,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/04/24/187/52cc84f6-875f-4a55-8979-a243de07a80d_720x909_70.jpg!85.webp',
       }],
-     list1:[{
-        yanse1:'奶油白',
-        image:'/images/details/xiaotu1.jpg',
-     },{
-        yanse1:'杏色',
-        image:'/images/details/xiaotu1.jpg',
-     },{
-        yanse1:'红色',
-        image:'/images/details/01.jpg',
-     }],
      list2:[{
         size:'S'
      },{
@@ -499,6 +373,7 @@ function showProject(req,res){
       price:'￥138',
       oldprice:'￥688',
       zhekou:'2.0折',
+      desc:'春秋新款韩版女装宽松显瘦中长款翻领格子休闲女士小西装',
       list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/09/18/583c3777-4775-4b29-bc03-d55f34e06dd0_720x909_70.jpg!85.webp',
       },{
@@ -510,16 +385,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/09/110/e58d06c4-b9ec-4546-93da-baed01901228_720x909_70.jpg!85.webp',
       }],
-     list1:[{
-        yanse1:'奶油白',
-        image:'/images/details/xiaotu1.jpg',
-     },{
-        yanse1:'杏色',
-        image:'/images/details/xiaotu1.jpg',
-     },{
-        yanse1:'红色',
-        image:'/images/details/01.jpg',
-     }],
      list2:[{
         size:'S'
      },{
@@ -534,6 +399,7 @@ function showProject(req,res){
    price:'￥150',
    oldprice:'￥799',
    zhekou:'1.6折',
+   desc:'【2019年冬季新品】女款时尚百搭收口袖仿水貂绒无领外套',
    list:[{
       img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00112613/10014498/1340240494-601870257894797397-601870257894797618-1_720x909_70.jpg!85.webp',
    },{
@@ -545,16 +411,6 @@ function showProject(req,res){
    },{
       img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00112613/10014498/1104808118-601870257894797397-601870257894797618-15_720x909_70.jpg!85.webp',
    }],
-  list1:[{
-     yanse1:'奶油白',
-     image:'/images/details/xiaotu1.jpg',
-  },{
-     yanse1:'杏色',
-     image:'/images/details/xiaotu1.jpg',
-  },{
-     yanse1:'红色',
-     image:'/images/details/01.jpg',
-  }],
    list2:[{
       size:'S'
    },{
@@ -569,6 +425,7 @@ function showProject(req,res){
       price:'￥499',
       oldprice:'￥1099',
       zhekou:'2.9折',
+      desc:'【100%羊毛】秋冬女装外套2019新款休闲短款羊毛外套女',
       list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/605176/2019/1012/104/e381ddfd-9fd3-44dc-bed4-2deedb3ee6da_720x909_70.jpg!85.webp',
       },{
@@ -580,16 +437,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/605176/2019/1012/91/59f9c7ad-5b7e-44ab-9b97-4b01af348130_720x909_70.jpg!85.webp',
       }],
-   list1:[{
-      yanse1:'奶油白',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'杏色',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'红色',
-      image:'/images/details/01.jpg',
-   }],
    list2:[{
       size:'S'
    },{
@@ -604,6 +451,7 @@ function showProject(req,res){
       price:'￥179',
       oldprice:'￥1799',
       zhekou:'1.5折',
+      desc:'2019冬季新款仿貂毛长款大衣女气质流苏时尚保暖女式外套',
       list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/06/04/198/21e41ca8-bf3d-4e70-8ce6-cbd598740bcd_720x909_70.jpg!85.webp',
       },{
@@ -615,16 +463,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/06/04/30/500992c1-03e3-4d27-8e23-5d6ecf8a07a0_720x909_70.jpg!85.webp',
       }],
-   list1:[{
-      yanse1:'奶油白',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'杏色',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'红色',
-      image:'/images/details/01.jpg',
-   }],
    list2:[{
       size:'S'
    },{
@@ -639,6 +477,7 @@ function showProject(req,res){
       price:'￥136',
       oldprice:'￥1799',
       zhekou:'2.2折',
+      desc:'女长款连帽侧边织带帽绳新品',
       list:[{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10014935/106801122-243834019925577728-243834029798592513-1_720x909_70.jpg!85.webp',
       },{
@@ -650,16 +489,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00107361/10014935/210632044-243834019925577728-243834029798592513-15_720x909_70.jpg!85.webp',
       }],
-   list1:[{
-      yanse1:'奶油白',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'杏色',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'红色',
-      image:'/images/details/01.jpg',
-   }],
    list2:[{
       size:'S'
    },{
@@ -674,6 +503,7 @@ function showProject(req,res){
       price:'￥150',
       oldprice:'￥1799',
       zhekou:'1.2折',
+      desc:'灯芯绒森马冬季新款连帽外套韩版工装复古潮流学生ins夹克女',
       list:[{
          img:'src="https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/0/fd034615-c98c-4c43-a0a3-0a17d25d77a6_720x909_70.jpg!85.webp"',
       },{
@@ -685,16 +515,6 @@ function showProject(req,res){
       },{
          img:'https://h2a.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/09/18/185/760c4076-22fe-4835-83ff-15518b96f7b8_720x909_70.jpg!85.webp',
       }],
-   list1:[{
-      yanse1:'奶油白',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'杏色',
-      image:'/images/details/xiaotu1.jpg',
-   },{
-      yanse1:'红色',
-      image:'/images/details/01.jpg',
-   }],
    list2:[{
       size:'S'
    },{

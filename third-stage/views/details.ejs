@@ -1,25 +1,31 @@
 <% include base/head.ejs%>
+<style>
+</style>
+<div id='addcar'>
 <link rel="stylesheet" href="/stylesheets/details/details.css">
 <div class="daohang">
     <div class="kefu"><img src="/images/details/kefu.png"></div>
     <div class="gouwuche"><img src="/images/details/gouwuche.png"></div>
-    <div class="jiaru"><span>加入购物车</span></div>
+    <div class="jiaru"  id="<%= data[0].id %>"><span>加入购物车</span></div>
 </div>
-<div class="swiper-container">
+<div class="swiper-container" >
         <div class="swiper-wrapper">
            <% for(var i=0;i<data[0].list.length;i++){ %>
                 <div class="swiper-slide"><a href=""><img src=" <%= data[0].list[i].img%>" width="100%"></img></a></div>
-               
             <% } %>
         </div>
         <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
         <div class="tubiao">
             <div class="tubiao1"><img src="/images/details/fanhui.png"></div>
-            <div class="tubiao2"><img src="/images/details/shoucang.png"><img src="/images/details/zhuanfa.png"></div>
+            <div class="tubiao2"> 
+                <img src="/images/details/heart.png" id="shoucanghou" style="display: none;">
+                <img src="/images/details/shoucang.png" id="shoucang">
+                <img src="/images/details/zhuanfa.png" id="fenxiang">
+            </div>
         </div>
 </div>
     <div class="jiage">
-        <div class="price-wrap">
+        <div class="price-wrap" >
             <div class="price-bar"> 
                <span class="feng">疯抢价</span> 
                 <% for(var i=0;i<data.length;i++){%>
@@ -32,31 +38,19 @@
     </div>
 <div class="mingcheng-wai">
     <div class="mingcheng">
-        <p class="mingcheng-p1">衣香丽影 | 【2019冬装新品】衣香丽影长袖针织连衣裙女气质洋气毛衣裙子</p>
+        <% for(var i=0;i<data.length;i++){ %>
+        <p class="mingcheng-p1"><%= data[i].desc%></p>
+        <% } %>
     </div>
 </div>
 
 <div class="product">
-    <div class="color">
-        <div class="yanse">
-            <span> 颜色</span>
-        </div>
-        <div class="grid">
-            <% for(var i=0;i<data[0].list1.length;i++){ %>
-            <div class="grid-option">
-                <img src="<%= data[0].list1[i].image%>" alt="">
-                <span ><%= data[0].list1[i].yanse1%></span>
-            </div>
-          
-            <% } %>
-        </div>
-    
     <div class="size">
         <div class="hd">
             <span>尺码</span>
         </div>   
        <div class="seclect">
-           <div class="grid-select">
+           <div class="grid-select" id='default'>
                 <% for(var i=0;i<data[0].list2.length;i++){ %>
                 <button class="grid-option2"> <%= data[0].list2[i].size%> </button>
                
@@ -64,18 +58,6 @@
             </div>
         </div>
     </div>
-
-    </div>
-
-<div class="product-address">
-    <div class="product-box">
-        <span class="pei">配送至</span>&nbsp;&nbsp;
-        <span class="qing">请选择配送地址 <img src="/images/details/address.png" alt=""></span>
-        <i class="fa fa-address-icon icon-gps"></i>
-    </div>
-</div>
-
-
 <div class="services-bar">
     <ul class="services-list">
         <li class="service">
@@ -83,22 +65,21 @@
             <span>唯品会自营</span>
         </li>
         <li>
-                <img src="/images/details/ok.png" alt="">
-                <span>7天无理由退货</span>
+            <img src="/images/details/ok.png" alt="">
+            <span>7天无理由退货</span>
         </li>
         <li>
-                <img src="/images/details/ok.png" alt="">
-                <span>退货返10元唯品币</span>
+            <img src="/images/details/ok.png" alt="">
+            <span>退货返10元唯品币</span>
         </li>
         <li>
-                <img src="/images/details/ok.png" alt="">
-                <span>7天可换</span>
+            <img src="/images/details/ok.png" alt="">
+            <span>7天可换</span>
         </li>
         <li>
-                <img src="/images/details/ok.png" alt="">
-                <span>买赠唯品币</span>
+            <img src="/images/details/ok.png" alt="">
+            <span>买赠唯品币</span>
         </li>
-       
     </ul>
 </div>
 
@@ -140,10 +121,10 @@
         <img src="/images/details/1111.jpg" alt="">
     </div>
     <div class="tu33">
-            <img src="/images/details/02.jpg" >
+        <img src="/images/details/02.jpg" >
     </div>
     <div class="tu44">
-            <img src="/images/details/2222.jpg" >
+        <img src="/images/details/2222.jpg" >
     </div>
 </div>
 
@@ -151,8 +132,40 @@
         <div id="back"><img src="/images/details/zhiding.png"></div> 
     </div>
 </div>
+</div>
 
+
+    <!-- 分享链接 -->
+    <div class='fenxiang'>
+        <div class='yingcang'>
+            <div class='yc-top'>
+                <div class='flex-1'>
+                    <div><i class='fa fa-weixin weixin'></i></div>
+                    <p>微信好友</p>
+                </div>
+                <div class='flex-1'>
+                    <div><img class="pengyouquan" src="/images/details/yhqpyq.png" alt=""></div>
+                    <p>朋友圈</p>
+                </div>
+                <div class='flex-1'>
+                    <div><i class='fa fa-weibo weibo'></i></div>
+                    <p>新浪微博</p>
+                </div>
+                <div class='flex-1'>
+                    <div><i class='fa fa-qq qq'></i></div>
+                    <p>QQ</p>
+                </div>
+            </div>
+            <button class="quxiao">取消</button>
+        </div>
+    </div>
 <script>
+var xhr;
+if(XMLHttpRequest){
+    xhr= new XMLHttpRequest()
+}else{
+    xhr= new ActiveXObject("Microsoft.XMLHttp")
+}
 var back=document.querySelector('#back')
         window.onscroll=function(){
             if(window.scrollY>1000){
@@ -174,24 +187,71 @@ var back=document.querySelector('#back')
 
     // 尺码选择样式改变
     var grid=document.querySelectorAll('.grid-option2')
+    grid[0].classList.add('checked')
     for(var i=0;i<grid.length;i++){
-        if(grid[i].checked=="checked"){
-            grid[i].classList.add('grid_1')
+        grid[i].onclick=function(){
+            for(var j = 0 ;j<grid.length;j++){
+            grid[j].classList.remove('checked')
         }
-    }
-    //颜色
-    var grid1=document.querySelectorAll('.grid-option')
-    for(var i=0;i<grid1.length;i++){
-        if(grid1[i].checked=="checked"){
-            grid1[i].classList.add('grid_1')
+            this.classList.add('checked')
         }
     }
 
-    // var details=document.getElementById('details')
-    // details.onclick=function(){
-    //     location.href='/details'
-    // }
+    //加入购物车
+    var sizechuan = document.querySelector('.checked').innerHTML
+    var jiaru=document.querySelector('.jiaru')
+    console.log(jiaru.id)
+    jiaru.onclick=function(){
+        // console.log(sizechuan)
+        xhr.open('post','/detail',true)
+        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
+        xhr.send(`sizechuan=${sizechuan}&&id=${jiaru.id}`)
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 &&xhr.status==200){
+               
+            }   
+        }
+        // console.log(this.id)
+        location.href='/shopping/fullcar'
+    }
+    //返回上一页
+    var tubiao1=document.querySelector('.tubiao1')
+    tubiao1.onclick=function(){
+        history.back()
+    }
+
+
+
+
+
+
+
+     //收藏
+     var shoucanghou = document.querySelector('#shoucanghou')
+    var shoucang = document.querySelector('#shoucang')
+        shoucang.onclick = function(){
+            shoucanghou.style.display = 'block'
+            shoucang.style.display = 'none'
+        }
+        shoucanghou.onclick = function(){
+            shoucang.style.display = 'block'
+            shoucanghou.style.display = 'none'
+        }
+
+
+        
+//分享
+    var fxview = document.querySelector('.fenxiang')
+    var fenxiang=document.querySelector('#fenxiang')
+    var quxiao=document.querySelector('.quxiao')
+    fenxiang.onclick=function(){
+        fxview.style.display='block'
+    }
+    quxiao.onclick=function(){
+        fxview.style.display='none'
+    }
+    
 </script>
-
+<!-- <script src="/javascripts/ajax/details.js"></script> -->
 
 <% include base/foot.ejs%>
