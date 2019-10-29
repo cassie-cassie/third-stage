@@ -240,87 +240,87 @@ function showclassify(req,res){
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"母婴",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(39).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(40).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(41).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"运动户外",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(42).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(43).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(44).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"手机数码",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(45).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(46).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(47).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"家用电器",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(48).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(49).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(50).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"家居家纺",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(51).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(52).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(53).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"生活超市",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(54).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(55).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(56).jpg",
             title:"连衣裙"
         }]
     },{
-        h2:"品质精选",
+        h2:"唯品国际",
         xqimg:[{
-            img:"/images/classify/p(14).jpg",
+            img:"/images/classify/p(1).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(15).jpg",
+            img:"/images/classify/p(28).jpg",
             title:"连衣裙"
         },{
-            img:"/images/classify/p(16).jpg",
+            img:"/images/classify/p(36).jpg",
             title:"连衣裙"
         }]
     }]
