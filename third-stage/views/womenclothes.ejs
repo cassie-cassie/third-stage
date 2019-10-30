@@ -25,7 +25,7 @@
             </div>
             <div class="opennew-bottom" style="padding:0 5%;">
                 <span class="womenclothes-sell"><%= data[0].largelist[i].sell%></span>
-                <span class="womenclothes-sell-go">进入会场</span>
+                <span class="womenclothes-sell-go clothinggo">进入会场</span>
             </div>
         </div>
         <% } %>
@@ -40,6 +40,16 @@
                 location.href=`/clothing/${this.id}`
             }
         }
+
+        // 下方店铺跳连接
+        var clothinggo=document.querySelectorAll('.clothinggo')
+        for(var i=0;i<clothinggo.length;i++){
+            clothinggo[i].onclick=function(){
+                location.href='/clothing/1'
+                // alert(1)
+            }
+        }
+      
     </script>
     
 <% include base/foot.ejs%>
