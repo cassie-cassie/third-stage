@@ -1,0 +1,117 @@
+<% include base/head.ejs%>
+ <link rel="stylesheet" href="/stylesheets/lastcrazy/UserAddress.css">
+<!-- 收货地址列表 -->
+<div class="Addlist">
+    <div class="k4-top">
+        <p class="fa fa-angle-left" id="k4-topp"></p>
+        <p>收货地址列表</p>
+        <p class="fa fa-home backindex"></p>
+    </div>
+    <div class="address">
+        <div class="addinfor">
+            <h4>
+                <span>姓名</span>
+                <span>13254684579</span>
+            </h4>
+            <p>山西省晋中市榆次区 米加U聚鑫商务</p>
+            <p>收货时间</p>
+            <a class="delete">删除</a>
+            <a class="xiugai">修改</a>
+        </div>
+        <div class="button xiugai"  >
+            <span>添加收货地址</span>
+        </div>
+    </div>
+    <div class="mengban">
+        <div class="tankuang">
+            <div>你要删除该地址吗？</div>
+            <button class="quxiao">取消</button>
+            <button>确认</button>
+        </div>
+
+    </div>
+</div>
+    
+    <!-- 添加修改地址列表 -->
+    <div class="changeAdd">
+        <div class="k4-top">
+            <p class="fa fa-spinner" id="k4-topp" ></p>
+            <p>修改收货地址</p>
+            <p class="fa fa-home backindex"></p>
+        </div>
+        <div class="xgcontent">
+            <div>
+                <span>收货人</span>
+                <input type="text" placeholder="请输入姓名">
+            </div>
+            <div>
+                <span>手机号</span>
+                <input type="text" placeholder="请输入正确的手机号">
+            </div>
+            <div>
+                <span>收货时间</span>
+                <input type="text" placeholder="收货时间不限">
+            </div>
+            
+        </div>
+        <div class="xgcontent">
+            <div id="suozaiadd">
+                <span>所在地址</span>
+                <input type="text" placeholder="收货时间不限">
+            </div>
+            <div id="xiangxiadd">
+                <span>详细地址</span>
+                <textarea name="" id="" cols="30" rows="5" placeholder="请具体到街道、门牌号等"></textarea>
+            </div>
+        </div>
+        <div class="sure">
+            <button>确定</button>
+        </div>
+    </div>
+    <script>
+    // 返加上一界面
+    var back = document.querySelector('#k4-topp')
+        back.onclick = function(){
+            history.go(-1);
+        }
+
+    // 添加或修改
+    var xiugai = document.querySelectorAll('.xiugai')
+    var changeAdd = document.querySelector('.changeAdd')
+    var Addlist = document.querySelector('.Addlist')
+    var sure = document.querySelector('.sure')
+    for(var i=0;i<xiugai.length;i++){
+        xiugai[i].onclick = function(){
+            changeAdd.style.display = 'block'
+            Addlist.style.display = 'none'
+        }
+    }
+        sure.onclick = function (){
+            changeAdd.style.display = 'none'
+            Addlist.style.display = 'block'
+        }
+
+    // 蒙版
+    var quxiao = document.querySelector('.quxiao')
+    var shanchu = document.querySelector('.delete')
+    var mengban = document.querySelector('.mengban')
+        shanchu.onclick = function(){
+            mengban.style.display= 'block'
+        }
+        quxiao.onclick = function(){
+            mengban.style.display = 'none'
+        }
+
+        
+     // 左边箭头右边房子回当前页
+     var backindex=document.querySelectorAll('.backindex')
+        for(var i=0;i<backindex.length;i++){
+            backindex[i].onclick=function(){
+                location.href='/shop/index'
+            }
+        }
+
+    
+
+    </script>
+<% include base/foot.ejs%>
