@@ -1,0 +1,165 @@
+.k4-top{
+    height: 45px;
+    background: #fbfbfa;
+    padding-right:15px;
+}
+#k4-topp{
+    padding:5px 0px 0px 10px;
+    font-size: 32px;
+}
+.k4-top>p{
+    float: left;
+    color: black;
+}
+.k4-top>p:nth-child(2){
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 31%;
+}
+.k4-top>p:nth-child(3){
+    float: right;
+    font-size: 29px;
+    line-height: 45px;
+}
+
+/* 地址部分 */
+.address{
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    width: 100%;
+    background: #ffffff;
+}
+.address div:first-child{
+    height:12.6rem;
+    width: 100%;
+    box-sizing: border-box;
+    /* background: lightpink; */
+}
+.addinfor>h4{
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.addinfor>a{
+    float: right;
+    margin: 0rem 1rem;
+}
+.addinfor>p{
+    color: #585c64;
+}
+.addinfor>h4>span{
+    font-size: 14px;
+    color:black;
+    margin-right: 3rem;
+}
+.address div:last-child{
+    height: 85px;
+    width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+.button>span{
+    line-height: 4.7rem;
+    width: 80%;
+    height: 100%;
+    padding: 1rem 6rem;
+    background: white;
+    color: #585c64;
+    border: #ccc solid 0.1rem;
+}
+
+/* 蒙版 */
+.mengban{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+}
+.tankuang{
+    width: 70%;
+    height:15%;
+    left: 15%;
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    top: 40%;
+    overflow: hidden;
+}
+.tankuang>div{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    border-bottom: #ccc solid 1px;
+    color: black;
+    padding: 1.5rem;
+}
+.tankuang>button{
+    height: 50%;
+    width: 50%;
+    box-sizing: border-box;
+    color: #157efb;
+    font-size: 18px;
+    border-radius:0px;
+    border: none;
+    border-right: #ccc solid 1px;
+    float: left;
+}
+
+/* .Addlist{
+    display: none;
+} */
+.changeAdd{
+    display: none;
+}
+
+/* 添加修改地址列表 */
+.xgcontent{
+    width: 100%;
+    margin-top:1rem;
+}
+.xgcontent>div{
+    line-height: 4rem;
+    width: 100%;
+    padding: 1rem  1.5rem;
+    background: white;
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.xgcontent>div>span{
+    width: 20%;
+    
+}
+.xgcontent>div>input{
+    /* line-height: 5rem; */
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+#xiangxiadd>textarea{
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+}
+.sure{
+    position: absolute;
+    width: 100%;
+    height: 9rem;
+    background: white;
+    bottom: 0;
+    padding: 2rem 1.5rem;
+}
+.sure>button{
+    width: 100%;
+    height: 100%;
+    background: #de3d96;
+    color: white;
+    font-size: 16px;
+}
