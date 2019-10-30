@@ -9,6 +9,9 @@ Router.get('/index',require('../controller/nav.js'))
 // 搜索路由
 Router.get('/search',require('../controller/search'))
 
+// 用户地址路由
+Router.get('/UserAddress ',require('../controller/UserAddress'))
+
 // 动态路由   首页的10个分类  女装 男装等
 Router.get('/index/:type',require('../controller/index/womenclothes'))
 
