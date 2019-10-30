@@ -29,7 +29,7 @@
             <div class="price-bar"> 
                <span class="feng">疯抢价</span> 
                 <% for(var i=0;i<data.length;i++){%>
-                <span class="price"><%= data[i].price %></span>&nbsp;
+                <span class="price">￥<%= data[i].price %></span>&nbsp;
                 <span class=" oldprice"><%= data[i].oldprice %></span>&nbsp;
                 <span class="zhekou"><%= data[i].zhekou %></span>
                 <% } %>
@@ -197,28 +197,64 @@ var back=document.querySelector('#back')
         }
     }
 
-    //加入购物车
+    //点击加入购物车
     
     var jiaru=document.querySelector('.jiaru')
     console.log(jiaru.id)
 
     jiaru.onclick=function(){
         //判断权限
-      
-        console.log(document.cookie)
-        var sizechuan = document.querySelector('.checked').innerHTML //先点击再拿尺码选中状态
-        // console.log(sizechuan)
-        xhr.open('post','/detail',true)
-        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
-        xhr.send(`sizechuan=${sizechuan}&&id=${jiaru.id}`)
-        xhr.onreadystatechange=function(){
-            if(xhr.readyState==4 &&xhr.status==200){
+        // console.log(document.cookie)
+       
+        var str = document.cookie
+        var arr = str.split(';')
+        var boo = false
+        for( var i=0;i<arr.length;i++){
+            arr[i] = arr[i].trim().split('=')
+            if(arr[i][0] === '_id'){
+                var sizechuan = document.querySelector('.checked').innerHTML //先点击再拿尺码选中状态
+                // console.log(sizechuan)
+                xhr.open('post','/detail',true)
+                xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
+                xhr.send(`sizechuan=${sizechuan}&&id=${jiaru.id}`)
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4 &&xhr.status==200){
+                        console.log('传数据')
+                        layer.msg("加入购物车成功")
+                    }   
+                   
+                }
+                boo = true
                
-            }   
+            }
         }
-        // console.log(this.id)
-        location.href='/shopping/fullcar'
+        // 判断用户名是否有，如果没有，回到登录界面重新登录
+        if(!boo){
+            location.href='/login_user'
+        }
+        
     }
+
+    // 购物车
+    var gouwuche=document.querySelector('.gouwuche')
+    gouwuche.onclick=function(){
+        var str = document.cookie
+        var arr = str.split(';')
+        var boo = false
+        for(var i=0;i<arr.length;i++){
+            arr[i] = arr[i].trim().split('=')
+            if(arr[i][0] === '_id'){
+                location.href='/shopping/fullcar'
+                boo = true
+            }
+        }
+        // 判断用户名是否有，如果没有，回到登录界面重新登录
+        if(!boo){
+            location.href='/login_user'
+        }
+    }
+        
+    
     //返回上一页
     var tubiao1=document.querySelector('.tubiao1')
     tubiao1.onclick=function(){
@@ -231,30 +267,30 @@ var back=document.querySelector('#back')
 
 
 
-     //收藏
-     var shoucanghou = document.querySelector('#shoucanghou')
-    var shoucang = document.querySelector('#shoucang')
-        shoucang.onclick = function(){
-            shoucanghou.style.display = 'block'
-            shoucang.style.display = 'none'
-        }
-        shoucanghou.onclick = function(){
-            shoucang.style.display = 'block'
-            shoucanghou.style.display = 'none'
-        }
+    //  //收藏
+    //  var shoucanghou = document.querySelector('#shoucanghou')
+    // var shoucang = document.querySelector('#shoucang')
+    //     shoucang.onclick = function(){
+    //         shoucanghou.style.display = 'block'
+    //         shoucang.style.display = 'none'
+    //     }
+    //     shoucanghou.onclick = function(){
+    //         shoucang.style.display = 'block'
+    //         shoucanghou.style.display = 'none'
+    //     }
 
 
         
-//分享
-    var fxview = document.querySelector('.fenxiang')
-    var fenxiang=document.querySelector('#fenxiang')
-    var quxiao=document.querySelector('.quxiao')
-    fenxiang.onclick=function(){
-        fxview.style.display='block'
-    }
-    quxiao.onclick=function(){
-        fxview.style.display='none'
-    }
+// //分享
+//     var fxview = document.querySelector('.fenxiang')
+//     var fenxiang=document.querySelector('#fenxiang')
+//     var quxiao=document.querySelector('.quxiao')
+//     fenxiang.onclick=function(){
+//         fxview.style.display='block'
+//     }
+//     quxiao.onclick=function(){
+//         fxview.style.display='none'
+//     }
     
 </script>
 <!-- <script src="/javascripts/ajax/details.js"></script> -->

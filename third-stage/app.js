@@ -49,6 +49,9 @@ app.post('/submit',require('./controller/submit'))
 // 配置功能路由
 app.post('/login',require('./api/login'))  
 app.post('/detail',require('./api/Car')) //详情界面提交内容到购物车
+app.post('/del',require('./api/del'))  // 删除购物车内容
+app.post('/dingdan',require("./api/dingdan")) //订单界面
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

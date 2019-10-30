@@ -12,10 +12,10 @@ function get(){
     for( var i=0;i<arr.length;i++){
         // trim()删除空格
         arr[i] = arr[i].trim().split('=')
-        if(arr[i][0] === 'blog-admin-cookie'){
+        if(arr[i][0] === '_id'){
             // unescape()字符串解码
-            var user = JSON.parse(unescape(arr[i][1]))
-            $('#user').text(user.username)
+            // var user = JSON.parse(unescape(arr[i][1]))
+            // $('#user').text(user.username)
             boo = true
         }
     }
