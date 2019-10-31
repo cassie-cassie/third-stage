@@ -6,9 +6,9 @@
     <div class="top-content">购物车</div>
 </div>
 <!-- 商品列表 -->
-<div class="contentbox">
+<div class="contentbox" >
     <% for(var i=0;i<cargoods.length;i++){%>
-        <div class="content">
+        <div class="content" id=<%=cargoods[i].p_id%>>
                 <div class="content-head"><%=cargoods[i].goodshop%></div>
                 <div class="content-body">
                     <div class="content-left">
@@ -23,8 +23,8 @@
                                 <div class="goodsdesc"><%=cargoods[i].goodssize%></div>
                                 <!-- 价格 -->
                                 <div class="pricebox">
-                                    <p class="goodsprice"><span class="danjia"><%=cargoods[i].goodsprice%></span></p>
-                                    <p class="jinger">123</p>
+                                    <p class="goodsprice">￥<span class="danjia"><%=cargoods[i].goodsprice%></span></p>
+                                    <p class="jinger"><%=cargoods[i].goodsprice%></p>
                                     <!-- 按钮 -->
                                     <div class="btnbox">
                                         <button class="numminus">-</button>
@@ -53,7 +53,7 @@
             <!-- 总计 -->
             <div class="totalbox">
                     <div class="total">
-                            合计：<span class="totalpricebox">¥&nbsp;<span id="totalprice">0</span></span>
+                            合计：<span class="totalpricebox">¥&nbsp;<span id="totalprice">0.00</span></span>
                     </div>
                     <div class="buybox">
                         <!-- 总件数 -->
@@ -69,6 +69,20 @@ var backindex=document.querySelector('.backindex')
 backindex.onclick=function(){
     history.back()
 }
+//权限判断
+var str = document.cookie
+var arr = str.split(';')
+var boo = false
+for( var i=0;i<arr.length;i++){
+    arr[i] = arr[i].trim().split('=')
+    if(arr[i][0] === '_id'){
+        boo = true
+    }
+}
+// 判断用户名是否有，如果没有，回到登录界面重新登录
+if(!boo){
+    location.href='/login_user'
+}
 
  var buybox=document.querySelector(".buybox")
  var jianshu=document.querySelector(".jianshu")
@@ -81,10 +95,14 @@ backindex.onclick=function(){
  var totalprice=document.querySelector('#totalprice') //总价格
  var quanxuan=document.getElementById("quanxuan") //全选
  var xuan=document.getElementsByClassName('xuan') // 选择按钮
- var buy=document.querySelector(".buybox")
- buy.onclick=function(){
-    location.href='/checkout'
-}
+
+
+ var xhr;
+    if(XMLHttpRequest){
+        xhr= new XMLHttpRequest()
+    }else{
+        xhr= new ActiveXObject("Microsoft.XMLHttp")
+    }
  // 数量-
 
 for(i=0;i<down.length;i++){
@@ -142,6 +160,7 @@ for(var i=0;i<ipt.length;i++){
     }
 }
 //全选
+
 quanxuan.onclick=function(){
     allnum.innerHTML=0
     totalprice.innerHTML='0.00'
@@ -160,9 +179,12 @@ quanxuan.onclick=function(){
             totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[i].innerHTML)
         }
     }
+    
 }
  
+// 商品单选按钮
 for(j=0;j<xuan.length;j++){
+
     xuan[j].a=j
     xuan[j].onclick=function(){
         if(this.checked==false){
@@ -170,22 +192,71 @@ for(j=0;j<xuan.length;j++){
             jianshu.classList.remove("white")
             allnum.innerHTML=parseInt(allnum.innerHTML)-parseInt(ipt[this.a].value)
             totalprice.innerHTML=parseInt(totalprice.innerHTML)-parseInt(jingers[this.a].innerHTML)
+
         }else{
-            buybox.classList.add('add')
-            jianshu.classList.add("white")
-            allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[this.a].value)
-            totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[this.a].innerHTML)
+             buybox.classList.add('add')
+             jianshu.classList.add("white")
+             allnum.innerHTML=parseInt(allnum.innerHTML)+parseInt(ipt[this.a].value)
+             totalprice.innerHTML=parseInt(totalprice.innerHTML)+parseInt(jingers[this.a].innerHTML)
+            
+            
+            
         }
     }
 }
 
 //删除
-var remove=document.querySelector(".remove")
+var remove=document.getElementsByClassName("remove")
 for(var i=0;i<remove.length;i++){
-    remove[i].a=i
     remove[i].onclick=function(){
         //清除数据库的内容
+        xhr.open('post','/del',true)
+        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
+        xhr.send(`idchuan=${this.parentElement.parentElement.parentElement.parentElement.id}`)
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 &&xhr.status==200){
+                console.log('删除数据')
+                layer.msg("删除成功")
+            }   
+            
+        }
+        this.parentElement.parentElement.parentElement.parentElement.parentElement.remove(this.parentElement.parentElement.parentElement.parentElement)
     }
+}
+
+//去结算
+var arr=[]
+var arrid = []
+var arrprice=[]
+var arrnum=[]
+buybox.onclick=function(){
+    for(var i=0;i<xuan.length;i++){
+        if(xuan[i].checked == true){
+            arr.push(i)
+        }
+    }
+    for(var i = 0;i<arr.length;i++){
+        arrid.push(xuan[arr[i]].parentElement.parentElement.parentElement.id)
+        // arrprice.push(jingers[arr[i]].innerHTML)  //
+        arrnum.push(ipt[arr[i]].value) // 商品件数
+    }
+    console.log(arrid)
+    console.log(arrprice)
+    console.log(arrnum)
+    xhr.open('post','/dingdan',true)
+    xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
+    xhr.send(`arrid=${arrid}&&totalprice=${totalprice.innerHTML}&&arrnum=${arrnum}`)
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4 &&xhr.status==200){
+            console.log('购物车传数据')
+        }   
+        
+    }
+
+
+
+    location.href='/checkout'
+
 }
 </script>
 <% include base/foot.ejs %>

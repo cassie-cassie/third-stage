@@ -6,8 +6,10 @@ function login(req,res){
     User.findOne({username:req.body.username,password: req.body.password})
         .then((result)=>{
             if(result){
+                console.log(result)
                 let data = {"username": req.body.username}
-                res.cookie('blog-admin-cookie',JSON.stringify(data));
+                var a = result.id.toString()
+                res.cookie('_id',a);
                 res.json({
                     code:1,
                     msg: '登录成功'

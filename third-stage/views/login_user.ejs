@@ -56,15 +56,22 @@
                 if (xhr.readyState == 4 && xhr.status ==200) {
                     var data = JSON.parse(xhr.responseText)
                     if (data.code) {
-                        alert('注册成功')
-                        location.href = "/shop/login";
+                        layer.msg('注册成功')
+                        setTimeout(()=>{
+                            location.href = "/shop/login";
+                        },2000)
+                     
                     }else{
-                        alert('用户名已存在！')
-                        
+                        layer.msg('用户名已存在！') 
                     }
                 }
             }
         }
+        var x=document.querySelector('.x')
+        x.onclick=function(){
+            history.back()
+        }
+ 
     </script>
-<!-- <script src="/javascripts/ajax/login.js"></script> -->
+
 <% include base/foot.ejs %>

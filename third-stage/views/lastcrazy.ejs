@@ -5,7 +5,7 @@
     <div class="top">
         <img src="/images/lastcrazy/top.webp" alt="" width="100%" height="100%">
     </div>
-    <div class="content">
+    <div class="content" >
         <img src="/images/lastcrazy/content.webp" alt="" width="100%" height="100%">
         <div class="smwy"></div>
         <div class="smwy"></div>
@@ -94,6 +94,23 @@
         }
         back.onclick=function(e){
             window.scrollTo(0,0)
+        }
+
+
+
+        // 点击图片跳转到女装
+
+        var content=document.querySelector('.content')
+        content.onclick=function(){
+            location.href='/index/womenclothes'
+        }
+
+        // 点击男装跳转到男装
+        var sx2=document.querySelectorAll('.sx2-1')
+        for(var i=0;i<sx2.length;i++){
+            sx2[i].onclick=function(){
+                location.href='/index/manclothes'
+            }
         }
     </script>
     

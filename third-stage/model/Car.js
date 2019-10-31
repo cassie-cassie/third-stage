@@ -10,7 +10,8 @@ const CarSchema = new mongoose.Schema({
     goodsdesc:String, // 商品尺码
     goodsprice:String,// 商品价格
     goodssize:String,//商品尺寸
-    username:String//用户名字
+    username:String,//用户名字
+    p_id:String//商品原本的id  100 102 ...
 });
 
 // 设置Model

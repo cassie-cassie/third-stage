@@ -1,31 +1,30 @@
 const Car = require('../model/Car')
 const Project = require('../model/Project')
-const User=require('../model/User')
+
 
 function showCar(req,res){
-      console.log('1')
-//      console.log(req.body.sizechuan)
-//      console.log(req.body.id,'----------------------------------req.body.id')
-      // User.find({'username':})
-      // var a = await Project.find('id':req.body.id)
+      var str = req.cookies
       Project.find({'id':req.body.id}).then(async (results)=>{
             console.log(req.body.sizechuan)
+            console.log(req.body.id)
             var data = {
                   // 'goddsshop':results[0].shopname
-                  'goodsimg':results[0].img,
+                  'goodsimg':results[0].list[0].img,
                   'goodsname':results[0].desc,
                   'goodsprice':results[0].price,
-                  'goodssize':req.body.sizechuan
+                  'goodssize':req.body.sizechuan,
+                  "username":str._id,
+                  "p_id":req.body.id
             }
             Car.create(data).then((alldata)=>{
                   if(alldata){
-                        res.send('添加成功')
+                       console.log("详情页商品已经加入购物车")
                   }else{
                        console.log(err)
                   }
            })
 
       })
-      
+      res.end()
 }
 module.exports = showCar

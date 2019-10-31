@@ -3,9 +3,11 @@
 <link rel="stylesheet" href="/stylesheets/index/index.css">
     <!-- 今日推荐 -->
 <div id="index">
+    <!-- 首页第一个图片 -->
     <div class="vip">
         <img src="/images/index/vip.jpg" alt="">
     </div>
+    <!-- 首页第二个图片 -->
     <div class="vip-goods">
         <div class="vip-goods-desc">
             <img src="/images/index/vipgoods1 (1).jpg" alt="">
@@ -17,6 +19,7 @@
             <img src="/images/index/vipgoods1 (3).jpg" alt="">
         </div>
     </div>
+    <!-- 10个小图标对应的分类  跳转到womenclothes界面对应的界面   动态路由-->
     <div class="index-list clear">
         <div class="index-desc clear">
             <% for(var i =0;i<indeximage.length;i++){%>
@@ -34,7 +37,7 @@
             <p class="fastbuy-desc2">美好生活抢先到<i class="fa fa-angle-right" style="margin-left: 0.5rem;"></i></p>
         </div>
         <div class="fastbuy-bottom">
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 fastbuygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (1).jpg" alt="">
                 </div>
@@ -43,7 +46,7 @@
                 </div>
                 <p style="color:#DE3E97;font: size 16px;">￥58</p>
             </div>
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 fastbuygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (2).jpg" alt="">
                 </div>
@@ -52,7 +55,7 @@
                 </div>
                 <p style="color:#DE3E97;font: size 16px;">￥50</p>
             </div>
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 fastbuygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (3).jpg" alt="">
                 </div>
@@ -61,7 +64,7 @@
                 </div>
                 <p style="color:#DE3E97;font: size 16px;">￥49</p>
             </div>
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 fastbuygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/fastbuy (4).jpg" alt="">
                 </div>
@@ -79,19 +82,19 @@
             <p class="fastbuy-desc2">早10晚8上新 150+品牌疯抢中<i class="fa fa-angle-right" style="margin-left: 0.5rem;"></i></p>
         </div>
         <div class="fastbuy-bottom">
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 lastcrazygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/lastcrazy (1).jpg" alt="">
                 </div>
                <p style="margin-top:0.5rem;"><span style="padding:0.2rem;border-radius:0.5rem;background:-webkit-linear-gradient(left,#DC429C,#CC72D5);font-size:10px;color:#fff">疯抢价</span><span style="margin-left:0.2rem;font-size:13px;color:#000">￥488</span></p>
             </div>
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 lastcrazygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/lastcrazy (2).jpg" alt="">
                 </div>
                 <p style="margin-top:0.5rem;"><span style="padding:0.2rem;border-radius:0.5rem;background:-webkit-linear-gradient(left,#DC429C,#CC72D5);font-size:10px;color:#fff">疯抢价</span><span style="margin-left:0.2rem;font-size:13px;color:#000">￥174</span></p>
             </div>
-            <div class="fastbuy-bottom1">
+            <div class="fastbuy-bottom1 lastcrazygo">
                 <div class="fastbuy-bottom1-desc">
                     <img width="100%" src="/images/index/lastcrazy (3).jpg" alt="">
                 </div>
@@ -102,23 +105,22 @@
     <!-- 今日特卖10点上新 opennew-->
     <p style="margin:0 auto;width:100%;text-align:center;font-size:16px;font-weight:600;color:#000;margin-bottom:1rem;">今日特卖 10点上新</p>
     <% for(var i=0;i<data.length;i++){%>
-    <div class="opennew">
+    <div class="opennew opengo">
         <div class="opennew-top">
             <img width="100%" src=<%= data[i].img%> alt="">
         </div>
         <div class="clear" style="margin:0.2rem 0">
             <p class="opennew-goodsname"><span><%= data[i].goodsname%></span></p>
-            <!-- <p class="opennew-times">还剩<span id="timer"></span></p> -->
-            <p class="opennew-times">还剩<span class="showInterval">12</span>:<span class="showInterval">34</span>:<span class="showInterval">56</span></p>
+            <!-- <p class="opennew-times">还剩<span class="timer"></span></p> -->
+            <!-- <p class="opennew-times">还剩<span class="showInterval">12</span>:<span class="showInterval">34</span>:<span class="showInterval">56</span></p> -->
         </div>
         <p class="opnenew-price"><span style="margin-right:1.5rem"><%= data[i].price1%></span><span style="margin-right:0.3rem">|</span><%= data[i].price2%></p>
     </div>
     <% } %>
 </div>
 
-    <!-- <script src="../public/javascripts/ajax/index.js"></script> -->
-
     <script>
+//点击10个小图标，跳转到对应的界面 
         var indexlist=document.getElementsByClassName('index-desc-list')
         for(var i=0;i<indexlist.length;i++){
             indexlist[i].onclick=function(){
@@ -126,22 +128,55 @@
             }
         }
 
-        // 倒计时        ????????????????????????????????????????
-        // var timer = setInterval(function(){
-		//   if (sys_second > 0) {
-		// 	sys_second -= 1;
-		// 	var day = Math.floor((sys_second / 3600) / 24);
-		// 	var hour = Math.floor((sys_second / 3600) % 24);
-		// 	var minute = Math.floor((sys_second / 60) % 60);
-		// 	var second = Math.floor(sys_second % 60);
-		// 	day_elem && $(day_elem).text(day<10?"0"+day:day);//计算天
-		// 	$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
-		// 	$(minute_elem).text(minute<10?"0"+minute:minute);//计算分
-		// 	$(second_elem).text(second<10?"0"+second:second);// 计算秒
-		//   } else { 
-		// 	clearInterval(timer);
-		//   }
-		// }, 1000);
+
+// 10点上新跳连接
+         var opengo=document.querySelectorAll('.opengo')
+         for(var i=0;i<3;i++){
+            opengo[i].onclick=function(){
+                location.href='/index/womenclothes'
+            }
+         }
+         for(var i=4;i<5;i++){
+            opengo[i].onclick=function(){
+                location.href='/index/skincare'
+            }
+         }
+         for(var i=5;i<6;i++){
+            opengo[i].onclick=function(){
+                location.href='/index/manclothes'
+            }
+         }
+         for(var i=6;i<7;i++){
+            opengo[i].onclick=function(){
+                location.href='/index/clock'
+            }
+         }
+         for(var i=7;i<opengo.length;i++){
+            opengo[i].onclick=function(){
+                location.href='/index/womenclothes'
+            }
+         }
+
+
+//  唯品快抢跳转到国际品牌
+         var fastbuygo=document.querySelectorAll('.fastbuygo')
+         for(var i=0;i<fastbuygo.length;i++){
+             fastbuygo[i].onclick=function(){
+                //  alert(1)
+                location.href='/index/international'
+             }
+         }
+
+
+//  最后疯抢跳转到详情界面
+         var lastcrazygo=document.querySelectorAll('.lastcrazygo')
+         for(var i=0;i<lastcrazygo.length;i++){
+             lastcrazygo[i].onclick=function(){
+                //  alert(1)
+                 location.href='/clothing/1'
+             }
+         }
+
     </script> 
 
 <% include base/bottom.ejs%>
