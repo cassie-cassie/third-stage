@@ -50,7 +50,7 @@
             </li>
             <li class="list-item">
                 <a href="" class="list-item">
-                    <div class="item-inner">
+                    <div class="item-inner userAdd">
                         <p class="item-title">收货地址</p>
                     </div>
                     <div class="icon-back"><img src="../images/login/返回 1.png"></div>
@@ -137,6 +137,15 @@
                 xhr.open('post', 'user.php?act=act_edit_img');//请求方式，请求地址
                 xhr.send(fd);
         }
+
+        // 进入收货界面
+        var useradd=document.querySelector('.userAdd')
+        
+            useradd.onclick=function(){
+                location.href='/UserAddress'
+                
+            }
+        
 </script>
 
 <% include base/bottom.ejs %>
