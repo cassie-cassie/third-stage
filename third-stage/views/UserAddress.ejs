@@ -8,16 +8,18 @@
         <p class="fa fa-home backindex"></p>
     </div>
     <div class="address">
+        <%for(var i=0;i<inform.length;i++){%>
         <div class="addinfor">
             <h4>
-                <span>姓名</span>
-                <span>13254684579</span>
+                <span class="td"><%=inform[i].name%></span>
+                <span class="td"><%=inform[i].num%></span>
             </h4>
-            <p>山西省晋中市榆次区 米加U聚鑫商务</p>
-            <p>收货时间</p>
-            <a class="delete">删除</a>
-            <a class="xiugai">修改</a>
+            <p class="td"><%=inform[i].address%></p>
+            <p class="td"><%=inform[i].time%></p>
+            <a class="delete td"><%=inform[i].delete%></a>
+            <a class="xiugai td"><%=inform[i].xiugai%></a>
         </div>
+        <%}%>
         <div class="button xiugai"  >
             <span>添加收货地址</span>
         </div>
@@ -26,12 +28,10 @@
         <div class="tankuang">
             <div>你要删除该地址吗？</div>
             <button class="quxiao">取消</button>
-            <button>确认</button>
+            <button class="yes">确认</button>
         </div>
-
     </div>
 </div>
-    
     <!-- 添加修改地址列表 -->
     <div class="changeAdd">
         <div class="k4-top">
@@ -42,33 +42,36 @@
         <div class="xgcontent">
             <div>
                 <span>收货人</span>
-                <input type="text" placeholder="请输入姓名">
+                <input id="name" type="text" placeholder="请输入姓名">
             </div>
             <div>
                 <span>手机号</span>
-                <input type="text" placeholder="请输入正确的手机号">
+                <input id="phoneNum" type="number" placeholder="请输入正确的手机号">
             </div>
             <div>
                 <span>收货时间</span>
-                <input type="text" placeholder="收货时间不限">
+                <input id="sjian" type="text" placeholder="收货时间不限">
             </div>
             
         </div>
         <div class="xgcontent">
             <div id="suozaiadd">
                 <span>所在地址</span>
-                <input type="text" placeholder="收货时间不限">
+                <input id="Add" type="text" placeholder="收货时间不限">
             </div>
             <div id="xiangxiadd">
                 <span>详细地址</span>
-                <textarea name="" id="" cols="30" rows="5" placeholder="请具体到街道、门牌号等"></textarea>
+                <textarea name="" id="jiedao" cols="30" rows="5" placeholder="请具体到街道、门牌号等"></textarea>
             </div>
         </div>
         <div class="sure">
             <button>确定</button>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
+
     // 返加上一界面
     var back = document.querySelector('#k4-topp')
         back.onclick = function(){
@@ -89,19 +92,63 @@
         sure.onclick = function (){
             changeAdd.style.display = 'none'
             Addlist.style.display = 'block'
-        }
+            // 获取   添加节点
+            //将姓名，年龄，性别，手机号，职位的value值创建在一个新数组中，前提先获取他们的按钮
+            var name = document.querySelector('#name').value
+            var phoneNum = document.querySelector('#phonenum').value
+            var sjian = document.querySelector('#sjian').value
+            var Add = document.querySelector('#Add').value
+            var jiedao = document.querySelector('#jiedao').value
+
+            var address=document.querySelector('address')[0]
+            //新增一个addinfor
+            var addinfor = document.querySelectorAll('.addinfor')
+            //创建一个新数组
+            var arr=[name,phonenum,Time,Add,jiedao]
+            //让其进行循环
+            //因为有button,s所以多循环一次，即<=arr.length
+                for(var j=0;j<=arr.length;j++){
+                    //每循环一次，创建一个td
+                    var td = document.createElement('.td')
+                    td.innerHTML=arr[i]
+                    if(arr[i]==undefined){
+                        td.innerHTML='<button>删除</button>'
+                    }
+                    addinfor.appendChild(td)
+                    address.appendChild(addinfor)
+                }
+                //删除按钮，只能删除一个
+                // var btns=document.getElementsByTagName('button')
+                // for(var j=1;j<btns.length;j++){
+                //     btns[j].onclick=function(){
+                //         tbody.removeChild(tr)
+                //     }
+                // }
+        }   
 
     // 蒙版
     var quxiao = document.querySelector('.quxiao')
-    var shanchu = document.querySelector('.delete')
+    var shanchu = document.querySelectorAll('.delete')
     var mengban = document.querySelector('.mengban')
-        shanchu.onclick = function(){
+    var yes = document.querySelector('.yes')
+    var addinfor = document.querySelectorAll('.addinfor')
+    for(var i=0;i<shanchu.length;i++){
+        shanchu[i].onclick = function(){
             mengban.style.display= 'block'
+            this.parentElement.parentElement.removeChild(this.parentElement)  //删除节点
         }
+    }
         quxiao.onclick = function(){
             mengban.style.display = 'none'
         }
-
+       
+        yes.onclick = function(){
+            mengban.style.display = 'none'
+            // addinfor.parentElement.parentElement.remove(addinfor.parentElement)
+        }
+    var addinfor = document.querySelectorAll('.addinfor')
+    
+    
         
      // 左边箭头右边房子回当前页
      var backindex=document.querySelectorAll('.backindex')
